@@ -11,11 +11,11 @@ h1{margin:0;font-size:clamp(25px,4vw,38px)}header p,.muted{color:#a6b4d1}main{ma
 .match{font-size:18px;font-weight:650;margin:20px 0}.prob{display:flex;justify-content:space-between;margin:8px 0}.bar{height:11px;background:#33415c;border-radius:10px;overflow:hidden}
 .fill{height:100%;background:#5b9bff}.pill{font-size:12px;color:#c0d4ff;background:#253b60;padding:4px 8px;border-radius:6px}
 .notice{border:1px solid #3d4b63;background:#192339;padding:14px;border-radius:10px;line-height:1.5}
-footer{margin:32px 0;color:#9caac4;font-size:13px}.stats{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}.stat{background:#18263e;border:1px solid #344665;padding:14px;border-radius:10px;min-width:150px;flex:1}.stat strong{display:block;font-size:24px;margin-top:6px}.market{border-top:1px solid #344665;padding-top:12px;margin-top:12px}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}.tabs button{background:#243551;color:#eef2ff;border:1px solid #405072;border-radius:7px;padding:7px 9px;cursor:pointer}.tabs button.selected{background:#2863cc}.mini{font-size:13px;line-height:1.7}
+footer{margin:32px 0;color:#9caac4;font-size:13px}.stats{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}.stat{background:#18263e;border:1px solid #344665;padding:14px;border-radius:10px;min-width:150px;flex:1}.stat strong{display:block;font-size:24px;margin-top:6px}.market{border-top:1px solid #344665;padding-top:12px;margin-top:12px}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}.tabs button{background:#243551;color:#eef2ff;border:1px solid #405072;border-radius:7px;padding:7px 9px;cursor:pointer}.tabs button.selected{background:#2863cc}.mini{font-size:13px;line-height:1.7}.wide{grid-column:1/-1}.section-label{font-size:13px;font-weight:750;letter-spacing:.04em;color:#a9c8ff;text-transform:uppercase;border-top:1px solid #344665;margin-top:16px;padding-top:12px}.game-card{min-width:0}.stat-row{border-top:1px solid #2c3a52;padding:9px 0}.stat-row:first-of-type{border-top:0}.cards{grid-template-columns:repeat(auto-fill,minmax(min(100%,350px),1fr))}
 </style></head>
 <body><header><h1>Sports Edge AI</h1><p>Pregame NBA & NFL probability research</p></header>
 <main><div class="notice">Experimental predictions, not betting recommendations. Odds require a connected API key; no verified betting edge. Models do not account for real-time injuries or confirmed lineups.</div>
-<h2>Forward prediction tracking</h2><div id="performance" class="stats"><p class="muted">Loading performance history…</p></div><p id="marketStatus" class="muted">Sportsbook odds: loading…</p><p id="playerStatus" class="muted">Player form research: loading…</p><div class="tabs" id="views"><button data-view="moneyline" class="selected">Moneyline</button><button data-view="spreads">Spreads</button><button data-view="totals">Over/Under</button><button data-view="props">Player Props</button><button data-view="bestprops">Best Player Props 80+</button><button data-view="accuracy">Daily Accuracy</button><button data-view="research">Player Projections</button></div><div class="controls"><button data-league="all" class="active">All games</button><button data-league="nba">NBA</button><button data-league="nfl">NFL</button></div>
+<h2>Forward prediction tracking</h2><div id="performance" class="stats"><p class="muted">Loading performance history…</p></div><p id="marketStatus" class="muted">Sportsbook odds: loading…</p><p id="playerStatus" class="muted">Player form research: loading…</p><div class="tabs" id="views"><button data-view="moneyline" class="selected">Games & Odds</button><button data-view="players">Players: Props & Projections</button><button data-view="bestprops">Best Player Props 80+</button><button data-view="accuracy">Daily Accuracy</button><button data-view="research">Player Projections</button></div><div class="controls"><button data-league="all" class="active">All games</button><button data-league="nba">NBA</button><button data-league="nfl">NFL</button></div>
 <p id="status" class="muted" role="status">Loading prediction snapshot…</p><section class="cards" id="games" aria-label="Upcoming predictions"></section>
 <footer>Source: ESPN public scoreboard and Sports Edge AI historical model. Times displayed in your local timezone. Data refreshes when the scheduled GitHub workflow succeeds.</footer></main>
 <script>
@@ -65,9 +65,49 @@ function bestPropRows(){
  }
  return results.sort((a,b)=>b.score-a.score||b.hitRate-a.hitRate);
 }
+function fmt(n,d=1){return Number.isFinite(Number(n))?Number(n).toFixed(d):"—"}
+function signed(n){return Number.isFinite(Number(n))?(Number(n)>0?"+":"")+n:"—"}
+function moneylineGame(g){
+ const odds=(market?.quotes||[]).filter(q=>q.league===g.league&&q.game_id===g.game_id&&!q.stale);
+ const other=(market?.other_markets||[]).filter(q=>q.league===g.league&&q.game_id===g.game_id);
+ const preferred=rows=>rows.find(x=>x.sportsbook==="betmgm")||rows.find(x=>x.sportsbook==="draftkings")||rows[0];
+ const ml=preferred(odds),spread=preferred(other.filter(q=>q.market==="spreads")),total=preferred(other.filter(q=>q.market==="totals")),p=g.score_projection||{};
+ const line=(label,value,extra="")=>'<div class="prob"><span>'+label+'</span><strong>'+value+'</strong></div>'+(extra?'<p class="muted mini">'+extra+'</p>':"");
+ return '<article class="card game-card"><div class="top"><span class="pill">'+safe(g.league.toUpperCase())+'</span><time>'+safe(new Date(g.start_time).toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"}))+'</time></div>'+
+ '<div class="match">'+safe(g.away_team)+' @ '+safe(g.home_team)+'</div>'+
+ '<div class="section-label">Winner projection</div>'+
+ line(safe(g.home_team),fmt(100*g.home_win_probability,1)+'%')+
+ '<div class="bar"><div class="fill" style="width:'+Math.max(0,Math.min(100,100*g.home_win_probability))+'%"></div></div>'+
+ line(safe(g.away_team),fmt(100*g.away_win_probability,1)+'%')+
+ (ml?'<div class="section-label">Moneyline · '+safe(ml.sportsbook)+'</div>'+
+ line('Home / Away',signed(ml.home_american)+' / '+signed(ml.away_american)):'<p class="muted mini">Moneyline unavailable in this snapshot</p>')+
+ '<div class="section-label">Spread</div>'+
+ (p.status==="experimental"?line('Projected home margin',signed(fmt(p.projected_home_margin)))+line('Projected score',fmt(p.away_projected_points)+' – '+fmt(p.home_projected_points)):'')+
+ (spread?line(safe(spread.sportsbook)+' home / away',signed(spread.home_spread)+' / '+signed(spread.away_spread))+
+ line('Home cover estimate',spread.home_cover_probability==null?'—':fmt(spread.home_cover_probability*100)+'%'):'<p class="muted mini">No matched spread quote</p>')+
+ '<div class="section-label">Game total</div>'+
+ (p.status==="experimental"?line('Projected total',fmt(p.projected_total)):'')+
+ (total?line(safe(total.sportsbook)+' Over / Under',fmt(total.total_line))+
+ line('Estimated over',total.over_probability==null?'—':fmt(total.over_probability*100)+'%'):'<p class="muted mini">No matched total quote</p>')+
+ '<p class="muted mini">Experimental models · sportsbook prices are snapshots, not live or validated edges.</p></article>';
+}
+function playerCard(p,quotes,rank){
+ const labels={player_points:"Points",player_rebounds:"Rebounds",player_assists:"Assists",player_threes:"3-pointers",player_points_rebounds_assists:"Points + rebounds + assists",player_pass_yds:"Passing yards",player_pass_tds:"Passing TDs",player_rush_yds:"Rushing yards",player_reception_yds:"Receiving yards",player_receptions:"Receptions"};
+ const q=quotes.find(x=>x.sportsbook==="betmgm")||quotes.find(x=>x.sportsbook==="draftkings")||quotes[0];
+ return '<article class="card"><div class="top"><span class="pill">'+safe(p.league.toUpperCase())+'</span><span>'+p.games+' games</span></div>'+
+ '<div class="match">'+safe(p.player)+'</div>'+
+ p.markets.map(m=>{
+  const x=(m.quotes||[]).find(z=>z.sportsbook==="betmgm")||(m.quotes||[]).find(z=>z.sportsbook==="draftkings")||(m.quotes||[])[0];
+  return '<div class="stat-row"><div class="prob"><span>'+safe(labels[m.market]||m.market.replaceAll("_"," "))+'</span><strong>'+fmt(m.projected)+'</strong></div>'+
+  (x?'<div class="prob muted mini"><span>'+safe(x.sportsbook)+' line '+fmt(x.line)+'</span><span>O '+signed(x.over_american)+' · U '+signed(x.under_american)+'</span></div>':'<p class="muted mini">Sportsbook line not collected</p>')+
+  (Array.isArray(m.recent_values)?'<p class="muted mini">Last '+m.recent_values.length+': '+m.recent_values.map(v=>fmt(v,0)).join(' · ')+'</p>':'')+
+  '</div>';
+ }).join("")+
+ '<p class="muted mini">Historical form, not opponent-adjusted. Odds may be stale.</p></article>';
+}
 function render(){
  const root=document.getElementById("games"),status=document.getElementById("status");
- if(!snapshot){return}
+ if(!snapshot){status.textContent="Waiting for prediction data…";return}
  if(view==="accuracy"){
    const data=propAccuracy||{},stats=data.by_league||{},performance=window.gamePerformance||{};
    const leagues=filter==="all"?["nba","nfl"]:[filter];
@@ -96,6 +136,7 @@ function render(){
      '<p class="muted mini">'+safe(r.sportsbook)+' · '+safe(new Date(r.start_time).toLocaleString())+'</p></article>').join("")||'<p class="muted">No completed pregame-tracked player props graded yet. Results will populate after games finish and the next data refresh.</p>');
    return;
  }
+
  if(view==="bestprops"){
    const all=bestPropRows(),rows=all.slice(0,60);
    status.textContent=all.length+" research-ranked props scoring 80+ · not win probabilities · upcoming games only";
@@ -114,63 +155,34 @@ function render(){
      }).join(""):'<p class="muted">No props currently meet the 80+ research threshold with complete, fresh, uniquely matched data. This is expected until the next projection refresh or when markets are unavailable.</p>');
    return;
  }
- if(view==="research"||view==="props"){
-   const rows=(playerResearch?.projections||[]).filter(p=>filter==="all"||p.league===filter);
-   status.textContent=(view==="props"?"Player prop research · ":"Experimental player-form projections · ")+rows.length+" eligible stat lines · minimum five completed games";
-   const grouped=new Map();
-   for(const p of rows){
-     const key=p.league+":"+p.player_id;
-     if(!grouped.has(key))grouped.set(key,{league:p.league,player:p.player,markets:[],games:p.games});
-     grouped.get(key).markets.push(p);
-   }
-   const people=[...grouped.values()].sort((a,b)=>a.player.localeCompare(b.player));
-   const propCount=(market?.player_props||[]).filter(q=>filter==="all"||q.league===filter).length;
-   const notice=view==="props"?'<p class="muted">Sportsbook player-prop lines collected: '+propCount+'. Estimates below are historical player-form averages, NOT sportsbook over/under lines or validated betting predictions.</p>':"";
-   const oddsRows=(market?.player_props||[]).filter(q=>filter==="all"||q.league===filter);
-   const oddsCards=view==="props"&&oddsRows.length?
-     '<h3 style="grid-column:1/-1">Collected sportsbook player-prop lines</h3>'+
-     oddsRows.slice(0,90).map(q=>'<article class="card"><div class="top"><span class="pill">'+safe(q.league.toUpperCase())+'</span><span>'+safe(q.sportsbook)+'</span></div><div class="match">'+safe(q.player)+'</div><div class="prob"><span>'+safe(q.market.replaceAll("_"," "))+'</span><strong>'+Number(q.line).toFixed(1)+'</strong></div><p class="mini">Over '+safe(q.over_american)+' / Under '+safe(q.under_american)+'</p><p class="muted mini">Odds snapshot · not live or a betting recommendation</p></article>').join('')+
-     '<h3 style="grid-column:1/-1">Historical player-form averages (not sportsbook lines)</h3>':"";
-   root.innerHTML=notice+oddsCards+(people.length?people.slice(0,120).map(p=>
-     '<article class="card"><div class="top"><span class="pill">'+safe(p.league.toUpperCase())+'</span><span>'+p.games+' completed games</span></div>'+
-     '<div class="match">'+safe(p.player)+'</div>'+
-     p.markets.map(q=>'<div class="prob"><span>'+safe(q.market.replaceAll("player_","").replaceAll("_"," "))+'</span><strong>'+Number(q.projected).toFixed(1)+'</strong></div>').join('')+
-     '<p class="muted mini">Last '+p.markets[0].window+' available games · experimental average, not a matchup-specific prediction</p></article>').join("")+
-     (people.length>120?'<p class="muted">Showing 120 of '+people.length+' players. Select NBA or NFL to narrow results.</p>':''):
-     '<p class="muted">No player projections with at least five completed games yet for this league. Historical collection continues daily.</p>');
-   return;
+
+ if(view==="players"){
+  const rows=(playerResearch?.projections||[]).filter(p=>filter==="all"||p.league===filter);
+  const quotes=(market?.player_props||[]).filter(q=>filter==="all"||q.league===filter);
+  const normalize=n=>String(n||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
+  const byKey=new Map();
+  for(const p of rows){
+    const key=p.league+"|"+p.player_id;
+    if(!byKey.has(key))byKey.set(key,{league:p.league,player:p.player,player_id:p.player_id,games:p.games,markets:[]});
+    const matches=quotes.filter(q=>q.league===p.league&&normalize(q.player)===normalize(p.player)&&q.market===p.market);
+    byKey.get(key).markets.push({...p,quotes:matches});
+  }
+  const players=[...byKey.values()].sort((a,b)=>{
+    const aOdds=a.markets.reduce((n,m)=>n+m.quotes.length,0),bOdds=b.markets.reduce((n,m)=>n+m.quotes.length,0);
+    return bOdds-aOdds||a.player.localeCompare(b.player);
+  });
+  status.textContent=players.length+" players with form projections · "+quotes.length+" collected sportsbook quotes · matched lines shown alongside projections";
+  const cards=players.slice(0,180).map(p=>playerCard(p,quotes)).join("");
+  const matched=players.reduce((n,p)=>n+p.markets.reduce((x,m)=>x+m.quotes.length,0),0);
+  root.innerHTML='<p class="muted wide">Projected stat averages and sportsbook prices now appear together by player. '+matched+' player/market quotes matched to form data. Prices are historical snapshots, not guaranteed current.</p>'+
+    (cards||'<p class="muted">No player-form projections yet for this league.</p>')+
+    (players.length>180?'<p class="muted wide">Showing 180 of '+players.length+' players. Use NBA or NFL to filter.</p>':'')+
+    (quotes.length&&!matched?'<p class="muted wide">The sportsbook supplied quotes but none matched uniquely to historical player names. These quotes are not represented as projections.</p>':'');
+  return;
  }
  const games=snapshot.games.filter(g=>(filter==="all"||g.league===filter)&&new Date(g.start_time)>new Date());
  status.textContent="Updated "+new Date(snapshot.generated_at).toLocaleString()+" · "+games.length+" upcoming games";
- root.innerHTML=games.length?games.map(g=>{
- const home=Number(g.home_win_probability),away=Number(g.away_win_probability);
- const quotes=(market?.quotes||[]).filter(q=>q.league===g.league&&q.game_id===g.game_id&&!q.stale);
- const priority=items=>items.find(q=>q.sportsbook==="betmgm")||items[0]||null;
- const best=priority(quotes);
- const projection=g.score_projection||{};
- const lines=(market?.other_markets||[]).filter(q=>q.league===g.league&&q.game_id===g.game_id);
- const spread=priority(lines.filter(q=>q.market==="spreads"));
- const total=priority(lines.filter(q=>q.market==="totals"));
- let detail="";
- if(view==="spreads")detail=projection.status==="experimental"?
- '<div class="market mini"><strong>Projected home margin: '+projection.projected_home_margin.toFixed(1)+'</strong><p>Projected score: '+projection.away_projected_points+' – '+projection.home_projected_points+'</p>'+(spread?'<p>'+safe(spread.sportsbook)+' spread: '+spread.home_spread+' · Estimated home cover: '+(spread.home_cover_probability===undefined?"Unavailable":(spread.home_cover_probability*100).toFixed(1)+"%")+'</p>':'<p class="muted">No matched sportsbook spread in the latest snapshot.</p>')+'</div>':'<p class="muted">Insufficient historical games for spread projection.</p>';
- if(view==="totals")detail=projection.status==="experimental"?
- '<div class="market mini"><strong>Projected total: '+projection.projected_total.toFixed(1)+'</strong>'+(total?'<p>'+safe(total.sportsbook)+' over/under: '+total.total_line+' · Estimated over: '+(total.over_probability===undefined?"Unavailable":(total.over_probability*100).toFixed(1)+"%")+'</p>':'<p class="muted">No matched sportsbook total in the latest snapshot.</p>')+'</div>':'<p class="muted">Insufficient historical games for totals projection.</p>';
- if(view==="props"){
- const props=(market?.player_props||[]).filter(q=>q.league===g.league&&q.game_id===g.game_id);
- detail=props.length?'<div class="market mini"><strong>Player prop lines (BetMGM preferred; odds only)</strong><p class="muted">No player-stat projections or validated edges yet. Prices are snapshots.</p>'+
- props.slice(0,24).map(p=>'<p>'+safe(p.sportsbook.toUpperCase())+' · '+safe(p.player)+' · '+safe(p.market.replaceAll("_"," "))+' '+Number(p.line)+' · Over '+Number(p.over_american)+' / Under '+Number(p.under_american)+'</p>').join('')+
- (props.length>24?'<p class="muted">Showing first 24 of '+props.length+' markets</p>':'')+'</div>':
- '<div class="market mini"><strong>No player prop lines collected for this game.</strong><p class="muted">On the free API plan, props are checked only on Mondays for one game per league when at least 50 credits remain. No historical prop prices are presented as current. Player-stat projections are not implemented.</p></div>';
- }
- const oddsHtml=best?'<div class="market"><strong>Research-only market comparison</strong><p class="muted">'+safe(best.sportsbook)+' · Home '+best.home_american+' / Away '+best.away_american+'</p><p>Estimated EV: Home '+(best.home_ev_per_unit*100).toFixed(1)+'% · Away '+(best.away_ev_per_unit*100).toFixed(1)+'%</p><p class="muted">Snapshot odds · not a validated betting edge.</p></div>':'<div class="market mini muted">No matched sportsbook moneyline available for this game in the latest snapshot. Model probability is shown separately.</div>';
- return '<article class="card"><div class="top"><span class="pill">'+safe(g.league.toUpperCase())+'</span><time>'+safe(new Date(g.start_time).toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"}))+'</time></div>'+
- '<div class="match">'+safe(g.away_team)+' @ '+safe(g.home_team)+'</div>'+
- '<div class="prob"><span>'+safe(g.home_team)+'</span><strong>'+Math.round(home*100)+'%</strong></div>'+
- '<div class="bar"><div class="fill" style="width:'+Math.max(0,Math.min(100,home*100))+'%"></div></div>'+
- '<div class="prob"><span>'+safe(g.away_team)+'</span><strong>'+Math.round(away*100)+'%</strong></div>'+
- '<p class="muted">'+safe(g.model.replaceAll("_"," "))+' · '+g.history_games+' historical games</p>'+(view==='moneyline'?oddsHtml:detail)+'</article>'
- }).join(""):'<p class="muted">No upcoming predictions available for this filter. Check again after the next successful refresh.</p>';
+ root.innerHTML=games.length?games.map(moneylineGame).join(""):'<p class="muted wide">No upcoming games in the current snapshot. Completed games are tracked under Daily Accuracy; new games appear after the next data refresh.</p>';
 }
 document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{
  view=b.dataset.view;document.querySelectorAll("[data-view]").forEach(x=>x.classList.toggle("selected",x===b));render();
