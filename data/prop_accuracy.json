@@ -1,17 +1,28 @@
 {
-  "status": "awaiting_first_run",
+  "generated_at": "2026-11-11T01:48:17.626488+00:00",
+  "status": "forward_only_unvalidated",
   "by_league": {
     "nba": {
-      "tracked": 0,
-      "pending": 0,
-      "graded": 0
+      "tracked": 60,
+      "pending": 60,
+      "graded": 0,
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "hit_rate": null,
+      "mean_absolute_error": null
     },
     "nfl": {
       "tracked": 0,
       "pending": 0,
-      "graded": 0
+      "graded": 0,
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "hit_rate": null,
+      "mean_absolute_error": null
     }
   },
-  "recent_results": [],
-  "note": "Forward-only tracking starts with next pregame workflow run."
+  "note": "Only predictions frozen before tipoff count. Correlated sportsbook quotes and both sides are counted separately. Hit rate is not ROI or calibrated confidence.",
+  "recent_results": []
 }
