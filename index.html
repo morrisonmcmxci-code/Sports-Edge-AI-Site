@@ -15,11 +15,11 @@ footer{margin:32px 0;color:#9caac4;font-size:13px}.stats{display:flex;gap:12px;f
 </style></head>
 <body><header><h1>Sports Edge AI</h1><p>Pregame NBA & NFL probability research</p></header>
 <main><div class="notice">Experimental predictions, not betting recommendations. Odds require a connected API key; no verified betting edge. Models do not account for real-time injuries or confirmed lineups.</div>
-<h2>Forward prediction tracking</h2><div id="performance" class="stats"><p class="muted">Loading performance history…</p></div><p id="marketStatus" class="muted">Sportsbook odds: loading…</p><p id="playerStatus" class="muted">Player form research: loading…</p><div class="tabs" id="views"><button data-view="moneyline" class="selected">Moneyline</button><button data-view="spreads">Spreads</button><button data-view="totals">Over/Under</button><button data-view="props">Player Props</button><button data-view="bestprops">Best Player Props 80+</button><button data-view="research">Player Projections</button></div><div class="controls"><button data-league="all" class="active">All games</button><button data-league="nba">NBA</button><button data-league="nfl">NFL</button></div>
+<h2>Forward prediction tracking</h2><div id="performance" class="stats"><p class="muted">Loading performance history…</p></div><p id="marketStatus" class="muted">Sportsbook odds: loading…</p><p id="playerStatus" class="muted">Player form research: loading…</p><div class="tabs" id="views"><button data-view="moneyline" class="selected">Moneyline</button><button data-view="spreads">Spreads</button><button data-view="totals">Over/Under</button><button data-view="props">Player Props</button><button data-view="bestprops">Best Player Props 80+</button><button data-view="accuracy">Daily Accuracy</button><button data-view="research">Player Projections</button></div><div class="controls"><button data-league="all" class="active">All games</button><button data-league="nba">NBA</button><button data-league="nfl">NFL</button></div>
 <p id="status" class="muted" role="status">Loading prediction snapshot…</p><section class="cards" id="games" aria-label="Upcoming predictions"></section>
 <footer>Source: ESPN public scoreboard and Sports Edge AI historical model. Times displayed in your local timezone. Data refreshes when the scheduled GitHub workflow succeeds.</footer></main>
 <script>
-let snapshot=null,filter="all",market=null,view="moneyline",playerResearch=null;
+let snapshot=null,filter="all",market=null,view="moneyline",playerResearch=null,propAccuracy=null;
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function researchSummary(){
  const box=document.getElementById("playerStatus");
@@ -68,6 +68,34 @@ function bestPropRows(){
 function render(){
  const root=document.getElementById("games"),status=document.getElementById("status");
  if(!snapshot){return}
+ if(view==="accuracy"){
+   const data=propAccuracy||{},stats=data.by_league||{},performance=window.gamePerformance||{};
+   const leagues=filter==="all"?["nba","nfl"]:[filter];
+   status.textContent="Daily Accuracy · forward-tracked results only · "+(data.generated_at?new Date(data.generated_at).toLocaleString():"awaiting first run");
+   root.innerHTML='<p class="muted" style="grid-column:1/-1">Only predictions recorded before game start count. Player-prop results are graded from final ESPN box scores. Accuracy is not profitability or a validated betting edge.</p>'+
+   leagues.map(l=>{
+     const g=performance.by_league?.[l]||{},p=stats[l]||{};
+     return '<article class="card"><div class="top"><span class="pill">'+safe(l.toUpperCase())+'</span><span>Forward tracking</span></div>'+
+     '<div class="match">Game predictions</div>'+
+     '<div class="prob"><span>Graded</span><strong>'+Number(g.graded||0)+'</strong></div>'+
+     '<div class="prob"><span>Correct winners</span><strong>'+Number(g.correct||0)+'</strong></div>'+
+     '<div class="prob"><span>Winner accuracy</span><strong>'+(g.accuracy==null?"—":(100*g.accuracy).toFixed(1)+"%")+'</strong></div>'+
+     '<div class="match">Player props</div>'+
+     '<div class="prob"><span>Tracked / graded</span><strong>'+Number(p.tracked||0)+' / '+Number(p.graded||0)+'</strong></div>'+
+     '<div class="prob"><span>Won / lost / push</span><strong>'+Number(p.wins||0)+' / '+Number(p.losses||0)+' / '+Number(p.pushes||0)+'</strong></div>'+
+     '<div class="prob"><span>Prop hit rate</span><strong>'+(p.hit_rate==null?"—":(100*p.hit_rate).toFixed(1)+"%")+'</strong></div>'+
+     '<div class="prob"><span>Mean absolute projection error</span><strong>'+(p.mean_absolute_error==null?"—":Number(p.mean_absolute_error).toFixed(2))+'</strong></div>'+
+     '<p class="muted mini">Both prop sides and multiple books may be counted; results are correlated, not independent.</p></article>';
+   }).join("")+
+   '<h3 style="grid-column:1/-1">Recently graded player props</h3>'+
+   ((data.recent_results||[]).filter(r=>filter==="all"||r.league===filter).slice(0,30).map(r=>
+     '<article class="card"><div class="top"><span class="pill">'+safe(r.league.toUpperCase())+'</span><strong>'+safe(r.result.toUpperCase())+'</strong></div>'+
+     '<div class="match">'+safe(r.player)+'</div><p>'+safe(r.market.replaceAll("_"," "))+' · '+safe(r.side)+' '+Number(r.line).toFixed(1)+'</p>'+
+     '<div class="prob"><span>Projected</span><strong>'+Number(r.projection).toFixed(1)+'</strong></div>'+
+     '<div class="prob"><span>Actual</span><strong>'+Number(r.actual).toFixed(1)+'</strong></div>'+
+     '<p class="muted mini">'+safe(r.sportsbook)+' · '+safe(new Date(r.start_time).toLocaleString())+'</p></article>').join("")||'<p class="muted">No completed pregame-tracked player props graded yet. Results will populate after games finish and the next data refresh.</p>');
+   return;
+ }
  if(view==="bestprops"){
    const all=bestPropRows(),rows=all.slice(0,60);
    status.textContent=all.length+" research-ranked props scoring 80+ · not win probabilities · upcoming games only";
@@ -155,6 +183,7 @@ Promise.allSettled([
  fetch("./data/market.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()})
 ]).then(([p,m])=>{
  if(p.status==="fulfilled"){
+  window.gamePerformance=p.value;
   document.getElementById("performance").innerHTML=["nba","nfl"].map(l=>{
    const v=p.value.by_league[l];
    return '<div class="stat"><span>'+l.toUpperCase()+' · '+v.graded+' graded</span><strong>'+(v.accuracy===null?"Pending":(v.accuracy*100).toFixed(1)+"%")+'</strong><span class="muted">'+v.pending+' pending · Brier '+(v.brier===null?"—":v.brier.toFixed(3))+'</span></div>';
@@ -167,6 +196,7 @@ Promise.allSettled([
   render();
  }else{document.getElementById("marketStatus").textContent="Sportsbook odds not available yet.";}
 });
+fetch("./data/prop_accuracy.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()}).then(d=>{propAccuracy=d;render()}).catch(()=>{});
 fetch("./data/player_projections.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()})
 .then(data=>{playerResearch=data;researchSummary();render()}).catch(()=>researchSummary());
 fetch("./data/predictions.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("No published prediction snapshot");return r.json()})
