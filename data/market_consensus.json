@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T19:57:22.335000+00:00",
+  "generated_at": "2026-11-11T20:02:31.640333+00:00",
   "status": "research_only_not_calibrated",
   "games": [
     {
@@ -143,10 +143,10 @@
       "game_id": "401909970",
       "status": "review_required",
       "sportsbooks": 9,
-      "market_home_probability": 0.40136,
-      "market_away_probability": 0.59864,
-      "book_probability_range_pp": 1.35,
-      "model_market_gap_pp": 25.66,
+      "market_home_probability": 0.40347,
+      "market_away_probability": 0.59653,
+      "book_probability_range_pp": 1.28,
+      "model_market_gap_pp": 25.45,
       "history_current": true,
       "data_completeness_checks": {
         "historical_games_current": true,
@@ -179,7 +179,7 @@
       "sportsbooks": 9,
       "market_home_probability": 0.14672,
       "market_away_probability": 0.85328,
-      "book_probability_range_pp": 1.42,
+      "book_probability_range_pp": 1.69,
       "model_market_gap_pp": 8.02,
       "history_current": true,
       "data_completeness_checks": {
@@ -245,10 +245,10 @@
       "game_id": "401909973",
       "status": "screened_not_calibrated",
       "sportsbooks": 9,
-      "market_home_probability": 0.38453,
-      "market_away_probability": 0.61547,
-      "book_probability_range_pp": 1.54,
-      "model_market_gap_pp": 12.51,
+      "market_home_probability": 0.38403,
+      "market_away_probability": 0.61597,
+      "book_probability_range_pp": 2.57,
+      "model_market_gap_pp": 12.56,
       "history_current": true,
       "data_completeness_checks": {
         "historical_games_current": true,
@@ -712,7 +712,7 @@
       "sportsbooks": 9,
       "market_home_probability": 0.59653,
       "market_away_probability": 0.40347,
-      "book_probability_range_pp": 2.46,
+      "book_probability_range_pp": 3.46,
       "model_market_gap_pp": -6.77,
       "history_current": true,
       "data_completeness_checks": {
