@@ -20,7 +20,7 @@ footer{margin:32px 0;color:#9caac4;font-size:13px}.stats{display:flex;gap:12px;f
 <footer>Dashboard version: unified-v4-20261111 · Source: ESPN public scoreboard and Sports Edge AI historical model. Times displayed in your local timezone. Data refreshes when the scheduled GitHub workflow succeeds.</footer></main>
 <script>
 let snapshot=null,filter="all",market=null,view="moneyline",playerResearch=null,propAccuracy=null;
-const DATA_REV="injury-risk-v1-20261111";
+const DATA_REV="market-disagreement-v1-20261111";
 const dataUrl=path=>"./data/"+path+"?v="+DATA_REV;
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function researchSummary(){
@@ -77,7 +77,12 @@ function moneylineGame(g){
  const ml=preferred(odds),spread=preferred(other.filter(q=>q.market==="spreads")),total=preferred(other.filter(q=>q.market==="totals")),p=g.score_projection||{};
  const line=(label,value)=>'<div class="prob"><span>'+label+'</span><strong>'+value+'</strong></div>';
  const edgeHome=ml&&Number.isFinite(Number(ml.home_no_vig_market_probability))?100*(Number(g.home_win_probability)-Number(ml.home_no_vig_market_probability)):null;
- const edge= edgeHome===null?'':Math.abs(edgeHome)>=5?'<div class="edge-highlight">▲ '+safe(edgeHome>0?g.home_team:g.away_team)+' · model advantage '+fmt(Math.abs(edgeHome))+' percentage points vs no-vig market</div>':'';
+ const staleHistory=Math.max(Number(g.matchup_context?.home?.rest_days??999),Number(g.matchup_context?.away?.rest_days??999))>45;
+ const marketConflict=ml&&Number.isFinite(edgeHome)&&Math.abs(edgeHome)>25;
+ const spreadConflict=spread&&Number.isFinite(Number(p.projected_home_margin))&&Math.abs(Number(p.projected_home_margin)+Number(spread.home_spread))>10;
+ const modelUnsafe=staleHistory||g.history_quality?.status==="stale"||marketConflict||spreadConflict;
+ const caution=modelUnsafe?'<div class="edge-highlight" style="border-color:#e5a54a;background:#3a2d20">⚠ MODEL UNRELIABLE — '+(staleHistory?'Recent game history is stale. ':'')+(marketConflict?'Win probability sharply contradicts sportsbook odds. ':'')+(spreadConflict?'Projected margin sharply contradicts market spread. ':'')+'Do not treat this as a betting edge.</div>':'';
+ const edge= modelUnsafe||edgeHome===null?'':Math.abs(edgeHome)>=5?'<div class="edge-highlight">▲ '+safe(edgeHome>0?g.home_team:g.away_team)+' · model advantage '+fmt(Math.abs(edgeHome))+' percentage points vs no-vig market</div>':'';
  const form=p.recent_form;
  const teamForm=(name,stats)=>'<div class="team-form"><strong>'+safe(name)+'</strong>'+
   '<div class="prob"><span>Points scored · last 5 / 10</span><strong>'+fmt(stats.last_5_scored)+' / '+fmt(stats.last_10_scored)+'</strong></div>'+
@@ -85,13 +90,13 @@ function moneylineGame(g){
  const formHtml=form?'<div class="recent-form"><div class="section-title">Recent team averages</div>'+
   teamForm(g.away_team,form.away)+teamForm(g.home_team,form.home)+
   '<p class="muted mini">Last-five form contributes 35% to the projected score.</p></div>':'';
- const winner=g.home_win_probability>=.5?g.home_team:g.away_team;
- const probability=(name,pct,isWinner)=>'<div class="prob '+(isWinner?'favorite':'')+'"><span>'+safe(name)+(isWinner?' <span class="pick-tag">PROJECTED WINNER</span>':'')+'</span><strong>'+fmt(pct*100)+'%</strong></div>';
+ const winner=modelUnsafe?null:(g.home_win_probability>=.5?g.home_team:g.away_team);
+ const probability=(name,pct,isWinner)=>'<div class="prob '+(isWinner?'favorite':'')+'"><span>'+safe(name)+(isWinner?' <span class="pick-tag">PROJECTED WINNER</span>':'')+'</span><strong>'+fmt(pct*100)+'%'+(modelUnsafe?' ⚠':'')+'</strong></div>';
  const spreadName=p.projected_home_margin>=0?g.home_team:g.away_team;
  const projectedScore='<div class="score-grid"><div><span>'+safe(g.away_team)+'</span><strong>'+fmt(p.away_projected_points)+'</strong></div>'+
   '<div><span>'+safe(g.home_team)+'</span><strong>'+fmt(p.home_projected_points)+'</strong></div></div>';
  const moneylineHtml=ml?'<div class="section-label">Sportsbook moneyline · '+safe(ml.sportsbook)+'</div>'+
-  line(safe(g.away_team),signed(ml.away_american))+line(safe(g.home_team),signed(ml.home_american))+edge:
+  line(safe(g.away_team),signed(ml.away_american))+line(safe(g.home_team),signed(ml.home_american))+caution+edge:
   '<p class="muted mini">Sportsbook moneyline not available for this matchup.</p>';
  const spreadHtml=spread?'<div class="section-label">Sportsbook spread · '+safe(spread.sportsbook)+'</div>'+
   line(safe(g.away_team),signed(spread.away_spread))+line(safe(g.home_team),signed(spread.home_spread)):'';
