@@ -1,0 +1,48 @@
+{
+  "status": "insufficient_data",
+  "min_samples_to_evaluate": 100,
+  "by_league": {
+    "nba": {
+      "graded": 6,
+      "status": "insufficient_data",
+      "brier": 0.249,
+      "log_loss": 0.69672,
+      "calibration_bins": [
+        {
+          "range": "20-30%",
+          "count": 3,
+          "predicted_home_win_rate": 0.2323,
+          "observed_home_win_rate": 0.3333
+        },
+        {
+          "range": "30-40%",
+          "count": 1,
+          "predicted_home_win_rate": 0.3923,
+          "observed_home_win_rate": 1.0
+        },
+        {
+          "range": "50-60%",
+          "count": 1,
+          "predicted_home_win_rate": 0.5541,
+          "observed_home_win_rate": 0.0
+        },
+        {
+          "range": "70-80%",
+          "count": 1,
+          "predicted_home_win_rate": 0.7627,
+          "observed_home_win_rate": 1.0
+        }
+      ],
+      "auto_retraining_enabled": false
+    },
+    "nfl": {
+      "graded": 0,
+      "status": "insufficient_data",
+      "brier": null,
+      "log_loss": null,
+      "calibration_bins": [],
+      "auto_retraining_enabled": false
+    }
+  },
+  "note": "First-seen pregame forecasts only; no in-sample weight fitting or ROI claim."
+}

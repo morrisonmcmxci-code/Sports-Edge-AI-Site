@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-11T18:49:50.081768+00:00",
+  "generated_at": "2026-11-11T18:58:51.286040+00:00",
   "status": "forward_only_unvalidated",
   "by_league": {
     "nba": {
-      "tracked": 304,
-      "pending": 304,
+      "tracked": 312,
+      "pending": 312,
       "graded": 0,
       "wins": 0,
       "losses": 0,
