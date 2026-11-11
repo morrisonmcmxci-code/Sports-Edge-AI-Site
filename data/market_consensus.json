@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T18:58:51.245085+00:00",
+  "generated_at": "2026-11-11T19:05:24.859434+00:00",
   "status": "research_only_not_calibrated",
   "games": [
     {
@@ -22,7 +22,16 @@
       "data_completeness_pct": 60,
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": true,
-      "score_probability_conflict": false,
+      "score_probability_conflict": true,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.6419,
+        "away_win_probability_from_score": 0.3581,
+        "model_score_probability_gap_pp": 26.4,
+        "large_internal_disagreement": true,
+        "score_model_margin_sd": 17.6,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "review_required",
       "reason": "Market/model conflict, score/probability inconsistency, or stale history"
@@ -48,6 +57,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.5987,
+        "away_win_probability_from_score": 0.4013,
+        "model_score_probability_gap_pp": 8.31,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 17.6,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -73,6 +91,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.4458,
+        "away_win_probability_from_score": 0.5542,
+        "model_score_probability_gap_pp": -17.3,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 17.6,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -98,6 +125,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": true,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.3903,
+        "away_win_probability_from_score": 0.6097,
+        "model_score_probability_gap_pp": 1.03,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 17.6,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "review_required",
       "reason": "Market/model conflict, score/probability inconsistency, or stale history"
@@ -107,10 +143,10 @@
       "game_id": "401909970",
       "status": "screened_not_calibrated",
       "sportsbooks": 9,
-      "market_home_probability": 0.39892,
-      "market_away_probability": 0.60108,
-      "book_probability_range_pp": 2.0,
-      "model_market_gap_pp": -2.54,
+      "market_home_probability": 0.40136,
+      "market_away_probability": 0.59864,
+      "book_probability_range_pp": 1.35,
+      "model_market_gap_pp": -2.79,
       "history_current": true,
       "data_completeness_checks": {
         "historical_games_current": true,
@@ -123,6 +159,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.5227,
+        "away_win_probability_from_score": 0.4773,
+        "model_score_probability_gap_pp": -14.92,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 17.6,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -132,10 +177,10 @@
       "game_id": "401909971",
       "status": "review_required",
       "sportsbooks": 9,
-      "market_home_probability": 0.15165,
-      "market_away_probability": 0.84835,
-      "book_probability_range_pp": 1.06,
-      "model_market_gap_pp": 15.32,
+      "market_home_probability": 0.14695,
+      "market_away_probability": 0.85305,
+      "book_probability_range_pp": 2.04,
+      "model_market_gap_pp": 15.8,
       "history_current": true,
       "data_completeness_checks": {
         "historical_games_current": true,
@@ -148,6 +193,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": true,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.3752,
+        "away_win_probability_from_score": 0.6248,
+        "model_score_probability_gap_pp": -7.03,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 17.6,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "review_required",
       "reason": "Market/model conflict, score/probability inconsistency, or stale history"
@@ -173,6 +227,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.5249,
+        "away_win_probability_from_score": 0.4751,
+        "model_score_probability_gap_pp": 15.11,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 17.6,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -198,6 +261,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": true,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.4035,
+        "away_win_probability_from_score": 0.5965,
+        "model_score_probability_gap_pp": -19.78,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 17.6,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "review_required",
       "reason": "Market/model conflict, score/probability inconsistency, or stale history"
@@ -209,7 +281,7 @@
       "sportsbooks": 9,
       "market_home_probability": 0.69621,
       "market_away_probability": 0.30379,
-      "book_probability_range_pp": 1.67,
+      "book_probability_range_pp": 1.27,
       "model_market_gap_pp": -11.79,
       "history_current": true,
       "data_completeness_checks": {
@@ -223,6 +295,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.4728,
+        "away_win_probability_from_score": 0.5272,
+        "model_score_probability_gap_pp": 10.55,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 17.6,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -247,7 +328,16 @@
       "data_completeness_pct": 60,
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": true,
-      "score_probability_conflict": false,
+      "score_probability_conflict": true,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.4503,
+        "away_win_probability_from_score": 0.5497,
+        "model_score_probability_gap_pp": -22.17,
+        "large_internal_disagreement": true,
+        "score_model_margin_sd": 17.6,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "review_required",
       "reason": "Market/model conflict, score/probability inconsistency, or stale history"
@@ -294,6 +384,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.5849,
+        "away_win_probability_from_score": 0.4151,
+        "model_score_probability_gap_pp": -14.84,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -389,6 +488,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.4945,
+        "away_win_probability_from_score": 0.5055,
+        "model_score_probability_gap_pp": 18.54,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -414,6 +522,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.2358,
+        "away_win_probability_from_score": 0.7642,
+        "model_score_probability_gap_pp": -3.42,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -439,6 +556,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.5822,
+        "away_win_probability_from_score": 0.4178,
+        "model_score_probability_gap_pp": 2.61,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -464,6 +590,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.3621,
+        "away_win_probability_from_score": 0.6379,
+        "model_score_probability_gap_pp": -7.4,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -489,6 +624,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.2577,
+        "away_win_probability_from_score": 0.7423,
+        "model_score_probability_gap_pp": 2.56,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -514,6 +658,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.4642,
+        "away_win_probability_from_score": 0.5358,
+        "model_score_probability_gap_pp": -4.27,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -539,6 +692,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.555,
+        "away_win_probability_from_score": 0.445,
+        "model_score_probability_gap_pp": 0.69,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -564,6 +726,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.5358,
+        "away_win_probability_from_score": 0.4642,
+        "model_score_probability_gap_pp": 4.04,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -589,6 +760,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.3415,
+        "away_win_probability_from_score": 0.6585,
+        "model_score_probability_gap_pp": -7.64,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -614,6 +794,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.2829,
+        "away_win_probability_from_score": 0.7171,
+        "model_score_probability_gap_pp": -5.78,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -625,7 +814,7 @@
       "sportsbooks": 9,
       "market_home_probability": 0.3493,
       "market_away_probability": 0.6507,
-      "book_probability_range_pp": 1.42,
+      "book_probability_range_pp": 1.89,
       "model_market_gap_pp": 10.56,
       "history_current": true,
       "data_completeness_checks": {
@@ -639,6 +828,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.4779,
+        "away_win_probability_from_score": 0.5221,
+        "model_score_probability_gap_pp": -2.3,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -664,6 +862,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.5741,
+        "away_win_probability_from_score": 0.4259,
+        "model_score_probability_gap_pp": -8.15,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -689,6 +896,15 @@
       "data_completeness_is_not_win_probability": true,
       "market_disagreement": false,
       "score_probability_conflict": false,
+      "score_probability_diagnostic": {
+        "status": "experimental_not_calibrated",
+        "home_win_probability_from_score": 0.5523,
+        "away_win_probability_from_score": 0.4477,
+        "model_score_probability_gap_pp": 5.84,
+        "large_internal_disagreement": false,
+        "score_model_margin_sd": 14.45,
+        "actionable": false
+      },
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
