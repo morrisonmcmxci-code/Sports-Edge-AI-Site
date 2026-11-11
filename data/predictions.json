@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T19:29:56.731794+00:00",
+  "generated_at": "2026-11-11T19:35:55.865043+00:00",
   "status": "research_only",
   "source": "ESPN scoreboard; historical games in Supabase",
   "odds_available": false,
@@ -13,53 +13,53 @@
       "home_team": "Indiana Pacers",
       "away_team": "Washington Wizards",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 0.83,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.5826,
+      "experimental_v3_home_win_probability": 0.5664,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.568,
-      "away_win_probability": 0.432,
-      "elo_home_win_probability": 0.5625,
-      "history_games": 92,
+      "home_win_probability": 0.5553,
+      "away_win_probability": 0.4447,
+      "elo_home_win_probability": 0.5338,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 109.6,
-          "points_allowed_last_10": 115.5,
-          "points_scored_last_10": 108.33,
+          "points_allowed_last_10": 114.7,
+          "points_scored_last_10": 110.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 1.96,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 1,
+          "wins_last_10": 2,
           "current_streak": "L2",
-          "scoring_trend_last5_vs_previous5": -20.0,
+          "scoring_trend_last5_vs_previous5": -10.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 117.8,
-          "points_allowed_last_10": 111.33,
-          "points_scored_last_10": 103.5,
+          "points_allowed_last_10": 113.1,
+          "points_scored_last_10": 106.1,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.0,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 2,
+          "wins_last_10": 3,
           "current_streak": "L4",
-          "scoring_trend_last5_vs_previous5": 10.2,
+          "scoring_trend_last5_vs_previous5": -1.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -81,40 +81,40 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 112.7,
-        "away_projected_points": 109.7,
-        "projected_home_margin": 3.0,
-        "projected_total": 222.3,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 114.3,
+        "away_projected_points": 111.0,
+        "projected_home_margin": 3.3,
+        "projected_total": 225.3,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 6
+          "home": 15,
+          "away": 15
         },
         "recent_form": {
           "home": {
             "last_5_scored": 105,
-            "last_10_scored": 108.3,
+            "last_10_scored": 110.2,
             "last_5_allowed": 109.6,
-            "last_10_allowed": 115.5
+            "last_10_allowed": 114.7
           },
           "away": {
             "last_5_scored": 105.2,
-            "last_10_scored": 103.5,
+            "last_10_scored": 106.1,
             "last_5_allowed": 117.8,
-            "last_10_allowed": 111.3
+            "last_10_allowed": 113.1
           }
         },
         "recent_form_weight": 0.35,
@@ -135,53 +135,53 @@
       "home_team": "New York Knicks",
       "away_team": "Cleveland Cavaliers",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 0.83,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.7738,
+      "experimental_v3_home_win_probability": 0.6887,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.7395,
-      "away_win_probability": 0.2605,
-      "elo_home_win_probability": 0.663,
-      "history_games": 92,
+      "home_win_probability": 0.6633,
+      "away_win_probability": 0.3367,
+      "elo_home_win_probability": 0.6165,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 5,
+          "games": 10,
           "points_allowed_last_5": 95.0,
-          "points_allowed_last_10": 95.0,
-          "points_scored_last_10": 111.4,
+          "points_allowed_last_10": 102.3,
+          "points_scored_last_10": 110.6,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 0.98,
           "back_to_back": true,
           "wins_last_5": 4,
-          "wins_last_10": 4,
+          "wins_last_10": 6,
           "current_streak": "W4",
-          "scoring_trend_last5_vs_previous5": null,
+          "scoring_trend_last5_vs_previous5": 1.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 113.8,
-          "points_allowed_last_10": 113.43,
-          "points_scored_last_10": 114.71,
+          "points_allowed_last_10": 115.1,
+          "points_scored_last_10": 117.6,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.0,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 2,
+          "wins_last_10": 5,
           "current_streak": "L2",
-          "scoring_trend_last5_vs_previous5": -12.3,
+          "scoring_trend_last5_vs_previous5": -12.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -203,8 +203,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -216,8 +216,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -229,40 +229,40 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 114.0,
-        "away_projected_points": 106.8,
-        "projected_home_margin": 7.2,
-        "projected_total": 220.8,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 114.3,
+        "away_projected_points": 109.6,
+        "projected_home_margin": 4.6,
+        "projected_total": 223.9,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 5,
-          "away": 7
+          "home": 15,
+          "away": 14
         },
         "recent_form": {
           "home": {
             "last_5_scored": 111.4,
-            "last_10_scored": 111.4,
+            "last_10_scored": 110.6,
             "last_5_allowed": 95,
-            "last_10_allowed": 95
+            "last_10_allowed": 102.3
           },
           "away": {
             "last_5_scored": 111.2,
-            "last_10_scored": 114.7,
+            "last_10_scored": 117.6,
             "last_5_allowed": 113.8,
-            "last_10_allowed": 113.4
+            "last_10_allowed": 115.1
           }
         },
         "recent_form_weight": 0.35,
@@ -292,53 +292,53 @@
       "home_team": "Toronto Raptors",
       "away_team": "Boston Celtics",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 0.83,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.3135,
+      "experimental_v3_home_win_probability": 0.4048,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.3658,
-      "away_win_probability": 0.6342,
-      "elo_home_win_probability": 0.4968,
-      "history_games": 92,
+      "home_win_probability": 0.3748,
+      "away_win_probability": 0.6252,
+      "elo_home_win_probability": 0.4514,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 120.4,
-          "points_allowed_last_10": 120.5,
-          "points_scored_last_10": 116.0,
+          "points_allowed_last_10": 113.3,
+          "points_scored_last_10": 116.6,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 1.98,
           "back_to_back": false,
           "wins_last_5": 2,
-          "wins_last_10": 2,
+          "wins_last_10": 5,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": 2.4,
+          "scoring_trend_last5_vs_previous5": -0.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 97.8,
-          "points_allowed_last_10": 99.57,
-          "points_scored_last_10": 113.43,
+          "points_allowed_last_10": 102.3,
+          "points_scored_last_10": 116.0,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 0.96,
           "back_to_back": true,
           "wins_last_5": 4,
-          "wins_last_10": 6,
+          "wins_last_10": 9,
           "current_streak": "W4",
-          "scoring_trend_last5_vs_previous5": -4.3,
+          "scoring_trend_last5_vs_previous5": -7.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -360,8 +360,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -373,8 +373,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -386,8 +386,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -399,40 +399,40 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 110.3,
-        "away_projected_points": 115.4,
-        "projected_home_margin": -5.1,
-        "projected_total": 225.7,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 112.0,
+        "away_projected_points": 116.0,
+        "projected_home_margin": -4.0,
+        "projected_total": 228.0,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 7
+          "home": 15,
+          "away": 15
         },
         "recent_form": {
           "home": {
             "last_5_scored": 116.4,
-            "last_10_scored": 116,
+            "last_10_scored": 116.6,
             "last_5_allowed": 120.4,
-            "last_10_allowed": 120.5
+            "last_10_allowed": 113.3
           },
           "away": {
             "last_5_scored": 112.2,
-            "last_10_scored": 113.4,
+            "last_10_scored": 116,
             "last_5_allowed": 97.8,
-            "last_10_allowed": 99.6
+            "last_10_allowed": 102.3
           }
         },
         "recent_form_weight": 0.35,
@@ -453,53 +453,53 @@
       "home_team": "Chicago Bulls",
       "away_team": "San Antonio Spurs",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 0.88,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.2274,
+      "experimental_v3_home_win_probability": 0.2111,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.2787,
-      "away_win_probability": 0.7213,
-      "elo_home_win_probability": 0.4649,
-      "history_games": 92,
+      "home_win_probability": 0.2411,
+      "away_win_probability": 0.7589,
+      "elo_home_win_probability": 0.4454,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 4,
-          "points_allowed_last_5": 128.25,
-          "points_allowed_last_10": 128.25,
-          "points_scored_last_10": 111.0,
+          "games": 10,
+          "points_allowed_last_5": 129.2,
+          "points_allowed_last_10": 128.0,
+          "points_scored_last_10": 114.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.19,
           "back_to_back": false,
           "wins_last_5": 0,
-          "wins_last_10": 0,
-          "current_streak": "L4",
-          "scoring_trend_last5_vs_previous5": null,
+          "wins_last_10": 2,
+          "current_streak": "L7",
+          "scoring_trend_last5_vs_previous5": -1.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 103.2,
-          "points_allowed_last_10": 104.5,
-          "points_scored_last_10": 120.5,
+          "points_allowed_last_10": 106.1,
+          "points_scored_last_10": 120.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 1.96,
           "back_to_back": false,
           "wins_last_5": 5,
-          "wins_last_10": 6,
-          "current_streak": "W6",
-          "scoring_trend_last5_vs_previous5": -0.6,
+          "wins_last_10": 9,
+          "current_streak": "W9",
+          "scoring_trend_last5_vs_previous5": 0.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -521,8 +521,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -534,8 +534,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -547,8 +547,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -560,8 +560,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -573,22 +573,44 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
-        "status": "insufficient_history",
+        "status": "experimental",
+        "home_projected_points": 112.5,
+        "away_projected_points": 121.0,
+        "projected_home_margin": -8.5,
+        "projected_total": 233.5,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 4,
-          "away": 6
-        }
+          "home": 14,
+          "away": 16
+        },
+        "recent_form": {
+          "home": {
+            "last_5_scored": 114.2,
+            "last_10_scored": 114.7,
+            "last_5_allowed": 129.2,
+            "last_10_allowed": 128
+          },
+          "away": {
+            "last_5_scored": 120.4,
+            "last_10_scored": 120.2,
+            "last_5_allowed": 103.2,
+            "last_10_allowed": 106.1
+          }
+        },
+        "recent_form_weight": 0.35,
+        "method": "shrunk_rolling_scoring_plus_last5_v2"
       },
       "rematch_context": {
         "status": "no_recent_rematch",
@@ -605,53 +627,53 @@
       "home_team": "Memphis Grizzlies",
       "away_team": "Denver Nuggets",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 0.88,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.5695,
+      "experimental_v3_home_win_probability": 0.6586,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.583,
-      "away_win_probability": 0.417,
-      "elo_home_win_probability": 0.5724,
-      "history_games": 92,
+      "home_win_probability": 0.658,
+      "away_win_probability": 0.342,
+      "elo_home_win_probability": 0.6252,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 115.4,
-          "points_allowed_last_10": 113.33,
-          "points_scored_last_10": 118.67,
+          "points_allowed_last_10": 110.8,
+          "points_scored_last_10": 117.9,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.02,
           "back_to_back": false,
           "wins_last_5": 2,
-          "wins_last_10": 3,
+          "wins_last_10": 7,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": -6.4,
+          "scoring_trend_last5_vs_previous5": -0.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 5,
+          "games": 10,
           "points_allowed_last_5": 111.8,
-          "points_allowed_last_10": 111.8,
-          "points_scored_last_10": 115.8,
+          "points_allowed_last_10": 112.1,
+          "points_scored_last_10": 114.3,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 1.98,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 3,
+          "wins_last_10": 6,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": null,
+          "scoring_trend_last5_vs_previous5": 3.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -673,8 +695,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -686,8 +708,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -699,8 +721,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -712,40 +734,40 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 115.8,
-        "away_projected_points": 114.3,
-        "projected_home_margin": 1.5,
-        "projected_total": 230.0,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 116.4,
+        "away_projected_points": 113.8,
+        "projected_home_margin": 2.6,
+        "projected_total": 230.2,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 5
+          "home": 14,
+          "away": 14
         },
         "recent_form": {
           "home": {
             "last_5_scored": 117.6,
-            "last_10_scored": 118.7,
+            "last_10_scored": 117.9,
             "last_5_allowed": 115.4,
-            "last_10_allowed": 113.3
+            "last_10_allowed": 110.8
           },
           "away": {
             "last_5_scored": 115.8,
-            "last_10_scored": 115.8,
+            "last_10_scored": 114.3,
             "last_5_allowed": 111.8,
-            "last_10_allowed": 111.8
+            "last_10_allowed": 112.1
           }
         },
         "recent_form_weight": 0.35,
@@ -766,53 +788,53 @@
       "home_team": "Milwaukee Bucks",
       "away_team": "Los Angeles Lakers",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 0.88,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.2136,
+      "experimental_v3_home_win_probability": 0.1504,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.2834,
-      "away_win_probability": 0.7166,
-      "elo_home_win_probability": 0.4409,
-      "history_games": 92,
+      "home_win_probability": 0.2269,
+      "away_win_probability": 0.7731,
+      "elo_home_win_probability": 0.3807,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 115.2,
-          "points_allowed_last_10": 118.67,
-          "points_scored_last_10": 100.33,
+          "points_allowed_last_10": 120.5,
+          "points_scored_last_10": 105.3,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 1.02,
           "back_to_back": true,
           "wins_last_5": 0,
-          "wins_last_10": 0,
-          "current_streak": "L6",
-          "scoring_trend_last5_vs_previous5": -12.8,
+          "wins_last_10": 1,
+          "current_streak": "L7",
+          "scoring_trend_last5_vs_previous5": -14.2,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 113.6,
-          "points_allowed_last_10": 115.0,
-          "points_scored_last_10": 121.29,
+          "points_allowed_last_10": 115.1,
+          "points_scored_last_10": 121.3,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.04,
           "back_to_back": false,
           "wins_last_5": 5,
-          "wins_last_10": 6,
+          "wins_last_10": 8,
           "current_streak": "W6",
-          "scoring_trend_last5_vs_previous5": 11.6,
+          "scoring_trend_last5_vs_previous5": 6.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -834,8 +856,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -847,40 +869,40 @@
             "status": "available",
             "raw_status": "available",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 110.0,
-        "away_projected_points": 117.9,
-        "projected_home_margin": -7.8,
-        "projected_total": 227.9,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 110.9,
+        "away_projected_points": 118.6,
+        "projected_home_margin": -7.7,
+        "projected_total": 229.4,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 7
+          "home": 16,
+          "away": 17
         },
         "recent_form": {
           "home": {
             "last_5_scored": 98.2,
-            "last_10_scored": 100.3,
+            "last_10_scored": 105.3,
             "last_5_allowed": 115.2,
-            "last_10_allowed": 118.7
+            "last_10_allowed": 120.5
           },
           "away": {
             "last_5_scored": 124.6,
             "last_10_scored": 121.3,
             "last_5_allowed": 113.6,
-            "last_10_allowed": 115
+            "last_10_allowed": 115.1
           }
         },
         "recent_form_weight": 0.35,
@@ -901,53 +923,53 @@
       "home_team": "New Orleans Pelicans",
       "away_team": "Brooklyn Nets",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 0.88,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.7156,
+      "experimental_v3_home_win_probability": 0.6799,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.6534,
-      "away_win_probability": 0.3466,
-      "elo_home_win_probability": 0.622,
-      "history_games": 92,
+      "home_win_probability": 0.6586,
+      "away_win_probability": 0.3414,
+      "elo_home_win_probability": 0.6236,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 127.8,
-          "points_allowed_last_10": 122.57,
-          "points_scored_last_10": 118.14,
+          "points_allowed_last_10": 122.3,
+          "points_scored_last_10": 117.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 1.92,
           "back_to_back": false,
           "wins_last_5": 2,
           "wins_last_10": 4,
           "current_streak": "L3",
-          "scoring_trend_last5_vs_previous5": -11.7,
+          "scoring_trend_last5_vs_previous5": -4.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 110.2,
-          "points_allowed_last_10": 110.17,
-          "points_scored_last_10": 101.67,
+          "points_allowed_last_10": 115.7,
+          "points_scored_last_10": 106.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.02,
           "back_to_back": false,
           "wins_last_5": 2,
           "wins_last_10": 2,
           "current_streak": "L2",
-          "scoring_trend_last5_vs_previous5": 9.2,
+          "scoring_trend_last5_vs_previous5": -7.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -969,8 +991,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -982,8 +1004,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -995,8 +1017,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -1008,8 +1030,8 @@
             "status": "doubtful",
             "raw_status": "doubtful",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -1021,40 +1043,40 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 114.7,
-        "away_projected_points": 113.5,
-        "projected_home_margin": 1.1,
-        "projected_total": 228.2,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 115.7,
+        "away_projected_points": 115.2,
+        "projected_home_margin": 0.6,
+        "projected_total": 230.9,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 7,
-          "away": 6
+          "home": 15,
+          "away": 14
         },
         "recent_form": {
           "home": {
             "last_5_scored": 114.8,
-            "last_10_scored": 118.1,
+            "last_10_scored": 117.2,
             "last_5_allowed": 127.8,
-            "last_10_allowed": 122.6
+            "last_10_allowed": 122.3
           },
           "away": {
             "last_5_scored": 103.2,
-            "last_10_scored": 101.7,
+            "last_10_scored": 106.7,
             "last_5_allowed": 110.2,
-            "last_10_allowed": 110.2
+            "last_10_allowed": 115.7
           }
         },
         "recent_form_weight": 0.35,
@@ -1075,53 +1097,53 @@
       "home_team": "Utah Jazz",
       "away_team": "Orlando Magic",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 0.92,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.4493,
+      "experimental_v3_home_win_probability": 0.5075,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.4767,
-      "away_win_probability": 0.5233,
-      "elo_home_win_probability": 0.5424,
-      "history_games": 92,
+      "home_win_probability": 0.5096,
+      "away_win_probability": 0.4904,
+      "elo_home_win_probability": 0.5252,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 116.2,
-          "points_allowed_last_10": 115.5,
-          "points_scored_last_10": 101.5,
+          "points_allowed_last_10": 117.1,
+          "points_scored_last_10": 106.8,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 1.0,
           "back_to_back": true,
           "wins_last_5": 0,
-          "wins_last_10": 0,
-          "current_streak": "L6",
-          "scoring_trend_last5_vs_previous5": 13.8,
+          "wins_last_10": 1,
+          "current_streak": "L9",
+          "scoring_trend_last5_vs_previous5": -6.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 110.8,
-          "points_allowed_last_10": 111.33,
+          "points_allowed_last_10": 114.6,
           "points_scored_last_10": 107.0,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 0.96,
           "back_to_back": true,
           "wins_last_5": 1,
-          "wins_last_10": 2,
+          "wins_last_10": 3,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": -16.8,
+          "scoring_trend_last5_vs_previous5": -5.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -1135,34 +1157,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 110.0,
-        "away_projected_points": 111.3,
-        "projected_home_margin": -1.2,
-        "projected_total": 221.3,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 112.0,
+        "away_projected_points": 112.5,
+        "projected_home_margin": -0.4,
+        "projected_total": 224.5,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 6
+          "home": 15,
+          "away": 14
         },
         "recent_form": {
           "home": {
             "last_5_scored": 103.8,
-            "last_10_scored": 101.5,
+            "last_10_scored": 106.8,
             "last_5_allowed": 116.2,
-            "last_10_allowed": 115.5
+            "last_10_allowed": 117.1
           },
           "away": {
             "last_5_scored": 104.2,
             "last_10_scored": 107,
             "last_5_allowed": 110.8,
-            "last_10_allowed": 111.3
+            "last_10_allowed": 114.6
           }
         },
         "recent_form_weight": 0.35,
@@ -1183,53 +1205,53 @@
       "home_team": "Houston Rockets",
       "away_team": "Golden State Warriors",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 0.94,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.476,
+      "experimental_v3_home_win_probability": 0.602,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.4392,
-      "away_win_probability": 0.5608,
-      "elo_home_win_probability": 0.5246,
-      "history_games": 92,
+      "home_win_probability": 0.5493,
+      "away_win_probability": 0.4507,
+      "elo_home_win_probability": 0.5752,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 102.0,
-          "points_allowed_last_10": 104.33,
-          "points_scored_last_10": 109.17,
+          "points_allowed_last_10": 106.0,
+          "points_scored_last_10": 114.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.04,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 3,
+          "wins_last_10": 7,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": -2.2,
+          "scoring_trend_last5_vs_previous5": -10.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 106.2,
-          "points_allowed_last_10": 104.33,
-          "points_scored_last_10": 122.67,
+          "points_allowed_last_10": 109.6,
+          "points_scored_last_10": 121.9,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 1.98,
           "back_to_back": false,
           "wins_last_5": 5,
-          "wins_last_10": 6,
-          "current_streak": "W6",
-          "scoring_trend_last5_vs_previous5": 12.8,
+          "wins_last_10": 8,
+          "current_streak": "W8",
+          "scoring_trend_last5_vs_previous5": 5.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -1251,8 +1273,8 @@
             "status": "probable",
             "raw_status": "probable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -1264,8 +1286,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -1277,8 +1299,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -1290,40 +1312,40 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 110.2,
-        "away_projected_points": 113.2,
-        "projected_home_margin": -3.0,
-        "projected_total": 223.4,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 112.7,
+        "away_projected_points": 113.3,
+        "projected_home_margin": -0.5,
+        "projected_total": 226.0,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 6
+          "home": 14,
+          "away": 17
         },
         "recent_form": {
           "home": {
             "last_5_scored": 108.8,
-            "last_10_scored": 109.2,
+            "last_10_scored": 114.2,
             "last_5_allowed": 102,
-            "last_10_allowed": 104.3
+            "last_10_allowed": 106
           },
           "away": {
             "last_5_scored": 124.8,
-            "last_10_scored": 122.7,
+            "last_10_scored": 121.9,
             "last_5_allowed": 106.2,
-            "last_10_allowed": 104.3
+            "last_10_allowed": 109.6
           }
         },
         "recent_form_weight": 0.35,
@@ -1344,53 +1366,53 @@
       "home_team": "Portland Trail Blazers",
       "away_team": "Oklahoma City Thunder",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 0.96,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.5331,
+      "experimental_v3_home_win_probability": 0.7194,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.549,
-      "away_win_probability": 0.451,
-      "elo_home_win_probability": 0.5801,
-      "history_games": 92,
+      "home_win_probability": 0.6436,
+      "away_win_probability": 0.3564,
+      "elo_home_win_probability": 0.6289,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 116.2,
-          "points_allowed_last_10": 113.57,
-          "points_scored_last_10": 115.57,
+          "points_allowed_last_10": 112.7,
+          "points_scored_last_10": 119.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 0.96,
           "back_to_back": true,
           "wins_last_5": 3,
-          "wins_last_10": 4,
+          "wins_last_10": 7,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": 11.3,
+          "scoring_trend_last5_vs_previous5": -1.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 104.6,
-          "points_allowed_last_10": 107.0,
-          "points_scored_last_10": 114.0,
+          "points_allowed_last_10": 106.1,
+          "points_scored_last_10": 110.9,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 0.96,
           "back_to_back": true,
           "wins_last_5": 4,
-          "wins_last_10": 4,
+          "wins_last_10": 7,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": 19.2,
+          "scoring_trend_last5_vs_previous5": 12.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -1404,34 +1426,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 113.3,
-        "away_projected_points": 114.4,
-        "projected_home_margin": -1.1,
+        "home_projected_points": 114.7,
+        "away_projected_points": 113.1,
+        "projected_home_margin": 1.6,
         "projected_total": 227.8,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 7,
-          "away": 6
+          "home": 14,
+          "away": 16
         },
         "recent_form": {
           "home": {
             "last_5_scored": 118.8,
-            "last_10_scored": 115.6,
+            "last_10_scored": 119.7,
             "last_5_allowed": 116.2,
-            "last_10_allowed": 113.6
+            "last_10_allowed": 112.7
           },
           "away": {
             "last_5_scored": 117.2,
-            "last_10_scored": 114,
+            "last_10_scored": 110.9,
             "last_5_allowed": 104.6,
-            "last_10_allowed": 107
+            "last_10_allowed": 106.1
           }
         },
         "recent_form_weight": 0.35,
@@ -1461,53 +1483,53 @@
       "home_team": "Philadelphia 76ers",
       "away_team": "Toronto Raptors",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 1.83,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.6918,
+      "experimental_v3_home_win_probability": 0.652,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.6809,
-      "away_win_probability": 0.3191,
-      "elo_home_win_probability": 0.6519,
-      "history_games": 92,
+      "home_win_probability": 0.6186,
+      "away_win_probability": 0.3814,
+      "elo_home_win_probability": 0.6511,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 115.2,
-          "points_allowed_last_10": 110.43,
-          "points_scored_last_10": 109.71,
+          "points_allowed_last_10": 110.4,
+          "points_scored_last_10": 110.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 1.96,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 5,
+          "wins_last_10": 7,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": 8.7,
+          "scoring_trend_last5_vs_previous5": 4.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 120.4,
-          "points_allowed_last_10": 120.5,
-          "points_scored_last_10": 116.0,
+          "points_allowed_last_10": 113.3,
+          "points_scored_last_10": 116.6,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.98,
           "back_to_back": false,
           "wins_last_5": 2,
-          "wins_last_10": 2,
+          "wins_last_10": 5,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": 2.4,
+          "scoring_trend_last5_vs_previous5": -0.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -1529,8 +1551,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -1542,8 +1564,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -1555,40 +1577,40 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 116.2,
-        "away_projected_points": 113.9,
-        "projected_home_margin": 2.3,
-        "projected_total": 230.1,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 115.6,
+        "away_projected_points": 115.2,
+        "projected_home_margin": 0.5,
+        "projected_total": 230.8,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 7,
-          "away": 6
+          "home": 16,
+          "away": 15
         },
         "recent_form": {
           "home": {
             "last_5_scored": 112.2,
-            "last_10_scored": 109.7,
+            "last_10_scored": 110.2,
             "last_5_allowed": 115.2,
             "last_10_allowed": 110.4
           },
           "away": {
             "last_5_scored": 116.4,
-            "last_10_scored": 116,
+            "last_10_scored": 116.6,
             "last_5_allowed": 120.4,
-            "last_10_allowed": 120.5
+            "last_10_allowed": 113.3
           }
         },
         "recent_form_weight": 0.35,
@@ -1609,53 +1631,53 @@
       "home_team": "Washington Wizards",
       "away_team": "Detroit Pistons",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 1.83,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.3952,
+      "experimental_v3_home_win_probability": 0.3238,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.4469,
-      "away_win_probability": 0.5531,
-      "elo_home_win_probability": 0.5599,
-      "history_games": 92,
+      "home_win_probability": 0.3704,
+      "away_win_probability": 0.6296,
+      "elo_home_win_probability": 0.494,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 117.8,
-          "points_allowed_last_10": 111.33,
-          "points_scored_last_10": 103.5,
+          "points_allowed_last_10": 113.1,
+          "points_scored_last_10": 106.1,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.0,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 2,
+          "wins_last_10": 3,
           "current_streak": "L4",
-          "scoring_trend_last5_vs_previous5": 10.2,
+          "scoring_trend_last5_vs_previous5": -1.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 5,
+          "games": 10,
           "points_allowed_last_5": 105.8,
-          "points_allowed_last_10": 105.8,
-          "points_scored_last_10": 115.6,
+          "points_allowed_last_10": 104.6,
+          "points_scored_last_10": 112.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.0,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 3,
+          "wins_last_10": 7,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": null,
+          "scoring_trend_last5_vs_previous5": 5.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -1669,34 +1691,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 108.9,
-        "away_projected_points": 114.3,
-        "projected_home_margin": -5.4,
-        "projected_total": 223.1,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 109.7,
+        "away_projected_points": 114.8,
+        "projected_home_margin": -5.2,
+        "projected_total": 224.5,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 5
+          "home": 15,
+          "away": 14
         },
         "recent_form": {
           "home": {
             "last_5_scored": 105.2,
-            "last_10_scored": 103.5,
+            "last_10_scored": 106.1,
             "last_5_allowed": 117.8,
-            "last_10_allowed": 111.3
+            "last_10_allowed": 113.1
           },
           "away": {
             "last_5_scored": 115.6,
-            "last_10_scored": 115.6,
+            "last_10_scored": 112.7,
             "last_5_allowed": 105.8,
-            "last_10_allowed": 105.8
+            "last_10_allowed": 104.6
           }
         },
         "recent_form_weight": 0.35,
@@ -1726,53 +1748,53 @@
       "home_team": "Minnesota Timberwolves",
       "away_team": "Dallas Mavericks",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 1.88,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.6947,
+      "experimental_v3_home_win_probability": 0.6971,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.654,
-      "away_win_probability": 0.346,
-      "elo_home_win_probability": 0.6295,
-      "history_games": 92,
+      "home_win_probability": 0.6839,
+      "away_win_probability": 0.3161,
+      "elo_home_win_probability": 0.6569,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 107.4,
-          "points_allowed_last_10": 106.33,
-          "points_scored_last_10": 116.17,
+          "points_allowed_last_10": 107.1,
+          "points_scored_last_10": 116.8,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 4.04,
           "back_to_back": false,
           "wins_last_5": 4,
-          "wins_last_10": 5,
+          "wins_last_10": 7,
           "current_streak": "W4",
-          "scoring_trend_last5_vs_previous5": -13.0,
+          "scoring_trend_last5_vs_previous5": -5.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 108.4,
-          "points_allowed_last_10": 108.83,
-          "points_scored_last_10": 115.67,
+          "points_allowed_last_10": 108.5,
+          "points_scored_last_10": 115.4,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.0,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 4,
+          "wins_last_10": 7,
           "current_streak": "W3",
-          "scoring_trend_last5_vs_previous5": -0.4,
+          "scoring_trend_last5_vs_previous5": 0.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -1786,34 +1808,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 113.5,
-        "away_projected_points": 111.6,
-        "projected_home_margin": 1.9,
-        "projected_total": 225.2,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 115.2,
+        "away_projected_points": 112.5,
+        "projected_home_margin": 2.7,
+        "projected_total": 227.6,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 6
+          "home": 17,
+          "away": 15
         },
         "recent_form": {
           "home": {
             "last_5_scored": 114,
-            "last_10_scored": 116.2,
+            "last_10_scored": 116.8,
             "last_5_allowed": 107.4,
-            "last_10_allowed": 106.3
+            "last_10_allowed": 107.1
           },
           "away": {
             "last_5_scored": 115.6,
-            "last_10_scored": 115.7,
+            "last_10_scored": 115.4,
             "last_5_allowed": 108.4,
-            "last_10_allowed": 108.8
+            "last_10_allowed": 108.5
           }
         },
         "recent_form_weight": 0.35,
@@ -1842,45 +1864,45 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.5787,
-      "away_win_probability": 0.4213,
-      "elo_home_win_probability": 0.5787,
-      "history_games": 166,
+      "home_win_probability": 0.6322,
+      "away_win_probability": 0.3678,
+      "elo_home_win_probability": 0.6322,
+      "history_games": 273,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 166,
+        "eligible_games": 273,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 8,
-          "points_allowed_last_5": 16.6,
-          "points_allowed_last_10": 22.12,
-          "points_scored_last_10": 22.88,
+          "games": 10,
+          "points_allowed_last_5": 23.4,
+          "points_allowed_last_10": 19.9,
+          "points_scored_last_10": 25.0,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 4.3,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 3,
-          "current_streak": "W3",
-          "scoring_trend_last5_vs_previous5": 3.53,
+          "wins_last_10": 7,
+          "current_streak": "W2",
+          "scoring_trend_last5_vs_previous5": 4.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 9,
-          "points_allowed_last_5": 21.2,
-          "points_allowed_last_10": 22.33,
-          "points_scored_last_10": 19.22,
+          "games": 10,
+          "points_allowed_last_5": 22.0,
+          "points_allowed_last_10": 24.9,
+          "points_scored_last_10": 21.9,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 4.3,
           "back_to_back": false,
-          "wins_last_5": 2,
+          "wins_last_5": 1,
           "wins_last_10": 3,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": 4.0,
+          "scoring_trend_last5_vs_previous5": -5.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -1894,34 +1916,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 23.5,
-        "away_projected_points": 20.5,
-        "projected_home_margin": 3.0,
-        "projected_total": 44.0,
-        "margin_sd": 14.39,
-        "total_sd": 15.02,
+        "home_projected_points": 24.8,
+        "away_projected_points": 21.7,
+        "projected_home_margin": 3.2,
+        "projected_total": 46.5,
+        "margin_sd": 13.72,
+        "total_sd": 14.65,
         "team_games": {
-          "home": 8,
-          "away": 9
+          "home": 15,
+          "away": 15
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 24.2,
-            "last_10_scored": 22.9,
-            "last_5_allowed": 16.6,
-            "last_10_allowed": 22.1
+            "last_5_scored": 27.2,
+            "last_10_scored": 25,
+            "last_5_allowed": 23.4,
+            "last_10_allowed": 19.9
           },
           "away": {
-            "last_5_scored": 21,
-            "last_10_scored": 19.2,
-            "last_5_allowed": 21.2,
-            "last_10_allowed": 22.3
+            "last_5_scored": 19.4,
+            "last_10_scored": 21.9,
+            "last_5_allowed": 22,
+            "last_10_allowed": 24.9
           }
         },
         "recent_form_weight": 0.35,
@@ -1942,53 +1964,53 @@
       "home_team": "Phoenix Suns",
       "away_team": "Charlotte Hornets",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 1.92,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.7336,
+      "experimental_v3_home_win_probability": 0.7139,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.7116,
-      "away_win_probability": 0.2884,
-      "elo_home_win_probability": 0.6256,
-      "history_games": 92,
+      "home_win_probability": 0.6687,
+      "away_win_probability": 0.3313,
+      "elo_home_win_probability": 0.5967,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 113.4,
-          "points_allowed_last_10": 115.71,
-          "points_scored_last_10": 114.29,
+          "points_allowed_last_10": 118.1,
+          "points_scored_last_10": 112.8,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.0,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 3,
+          "wins_last_10": 4,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": -3.1,
+          "scoring_trend_last5_vs_previous5": 1.2,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 115.6,
-          "points_allowed_last_10": 112.17,
-          "points_scored_last_10": 97.0,
+          "points_allowed_last_10": 111.1,
+          "points_scored_last_10": 97.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.08,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 1,
+          "wins_last_10": 3,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": 21.6,
+          "scoring_trend_last5_vs_previous5": 5.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -2002,34 +2024,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 115.0,
+        "home_projected_points": 114.2,
         "away_projected_points": 108.4,
-        "projected_home_margin": 6.5,
-        "projected_total": 223.4,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "projected_home_margin": 5.8,
+        "projected_total": 222.5,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 7,
-          "away": 6
+          "home": 15,
+          "away": 15
         },
         "recent_form": {
           "home": {
             "last_5_scored": 113.4,
-            "last_10_scored": 114.3,
+            "last_10_scored": 112.8,
             "last_5_allowed": 113.4,
-            "last_10_allowed": 115.7
+            "last_10_allowed": 118.1
           },
           "away": {
             "last_5_scored": 100.6,
-            "last_10_scored": 97,
+            "last_10_scored": 97.7,
             "last_5_allowed": 115.6,
-            "last_10_allowed": 112.2
+            "last_10_allowed": 111.1
           }
         },
         "recent_form_weight": 0.35,
@@ -2050,53 +2072,53 @@
       "home_team": "Indiana Pacers",
       "away_team": "New York Knicks",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 2.83,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.3319,
+      "experimental_v3_home_win_probability": 0.4234,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.3632,
-      "away_win_probability": 0.6368,
-      "elo_home_win_probability": 0.5035,
-      "history_games": 92,
+      "home_win_probability": 0.4028,
+      "away_win_probability": 0.5972,
+      "elo_home_win_probability": 0.5096,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 109.6,
-          "points_allowed_last_10": 115.5,
-          "points_scored_last_10": 108.33,
+          "points_allowed_last_10": 114.7,
+          "points_scored_last_10": 110.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.96,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 1,
+          "wins_last_10": 2,
           "current_streak": "L2",
-          "scoring_trend_last5_vs_previous5": -20.0,
+          "scoring_trend_last5_vs_previous5": -10.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 5,
+          "games": 10,
           "points_allowed_last_5": 95.0,
-          "points_allowed_last_10": 95.0,
-          "points_scored_last_10": 111.4,
+          "points_allowed_last_10": 102.3,
+          "points_scored_last_10": 110.6,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.98,
           "back_to_back": false,
           "wins_last_5": 4,
-          "wins_last_10": 4,
+          "wins_last_10": 6,
           "current_streak": "W4",
-          "scoring_trend_last5_vs_previous5": null,
+          "scoring_trend_last5_vs_previous5": 1.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -2118,8 +2140,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2131,40 +2153,40 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 106.0,
-        "away_projected_points": 112.2,
-        "projected_home_margin": -6.1,
-        "projected_total": 218.2,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 109.4,
+        "away_projected_points": 112.0,
+        "projected_home_margin": -2.6,
+        "projected_total": 221.4,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 5
+          "home": 15,
+          "away": 15
         },
         "recent_form": {
           "home": {
             "last_5_scored": 105,
-            "last_10_scored": 108.3,
+            "last_10_scored": 110.2,
             "last_5_allowed": 109.6,
-            "last_10_allowed": 115.5
+            "last_10_allowed": 114.7
           },
           "away": {
             "last_5_scored": 111.4,
-            "last_10_scored": 111.4,
+            "last_10_scored": 110.6,
             "last_5_allowed": 95,
-            "last_10_allowed": 95
+            "last_10_allowed": 102.3
           }
         },
         "recent_form_weight": 0.35,
@@ -2185,53 +2207,53 @@
       "home_team": "Orlando Magic",
       "away_team": "Milwaukee Bucks",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 2.83,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.7464,
+      "experimental_v3_home_win_probability": 0.7643,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.7257,
-      "away_win_probability": 0.2743,
-      "elo_home_win_probability": 0.6459,
-      "history_games": 92,
+      "home_win_probability": 0.7267,
+      "away_win_probability": 0.2733,
+      "elo_home_win_probability": 0.6796,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 110.8,
-          "points_allowed_last_10": 111.33,
+          "points_allowed_last_10": 114.6,
           "points_scored_last_10": 107.0,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.88,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 2,
+          "wins_last_10": 3,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": -16.8,
+          "scoring_trend_last5_vs_previous5": -5.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 115.2,
-          "points_allowed_last_10": 118.67,
-          "points_scored_last_10": 100.33,
+          "points_allowed_last_10": 120.5,
+          "points_scored_last_10": 105.3,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.98,
           "back_to_back": false,
           "wins_last_5": 0,
-          "wins_last_10": 0,
-          "current_streak": "L6",
-          "scoring_trend_last5_vs_previous5": -12.8,
+          "wins_last_10": 1,
+          "current_streak": "L7",
+          "scoring_trend_last5_vs_previous5": -14.2,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -2253,40 +2275,40 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 113.1,
-        "away_projected_points": 107.3,
+        "home_projected_points": 115.1,
+        "away_projected_points": 109.3,
         "projected_home_margin": 5.8,
-        "projected_total": 220.5,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "projected_total": 224.3,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 6
+          "home": 14,
+          "away": 16
         },
         "recent_form": {
           "home": {
             "last_5_scored": 104.2,
             "last_10_scored": 107,
             "last_5_allowed": 110.8,
-            "last_10_allowed": 111.3
+            "last_10_allowed": 114.6
           },
           "away": {
             "last_5_scored": 98.2,
-            "last_10_scored": 100.3,
+            "last_10_scored": 105.3,
             "last_5_allowed": 115.2,
-            "last_10_allowed": 118.7
+            "last_10_allowed": 120.5
           }
         },
         "recent_form_weight": 0.35,
@@ -2307,53 +2329,53 @@
       "home_team": "Miami Heat",
       "away_team": "Cleveland Cavaliers",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 2.88,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.6657,
+      "experimental_v3_home_win_probability": 0.6073,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.6396,
-      "away_win_probability": 0.3604,
-      "elo_home_win_probability": 0.6613,
-      "history_games": 92,
+      "home_win_probability": 0.5844,
+      "away_win_probability": 0.4156,
+      "elo_home_win_probability": 0.6276,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 118.2,
-          "points_allowed_last_10": 119.33,
-          "points_scored_last_10": 118.0,
+          "points_allowed_last_10": 118.9,
+          "points_scored_last_10": 116.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.96,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 4,
+          "wins_last_10": 5,
           "current_streak": "W2",
-          "scoring_trend_last5_vs_previous5": -32.4,
+          "scoring_trend_last5_vs_previous5": -8.2,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 113.8,
-          "points_allowed_last_10": 113.43,
-          "points_scored_last_10": 114.71,
+          "points_allowed_last_10": 115.1,
+          "points_scored_last_10": 117.6,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 4.04,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 2,
+          "wins_last_10": 5,
           "current_streak": "L2",
-          "scoring_trend_last5_vs_previous5": -12.3,
+          "scoring_trend_last5_vs_previous5": -12.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -2375,8 +2397,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2388,40 +2410,40 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 115.4,
-        "away_projected_points": 114.9,
-        "projected_home_margin": 0.5,
-        "projected_total": 230.3,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 117.1,
+        "away_projected_points": 116.4,
+        "projected_home_margin": 0.6,
+        "projected_total": 233.5,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 7
+          "home": 16,
+          "away": 14
         },
         "recent_form": {
           "home": {
             "last_5_scored": 112.6,
-            "last_10_scored": 118,
+            "last_10_scored": 116.7,
             "last_5_allowed": 118.2,
-            "last_10_allowed": 119.3
+            "last_10_allowed": 118.9
           },
           "away": {
             "last_5_scored": 111.2,
-            "last_10_scored": 114.7,
+            "last_10_scored": 117.6,
             "last_5_allowed": 113.8,
-            "last_10_allowed": 113.4
+            "last_10_allowed": 115.1
           }
         },
         "recent_form_weight": 0.35,
@@ -2442,53 +2464,53 @@
       "home_team": "Chicago Bulls",
       "away_team": "Atlanta Hawks",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 2.88,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.4078,
+      "experimental_v3_home_win_probability": 0.333,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.4122,
-      "away_win_probability": 0.5878,
-      "elo_home_win_probability": 0.5069,
-      "history_games": 92,
+      "home_win_probability": 0.3722,
+      "away_win_probability": 0.6278,
+      "elo_home_win_probability": 0.4614,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 4,
-          "points_allowed_last_5": 128.25,
-          "points_allowed_last_10": 128.25,
-          "points_scored_last_10": 111.0,
+          "games": 10,
+          "points_allowed_last_5": 129.2,
+          "points_allowed_last_10": 128.0,
+          "points_scored_last_10": 114.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 5.19,
           "back_to_back": false,
           "wins_last_5": 0,
-          "wins_last_10": 0,
-          "current_streak": "L4",
-          "scoring_trend_last5_vs_previous5": null,
+          "wins_last_10": 2,
+          "current_streak": "L7",
+          "scoring_trend_last5_vs_previous5": -1.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 117.2,
-          "points_allowed_last_10": 116.86,
-          "points_scored_last_10": 116.86,
+          "points_allowed_last_10": 118.8,
+          "points_scored_last_10": 115.9,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 4.04,
           "back_to_back": false,
           "wins_last_5": 4,
           "wins_last_10": 5,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": 14.5,
+          "scoring_trend_last5_vs_previous5": 10.2,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -2510,8 +2532,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2523,8 +2545,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2536,8 +2558,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2549,22 +2571,44 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
-        "status": "insufficient_history",
+        "status": "experimental",
+        "home_projected_points": 117.1,
+        "away_projected_points": 121.7,
+        "projected_home_margin": -4.5,
+        "projected_total": 238.8,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 4,
-          "away": 7
-        }
+          "home": 14,
+          "away": 17
+        },
+        "recent_form": {
+          "home": {
+            "last_5_scored": 114.2,
+            "last_10_scored": 114.7,
+            "last_5_allowed": 129.2,
+            "last_10_allowed": 128
+          },
+          "away": {
+            "last_5_scored": 121,
+            "last_10_scored": 115.9,
+            "last_5_allowed": 117.2,
+            "last_10_allowed": 118.8
+          }
+        },
+        "recent_form_weight": 0.35,
+        "method": "shrunk_rolling_scoring_plus_last5_v2"
       },
       "rematch_context": {
         "status": "no_recent_rematch",
@@ -2581,53 +2625,53 @@
       "home_team": "New Orleans Pelicans",
       "away_team": "Memphis Grizzlies",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 2.88,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.5329,
+      "experimental_v3_home_win_probability": 0.3795,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.5426,
-      "away_win_probability": 0.4574,
-      "elo_home_win_probability": 0.6063,
-      "history_games": 92,
+      "home_win_probability": 0.415,
+      "away_win_probability": 0.585,
+      "elo_home_win_probability": 0.5171,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 127.8,
-          "points_allowed_last_10": 122.57,
-          "points_scored_last_10": 118.14,
+          "points_allowed_last_10": 122.3,
+          "points_scored_last_10": 117.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.92,
           "back_to_back": false,
           "wins_last_5": 2,
           "wins_last_10": 4,
           "current_streak": "L3",
-          "scoring_trend_last5_vs_previous5": -11.7,
+          "scoring_trend_last5_vs_previous5": -4.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 115.4,
-          "points_allowed_last_10": 113.33,
-          "points_scored_last_10": 118.67,
+          "points_allowed_last_10": 110.8,
+          "points_scored_last_10": 117.9,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 4.02,
           "back_to_back": false,
           "wins_last_5": 2,
-          "wins_last_10": 3,
+          "wins_last_10": 7,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": -6.4,
+          "scoring_trend_last5_vs_previous5": -0.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -2649,8 +2693,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2662,8 +2706,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2675,8 +2719,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2688,8 +2732,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2701,8 +2745,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2714,8 +2758,8 @@
             "status": "doubtful",
             "raw_status": "doubtful",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2727,40 +2771,40 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 116.1,
-        "away_projected_points": 119.1,
-        "projected_home_margin": -2.9,
-        "projected_total": 235.2,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 115.5,
+        "away_projected_points": 119.2,
+        "projected_home_margin": -3.7,
+        "projected_total": 234.6,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 7,
-          "away": 6
+          "home": 15,
+          "away": 14
         },
         "recent_form": {
           "home": {
             "last_5_scored": 114.8,
-            "last_10_scored": 118.1,
+            "last_10_scored": 117.2,
             "last_5_allowed": 127.8,
-            "last_10_allowed": 122.6
+            "last_10_allowed": 122.3
           },
           "away": {
             "last_5_scored": 117.6,
-            "last_10_scored": 118.7,
+            "last_10_scored": 117.9,
             "last_5_allowed": 115.4,
-            "last_10_allowed": 113.3
+            "last_10_allowed": 110.8
           }
         },
         "recent_form_weight": 0.35,
@@ -2790,53 +2834,53 @@
       "home_team": "Houston Rockets",
       "away_team": "Utah Jazz",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 2.9,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.8201,
+      "experimental_v3_home_win_probability": 0.8803,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.7658,
-      "away_win_probability": 0.2342,
-      "elo_home_win_probability": 0.6577,
-      "history_games": 92,
+      "home_win_probability": 0.8372,
+      "away_win_probability": 0.1628,
+      "elo_home_win_probability": 0.7329,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 102.0,
-          "points_allowed_last_10": 104.33,
-          "points_scored_last_10": 109.17,
+          "points_allowed_last_10": 106.0,
+          "points_scored_last_10": 114.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 4.0,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 3,
+          "wins_last_10": 7,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": -2.2,
+          "scoring_trend_last5_vs_previous5": -10.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 116.2,
-          "points_allowed_last_10": 115.5,
-          "points_scored_last_10": 101.5,
+          "points_allowed_last_10": 117.1,
+          "points_scored_last_10": 106.8,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.98,
           "back_to_back": false,
           "wins_last_5": 0,
-          "wins_last_10": 0,
-          "current_streak": "L6",
-          "scoring_trend_last5_vs_previous5": 13.8,
+          "wins_last_10": 1,
+          "current_streak": "L9",
+          "scoring_trend_last5_vs_previous5": -6.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -2858,40 +2902,40 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 113.9,
-        "away_projected_points": 105.7,
-        "projected_home_margin": 8.2,
-        "projected_total": 219.7,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 116.0,
+        "away_projected_points": 107.2,
+        "projected_home_margin": 8.8,
+        "projected_total": 223.1,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 6
+          "home": 14,
+          "away": 15
         },
         "recent_form": {
           "home": {
             "last_5_scored": 108.8,
-            "last_10_scored": 109.2,
+            "last_10_scored": 114.2,
             "last_5_allowed": 102,
-            "last_10_allowed": 104.3
+            "last_10_allowed": 106
           },
           "away": {
             "last_5_scored": 103.8,
-            "last_10_scored": 101.5,
+            "last_10_scored": 106.8,
             "last_5_allowed": 116.2,
-            "last_10_allowed": 115.5
+            "last_10_allowed": 117.1
           }
         },
         "recent_form_weight": 0.35,
@@ -2912,53 +2956,53 @@
       "home_team": "San Antonio Spurs",
       "away_team": "Golden State Warriors",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 2.94,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.6232,
+      "experimental_v3_home_win_probability": 0.6441,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.5926,
-      "away_win_probability": 0.4074,
-      "elo_home_win_probability": 0.607,
-      "history_games": 92,
+      "home_win_probability": 0.5964,
+      "away_win_probability": 0.4036,
+      "elo_home_win_probability": 0.5837,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 103.2,
-          "points_allowed_last_10": 104.5,
-          "points_scored_last_10": 120.5,
+          "points_allowed_last_10": 106.1,
+          "points_scored_last_10": 120.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 4.02,
           "back_to_back": false,
           "wins_last_5": 5,
-          "wins_last_10": 6,
-          "current_streak": "W6",
-          "scoring_trend_last5_vs_previous5": -0.6,
+          "wins_last_10": 9,
+          "current_streak": "W9",
+          "scoring_trend_last5_vs_previous5": 0.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 106.2,
-          "points_allowed_last_10": 104.33,
-          "points_scored_last_10": 122.67,
+          "points_allowed_last_10": 109.6,
+          "points_scored_last_10": 121.9,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.98,
           "back_to_back": false,
           "wins_last_5": 5,
-          "wins_last_10": 6,
-          "current_streak": "W6",
-          "scoring_trend_last5_vs_previous5": 12.8,
+          "wins_last_10": 8,
+          "current_streak": "W8",
+          "scoring_trend_last5_vs_previous5": 5.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -2980,8 +3024,8 @@
             "status": "probable",
             "raw_status": "probable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -2993,8 +3037,8 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -3006,8 +3050,8 @@
             "status": "questionable",
             "raw_status": "questionable",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           },
@@ -3019,40 +3063,40 @@
             "status": "out",
             "raw_status": "out",
             "source": "Official NBA injury report",
-            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_15PM.pdf",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_report_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_30PM.pdf",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": null,
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 114.3,
+        "home_projected_points": 114.9,
         "away_projected_points": 113.4,
-        "projected_home_margin": 0.8,
-        "projected_total": 227.7,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "projected_home_margin": 1.5,
+        "projected_total": 228.3,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 6
+          "home": 16,
+          "away": 17
         },
         "recent_form": {
           "home": {
             "last_5_scored": 120.4,
-            "last_10_scored": 120.5,
+            "last_10_scored": 120.2,
             "last_5_allowed": 103.2,
-            "last_10_allowed": 104.5
+            "last_10_allowed": 106.1
           },
           "away": {
             "last_5_scored": 124.8,
-            "last_10_scored": 122.7,
+            "last_10_scored": 121.9,
             "last_5_allowed": 106.2,
-            "last_10_allowed": 104.3
+            "last_10_allowed": 109.6
           }
         },
         "recent_form_weight": 0.35,
@@ -3073,53 +3117,53 @@
       "home_team": "Sacramento Kings",
       "away_team": "Portland Trail Blazers",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 2.96,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.3467,
+      "experimental_v3_home_win_probability": 0.1792,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.4132,
-      "away_win_probability": 0.5868,
-      "elo_home_win_probability": 0.5058,
-      "history_games": 92,
+      "home_win_probability": 0.2351,
+      "away_win_probability": 0.7649,
+      "elo_home_win_probability": 0.3625,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 112.2,
-          "points_allowed_last_10": 118.43,
-          "points_scored_last_10": 108.57,
+          "points_allowed_last_10": 121.0,
+          "points_scored_last_10": 109.5,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.0,
           "back_to_back": false,
           "wins_last_5": 1,
           "wins_last_10": 1,
           "current_streak": "L4",
-          "scoring_trend_last5_vs_previous5": -5.5,
+          "scoring_trend_last5_vs_previous5": -5.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 7,
+          "games": 10,
           "points_allowed_last_5": 116.2,
-          "points_allowed_last_10": 113.57,
-          "points_scored_last_10": 115.57,
+          "points_allowed_last_10": 112.7,
+          "points_scored_last_10": 119.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.96,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 4,
+          "wins_last_10": 7,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": 11.3,
+          "scoring_trend_last5_vs_previous5": -1.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -3133,34 +3177,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 113.1,
-        "away_projected_points": 115.3,
-        "projected_home_margin": -2.1,
-        "projected_total": 228.4,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 111.8,
+        "away_projected_points": 117.2,
+        "projected_home_margin": -5.4,
+        "projected_total": 228.9,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 7,
-          "away": 7
+          "home": 16,
+          "away": 14
         },
         "recent_form": {
           "home": {
             "last_5_scored": 107,
-            "last_10_scored": 108.6,
+            "last_10_scored": 109.5,
             "last_5_allowed": 112.2,
-            "last_10_allowed": 118.4
+            "last_10_allowed": 121
           },
           "away": {
             "last_5_scored": 118.8,
-            "last_10_scored": 115.6,
+            "last_10_scored": 119.7,
             "last_5_allowed": 116.2,
-            "last_10_allowed": 113.6
+            "last_10_allowed": 112.7
           }
         },
         "recent_form_weight": 0.35,
@@ -3181,53 +3225,53 @@
       "home_team": "LA Clippers",
       "away_team": "Oklahoma City Thunder",
       "history_quality": {
-        "status": "insufficient_history",
+        "status": "current",
         "latest_game_at": "2026-11-11T04:00:00+00:00",
         "age_days": 2.98,
         "prediction_validated": false
       },
       "model": "nba_v2_experimental",
-      "experimental_v3_home_win_probability": 0.4068,
+      "experimental_v3_home_win_probability": 0.4351,
       "experimental_v3_status": "shadow_only_not_live",
-      "home_win_probability": 0.3969,
-      "away_win_probability": 0.6031,
-      "elo_home_win_probability": 0.5092,
-      "history_games": 92,
+      "home_win_probability": 0.3899,
+      "away_win_probability": 0.6101,
+      "elo_home_win_probability": 0.4867,
+      "history_games": 227,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 92,
+        "eligible_games": 227,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 124.4,
-          "points_allowed_last_10": 124.83,
-          "points_scored_last_10": 116.0,
+          "points_allowed_last_10": 118.1,
+          "points_scored_last_10": 112.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 3.06,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 1,
+          "wins_last_10": 2,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": 18.0,
+          "scoring_trend_last5_vs_previous5": 13.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 6,
+          "games": 10,
           "points_allowed_last_5": 104.6,
-          "points_allowed_last_10": 107.0,
-          "points_scored_last_10": 114.0,
+          "points_allowed_last_10": 106.1,
+          "points_scored_last_10": 110.9,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 2.98,
           "back_to_back": false,
           "wins_last_5": 4,
-          "wins_last_10": 4,
+          "wins_last_10": 7,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": 19.2,
+          "scoring_trend_last5_vs_previous5": 12.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -3241,34 +3285,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 113.4,
-        "away_projected_points": 117.9,
-        "projected_home_margin": -4.5,
-        "projected_total": 231.3,
-        "margin_sd": 17.11,
-        "total_sd": 18.59,
+        "home_projected_points": 113.0,
+        "away_projected_points": 116.0,
+        "projected_home_margin": -3.0,
+        "projected_total": 229.0,
+        "margin_sd": 16.94,
+        "total_sd": 18.81,
         "team_games": {
-          "home": 6,
-          "away": 6
+          "home": 13,
+          "away": 16
         },
         "recent_form": {
           "home": {
             "last_5_scored": 119,
-            "last_10_scored": 116,
+            "last_10_scored": 112.2,
             "last_5_allowed": 124.4,
-            "last_10_allowed": 124.8
+            "last_10_allowed": 118.1
           },
           "away": {
             "last_5_scored": 117.2,
-            "last_10_scored": 114,
+            "last_10_scored": 110.9,
             "last_5_allowed": 104.6,
-            "last_10_allowed": 107
+            "last_10_allowed": 106.1
           }
         },
         "recent_form_weight": 0.35,
@@ -3297,14 +3341,14 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.4987,
-      "away_win_probability": 0.5013,
-      "elo_home_win_probability": 0.4987,
-      "history_games": 165,
+      "home_win_probability": 0.5195,
+      "away_win_probability": 0.4805,
+      "elo_home_win_probability": 0.5195,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
@@ -3312,30 +3356,30 @@
       "matchup_context": {
         "home": {
           "games": 10,
-          "points_allowed_last_5": 18.4,
-          "points_allowed_last_10": 23.7,
-          "points_scored_last_10": 23.6,
+          "points_allowed_last_5": 18.8,
+          "points_allowed_last_10": 22.8,
+          "points_scored_last_10": 25.1,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 6.85,
           "back_to_back": false,
-          "wins_last_5": 3,
-          "wins_last_10": 5,
-          "current_streak": "W3",
-          "scoring_trend_last5_vs_previous5": -10.8,
+          "wins_last_5": 4,
+          "wins_last_10": 7,
+          "current_streak": "W4",
+          "scoring_trend_last5_vs_previous5": 1.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 23.2,
-          "points_allowed_last_10": 19.8,
-          "points_scored_last_10": 25.7,
+          "points_allowed_last_5": 26.0,
+          "points_allowed_last_10": 23.6,
+          "points_scored_last_10": 22.4,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 6.71,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 7,
+          "wins_last_10": 5,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": -10.6,
+          "scoring_trend_last5_vs_previous5": 13.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -3349,34 +3393,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 22.3,
-        "away_projected_points": 22.6,
-        "projected_home_margin": -0.4,
-        "projected_total": 44.9,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "home_projected_points": 24.8,
+        "away_projected_points": 24.4,
+        "projected_home_margin": 0.4,
+        "projected_total": 49.2,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 10,
-          "away": 12
+          "home": 16,
+          "away": 19
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 18.2,
-            "last_10_scored": 23.6,
-            "last_5_allowed": 18.4,
-            "last_10_allowed": 23.7
+            "last_5_scored": 25.8,
+            "last_10_scored": 25.1,
+            "last_5_allowed": 18.8,
+            "last_10_allowed": 22.8
           },
           "away": {
-            "last_5_scored": 20.4,
-            "last_10_scored": 25.7,
-            "last_5_allowed": 23.2,
-            "last_10_allowed": 19.8
+            "last_5_scored": 29.2,
+            "last_10_scored": 22.4,
+            "last_5_allowed": 26,
+            "last_10_allowed": 23.6
           }
         },
         "recent_form_weight": 0.35,
@@ -3405,45 +3449,45 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.3941,
-      "away_win_probability": 0.6059,
-      "elo_home_win_probability": 0.3941,
-      "history_games": 165,
+      "home_win_probability": 0.3268,
+      "away_win_probability": 0.6732,
+      "elo_home_win_probability": 0.3268,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 9,
-          "points_allowed_last_5": 35.8,
-          "points_allowed_last_10": 34.22,
-          "points_scored_last_10": 15.11,
+          "games": 10,
+          "points_allowed_last_5": 27.8,
+          "points_allowed_last_10": 25.8,
+          "points_scored_last_10": 19.0,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.0,
           "back_to_back": false,
-          "wins_last_5": 0,
-          "wins_last_10": 1,
-          "current_streak": "L7",
-          "scoring_trend_last5_vs_previous5": -2.95,
+          "wins_last_5": 1,
+          "wins_last_10": 2,
+          "current_streak": "L4",
+          "scoring_trend_last5_vs_previous5": 4.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 16.2,
-          "points_allowed_last_10": 18.6,
-          "points_scored_last_10": 28.6,
+          "points_allowed_last_5": 21.8,
+          "points_allowed_last_10": 24.4,
+          "points_scored_last_10": 31.3,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 5.7,
           "back_to_back": false,
           "wins_last_5": 4,
           "wins_last_10": 8,
-          "current_streak": "W2",
-          "scoring_trend_last5_vs_previous5": 3.2,
+          "current_streak": "W4",
+          "scoring_trend_last5_vs_previous5": -0.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -3457,34 +3501,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 18.7,
-        "away_projected_points": 30.2,
-        "projected_home_margin": -11.6,
-        "projected_total": 48.9,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "home_projected_points": 21.8,
+        "away_projected_points": 28.5,
+        "projected_home_margin": -6.7,
+        "projected_total": 50.2,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 9,
-          "away": 12
+          "home": 16,
+          "away": 18
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 13.8,
-            "last_10_scored": 15.1,
-            "last_5_allowed": 35.8,
-            "last_10_allowed": 34.2
+            "last_5_scored": 21.2,
+            "last_10_scored": 19,
+            "last_5_allowed": 27.8,
+            "last_10_allowed": 25.8
           },
           "away": {
-            "last_5_scored": 30.2,
-            "last_10_scored": 28.6,
-            "last_5_allowed": 16.2,
-            "last_10_allowed": 18.6
+            "last_5_scored": 31,
+            "last_10_scored": 31.3,
+            "last_5_allowed": 21.8,
+            "last_10_allowed": 24.4
           }
         },
         "recent_form_weight": 0.35,
@@ -3513,45 +3557,45 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.6425,
-      "away_win_probability": 0.3575,
-      "elo_home_win_probability": 0.6425,
-      "history_games": 165,
+      "home_win_probability": 0.6017,
+      "away_win_probability": 0.3983,
+      "elo_home_win_probability": 0.6017,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 8,
-          "points_allowed_last_5": 18.0,
-          "points_allowed_last_10": 19.38,
-          "points_scored_last_10": 21.75,
+          "games": 10,
+          "points_allowed_last_5": 26.6,
+          "points_allowed_last_10": 26.1,
+          "points_scored_last_10": 23.6,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.0,
           "back_to_back": false,
-          "wins_last_5": 4,
-          "wins_last_10": 5,
+          "wins_last_5": 2,
+          "wins_last_10": 4,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": 7.6,
+          "scoring_trend_last5_vs_previous5": -5.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 26.0,
-          "points_allowed_last_10": 24.5,
-          "points_scored_last_10": 20.5,
+          "points_allowed_last_5": 27.2,
+          "points_allowed_last_10": 26.9,
+          "points_scored_last_10": 24.4,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.0,
           "back_to_back": false,
-          "wins_last_5": 0,
+          "wins_last_5": 2,
           "wins_last_10": 3,
-          "current_streak": "L5",
-          "scoring_trend_last5_vs_previous5": -3.0,
+          "current_streak": "L3",
+          "scoring_trend_last5_vs_previous5": -4.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -3565,34 +3609,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 24.6,
-        "away_projected_points": 20.1,
-        "projected_home_margin": 4.5,
-        "projected_total": 44.8,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "home_projected_points": 24.7,
+        "away_projected_points": 23.4,
+        "projected_home_margin": 1.2,
+        "projected_total": 48.1,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 8,
-          "away": 10
+          "home": 15,
+          "away": 16
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 24.6,
-            "last_10_scored": 21.8,
-            "last_5_allowed": 18,
-            "last_10_allowed": 19.4
+            "last_5_scored": 20.8,
+            "last_10_scored": 23.6,
+            "last_5_allowed": 26.6,
+            "last_10_allowed": 26.1
           },
           "away": {
-            "last_5_scored": 19,
-            "last_10_scored": 20.5,
-            "last_5_allowed": 26,
-            "last_10_allowed": 24.5
+            "last_5_scored": 22,
+            "last_10_scored": 24.4,
+            "last_5_allowed": 27.2,
+            "last_10_allowed": 26.9
           }
         },
         "recent_form_weight": 0.35,
@@ -3621,14 +3665,14 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.4051,
-      "away_win_probability": 0.5949,
-      "elo_home_win_probability": 0.4051,
-      "history_games": 165,
+      "home_win_probability": 0.5055,
+      "away_win_probability": 0.4945,
+      "elo_home_win_probability": 0.5055,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
@@ -3636,30 +3680,30 @@
       "matchup_context": {
         "home": {
           "games": 10,
-          "points_allowed_last_5": 19.4,
-          "points_allowed_last_10": 21.8,
-          "points_scored_last_10": 16.1,
+          "points_allowed_last_5": 20.2,
+          "points_allowed_last_10": 21.4,
+          "points_scored_last_10": 18.1,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.0,
           "back_to_back": false,
           "wins_last_5": 2,
-          "wins_last_10": 3,
+          "wins_last_10": 6,
           "current_streak": "L2",
-          "scoring_trend_last5_vs_previous5": 0.2,
+          "scoring_trend_last5_vs_previous5": -4.2,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 20.4,
-          "points_allowed_last_10": 18.8,
-          "points_scored_last_10": 27.4,
+          "points_allowed_last_5": 23.4,
+          "points_allowed_last_10": 22.6,
+          "points_scored_last_10": 25.5,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 6.87,
           "back_to_back": false,
-          "wins_last_5": 4,
-          "wins_last_10": 9,
+          "wins_last_5": 3,
+          "wins_last_10": 4,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": 4.4,
+          "scoring_trend_last5_vs_previous5": 11.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -3673,34 +3717,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 19.6,
-        "away_projected_points": 24.0,
-        "projected_home_margin": -4.4,
-        "projected_total": 43.6,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "home_projected_points": 20.6,
+        "away_projected_points": 24.1,
+        "projected_home_margin": -3.5,
+        "projected_total": 44.7,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 10,
-          "away": 11
+          "home": 17,
+          "away": 18
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 16.2,
-            "last_10_scored": 16.1,
-            "last_5_allowed": 19.4,
-            "last_10_allowed": 21.8
+            "last_5_scored": 16,
+            "last_10_scored": 18.1,
+            "last_5_allowed": 20.2,
+            "last_10_allowed": 21.4
           },
           "away": {
-            "last_5_scored": 29.6,
-            "last_10_scored": 27.4,
-            "last_5_allowed": 20.4,
-            "last_10_allowed": 18.8
+            "last_5_scored": 31,
+            "last_10_scored": 25.5,
+            "last_5_allowed": 23.4,
+            "last_10_allowed": 22.6
           }
         },
         "recent_form_weight": 0.35,
@@ -3729,45 +3773,45 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.398,
-      "away_win_probability": 0.602,
-      "elo_home_win_probability": 0.398,
-      "history_games": 165,
+      "home_win_probability": 0.3336,
+      "away_win_probability": 0.6664,
+      "elo_home_win_probability": 0.3336,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 9,
-          "points_allowed_last_5": 32.8,
-          "points_allowed_last_10": 29.33,
-          "points_scored_last_10": 21.11,
+          "games": 10,
+          "points_allowed_last_5": 28.0,
+          "points_allowed_last_10": 27.4,
+          "points_scored_last_10": 17.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 14.0,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 2,
-          "current_streak": "L3",
-          "scoring_trend_last5_vs_previous5": 6.05,
+          "wins_last_10": 1,
+          "current_streak": "L2",
+          "scoring_trend_last5_vs_previous5": 7.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 13.6,
-          "points_allowed_last_10": 15.4,
-          "points_scored_last_10": 33.3,
+          "points_allowed_last_5": 17.0,
+          "points_allowed_last_10": 15.5,
+          "points_scored_last_10": 29.4,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 9.7,
           "back_to_back": false,
           "wins_last_5": 4,
-          "wins_last_10": 9,
+          "wins_last_10": 7,
           "current_streak": "W2",
-          "scoring_trend_last5_vs_previous5": -1.4,
+          "scoring_trend_last5_vs_previous5": 0.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -3781,34 +3825,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 20.0,
-        "away_projected_points": 30.0,
-        "projected_home_margin": -10.0,
-        "projected_total": 50.0,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "home_projected_points": 19.5,
+        "away_projected_points": 27.7,
+        "projected_home_margin": -8.2,
+        "projected_total": 47.2,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 9,
-          "away": 11
+          "home": 16,
+          "away": 17
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 23.8,
-            "last_10_scored": 21.1,
-            "last_5_allowed": 32.8,
-            "last_10_allowed": 29.3
+            "last_5_scored": 21.4,
+            "last_10_scored": 17.7,
+            "last_5_allowed": 28,
+            "last_10_allowed": 27.4
           },
           "away": {
-            "last_5_scored": 32.6,
-            "last_10_scored": 33.3,
-            "last_5_allowed": 13.6,
-            "last_10_allowed": 15.4
+            "last_5_scored": 29.4,
+            "last_10_scored": 29.4,
+            "last_5_allowed": 17,
+            "last_10_allowed": 15.5
           }
         },
         "recent_form_weight": 0.35,
@@ -3837,14 +3881,14 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.635,
-      "away_win_probability": 0.365,
-      "elo_home_win_probability": 0.635,
-      "history_games": 165,
+      "home_win_probability": 0.5639,
+      "away_win_probability": 0.4361,
+      "elo_home_win_probability": 0.5639,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
@@ -3852,30 +3896,30 @@
       "matchup_context": {
         "home": {
           "games": 10,
-          "points_allowed_last_5": 22.0,
-          "points_allowed_last_10": 24.2,
-          "points_scored_last_10": 20.2,
+          "points_allowed_last_5": 26.2,
+          "points_allowed_last_10": 24.0,
+          "points_scored_last_10": 20.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.15,
           "back_to_back": false,
-          "wins_last_5": 3,
-          "wins_last_10": 5,
+          "wins_last_5": 1,
+          "wins_last_10": 4,
           "current_streak": "L2",
-          "scoring_trend_last5_vs_previous5": -4.8,
+          "scoring_trend_last5_vs_previous5": -4.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 20.0,
-          "points_allowed_last_10": 20.9,
-          "points_scored_last_10": 18.6,
+          "points_allowed_last_5": 18.6,
+          "points_allowed_last_10": 17.7,
+          "points_scored_last_10": 22.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.0,
           "back_to_back": false,
-          "wins_last_5": 1,
-          "wins_last_10": 2,
+          "wins_last_5": 3,
+          "wins_last_10": 6,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": 0.0,
+          "scoring_trend_last5_vs_previous5": 0.2,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -3889,34 +3933,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 21.3,
-        "away_projected_points": 21.3,
-        "projected_home_margin": -0.1,
-        "projected_total": 42.6,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "home_projected_points": 21.1,
+        "away_projected_points": 23.3,
+        "projected_home_margin": -2.2,
+        "projected_total": 44.3,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 10,
-          "away": 10
+          "home": 17,
+          "away": 16
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 17.8,
-            "last_10_scored": 20.2,
-            "last_5_allowed": 22,
-            "last_10_allowed": 24.2
+            "last_5_scored": 18.4,
+            "last_10_scored": 20.7,
+            "last_5_allowed": 26.2,
+            "last_10_allowed": 24
           },
           "away": {
-            "last_5_scored": 18.6,
-            "last_10_scored": 18.6,
-            "last_5_allowed": 20,
-            "last_10_allowed": 20.9
+            "last_5_scored": 22.8,
+            "last_10_scored": 22.7,
+            "last_5_allowed": 18.6,
+            "last_10_allowed": 17.7
           }
         },
         "recent_form_weight": 0.35,
@@ -3945,45 +3989,45 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.4829,
-      "away_win_probability": 0.5171,
-      "elo_home_win_probability": 0.4829,
-      "history_games": 165,
+      "home_win_probability": 0.5064,
+      "away_win_probability": 0.4936,
+      "elo_home_win_probability": 0.5064,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 9,
-          "points_allowed_last_5": 35.6,
-          "points_allowed_last_10": 30.56,
-          "points_scored_last_10": 19.44,
+          "games": 10,
+          "points_allowed_last_5": 29.0,
+          "points_allowed_last_10": 28.7,
+          "points_scored_last_10": 21.4,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.0,
           "back_to_back": false,
           "wins_last_5": 0,
-          "wins_last_10": 0,
-          "current_streak": "L9",
-          "scoring_trend_last5_vs_previous5": 3.05,
+          "wins_last_10": 2,
+          "current_streak": "L5",
+          "scoring_trend_last5_vs_previous5": -10.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 9,
-          "points_allowed_last_5": 28.6,
-          "points_allowed_last_10": 23.44,
-          "points_scored_last_10": 18.33,
+          "games": 10,
+          "points_allowed_last_5": 22.8,
+          "points_allowed_last_10": 25.5,
+          "points_scored_last_10": 15.6,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.0,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 4,
-          "current_streak": "L3",
-          "scoring_trend_last5_vs_previous5": -5.7,
+          "wins_last_10": 2,
+          "current_streak": "L2",
+          "scoring_trend_last5_vs_previous5": 4.8,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -4006,39 +4050,39 @@
             "raw_status": "IR. Injured Reserve",
             "source": "CBS Sports NFL injuries",
             "source_report_url": "https://www.cbssports.com/nfl/injuries/",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": "Tue, Nov 10",
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 23.7,
-        "away_projected_points": 24.5,
+        "home_projected_points": 22.4,
+        "away_projected_points": 23.2,
         "projected_home_margin": -0.8,
-        "projected_total": 48.2,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "projected_total": 45.5,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 9,
-          "away": 9
+          "home": 16,
+          "away": 15
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 20.8,
-            "last_10_scored": 19.4,
-            "last_5_allowed": 35.6,
-            "last_10_allowed": 30.6
+            "last_5_scored": 16.4,
+            "last_10_scored": 21.4,
+            "last_5_allowed": 29,
+            "last_10_allowed": 28.7
           },
           "away": {
-            "last_5_scored": 15.8,
-            "last_10_scored": 18.3,
-            "last_5_allowed": 28.6,
-            "last_10_allowed": 23.4
+            "last_5_scored": 18,
+            "last_10_scored": 15.6,
+            "last_5_allowed": 22.8,
+            "last_10_allowed": 25.5
           }
         },
         "recent_form_weight": 0.35,
@@ -4067,14 +4111,14 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.5825,
-      "away_win_probability": 0.4175,
-      "elo_home_win_probability": 0.5825,
-      "history_games": 165,
+      "home_win_probability": 0.5288,
+      "away_win_probability": 0.4712,
+      "elo_home_win_probability": 0.5288,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
@@ -4082,30 +4126,30 @@
       "matchup_context": {
         "home": {
           "games": 10,
-          "points_allowed_last_5": 26.8,
-          "points_allowed_last_10": 24.1,
-          "points_scored_last_10": 25.0,
+          "points_allowed_last_5": 17.2,
+          "points_allowed_last_10": 22.2,
+          "points_scored_last_10": 24.3,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 6.86,
           "back_to_back": false,
-          "wins_last_5": 2,
-          "wins_last_10": 5,
+          "wins_last_5": 4,
+          "wins_last_10": 6,
           "current_streak": "W2",
-          "scoring_trend_last5_vs_previous5": 0.4,
+          "scoring_trend_last5_vs_previous5": 8.6,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 13.6,
-          "points_allowed_last_10": 16.2,
-          "points_scored_last_10": 16.4,
+          "points_allowed_last_5": 15.0,
+          "points_allowed_last_10": 12.9,
+          "points_scored_last_10": 18.5,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 5.7,
           "back_to_back": false,
           "wins_last_5": 3,
-          "wins_last_10": 5,
+          "wins_last_10": 8,
           "current_streak": "L2",
-          "scoring_trend_last5_vs_previous5": -2.4,
+          "scoring_trend_last5_vs_previous5": -7.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -4119,34 +4163,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 21.5,
-        "away_projected_points": 21.0,
-        "projected_home_margin": 0.5,
-        "projected_total": 42.5,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "home_projected_points": 21.4,
+        "away_projected_points": 19.2,
+        "projected_home_margin": 2.2,
+        "projected_total": 40.7,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 11,
-          "away": 10
+          "home": 18,
+          "away": 16
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 25.2,
-            "last_10_scored": 25,
-            "last_5_allowed": 26.8,
-            "last_10_allowed": 24.1
+            "last_5_scored": 28.6,
+            "last_10_scored": 24.3,
+            "last_5_allowed": 17.2,
+            "last_10_allowed": 22.2
           },
           "away": {
-            "last_5_scored": 15.2,
-            "last_10_scored": 16.4,
-            "last_5_allowed": 13.6,
-            "last_10_allowed": 16.2
+            "last_5_scored": 15,
+            "last_10_scored": 18.5,
+            "last_5_allowed": 15,
+            "last_10_allowed": 12.9
           }
         },
         "recent_form_weight": 0.35,
@@ -4175,14 +4219,14 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.4066,
-      "away_win_probability": 0.5934,
-      "elo_home_win_probability": 0.4066,
-      "history_games": 165,
+      "home_win_probability": 0.4171,
+      "away_win_probability": 0.5829,
+      "elo_home_win_probability": 0.4171,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
@@ -4190,30 +4234,30 @@
       "matchup_context": {
         "home": {
           "games": 10,
-          "points_allowed_last_5": 29.4,
-          "points_allowed_last_10": 32.0,
-          "points_scored_last_10": 18.9,
+          "points_allowed_last_5": 27.6,
+          "points_allowed_last_10": 29.2,
+          "points_scored_last_10": 19.8,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 6.99,
           "back_to_back": false,
-          "wins_last_5": 1,
-          "wins_last_10": 1,
+          "wins_last_5": 2,
+          "wins_last_10": 3,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": -2.2,
+          "scoring_trend_last5_vs_previous5": -3.2,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 20.2,
-          "points_allowed_last_10": 23.7,
-          "points_scored_last_10": 30.9,
+          "points_allowed_last_5": 19.6,
+          "points_allowed_last_10": 21.2,
+          "points_scored_last_10": 24.1,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.13,
           "back_to_back": false,
-          "wins_last_5": 4,
-          "wins_last_10": 7,
-          "current_streak": "W2",
-          "scoring_trend_last5_vs_previous5": -11.8,
+          "wins_last_5": 3,
+          "wins_last_10": 5,
+          "current_streak": "W3",
+          "scoring_trend_last5_vs_previous5": 3.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -4236,39 +4280,39 @@
             "raw_status": "IR. Injured Reserve",
             "source": "CBS Sports NFL injuries",
             "source_report_url": "https://www.cbssports.com/nfl/injuries/",
-            "source_fetched_at": "2026-11-11T19:29:43.499662+00:00",
+            "source_fetched_at": "2026-11-11T19:35:14.137876+00:00",
             "source_updated_label": "Tue, Nov 10",
             "availability_impact_status": "not_model_adjusted"
           }
         ],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
         "home_projected_points": 21.4,
-        "away_projected_points": 28.1,
-        "projected_home_margin": -6.7,
-        "projected_total": 49.5,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "away_projected_points": 27.6,
+        "projected_home_margin": -6.3,
+        "projected_total": 49.0,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 10,
-          "away": 13
+          "home": 17,
+          "away": 20
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 17.8,
-            "last_10_scored": 18.9,
-            "last_5_allowed": 29.4,
-            "last_10_allowed": 32
+            "last_5_scored": 18.2,
+            "last_10_scored": 19.8,
+            "last_5_allowed": 27.6,
+            "last_10_allowed": 29.2
           },
           "away": {
-            "last_5_scored": 25,
-            "last_10_scored": 30.9,
-            "last_5_allowed": 20.2,
-            "last_10_allowed": 23.7
+            "last_5_scored": 25.8,
+            "last_10_scored": 24.1,
+            "last_5_allowed": 19.6,
+            "last_10_allowed": 21.2
           }
         },
         "recent_form_weight": 0.35,
@@ -4297,14 +4341,14 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.3797,
-      "away_win_probability": 0.6203,
-      "elo_home_win_probability": 0.3797,
-      "history_games": 165,
+      "home_win_probability": 0.3882,
+      "away_win_probability": 0.6118,
+      "elo_home_win_probability": 0.3882,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
@@ -4312,30 +4356,30 @@
       "matchup_context": {
         "home": {
           "games": 10,
-          "points_allowed_last_5": 28.0,
-          "points_allowed_last_10": 28.3,
-          "points_scored_last_10": 15.7,
+          "points_allowed_last_5": 36.8,
+          "points_allowed_last_10": 28.0,
+          "points_scored_last_10": 25.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 6.99,
           "back_to_back": false,
-          "wins_last_5": 2,
-          "wins_last_10": 2,
+          "wins_last_5": 1,
+          "wins_last_10": 5,
           "current_streak": "L1",
-          "scoring_trend_last5_vs_previous5": 8.6,
+          "scoring_trend_last5_vs_previous5": -1.2,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 16.6,
-          "points_allowed_last_10": 15.8,
-          "points_scored_last_10": 26.8,
+          "points_allowed_last_5": 17.8,
+          "points_allowed_last_10": 17.5,
+          "points_scored_last_10": 23.1,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 6.99,
           "back_to_back": false,
-          "wins_last_5": 4,
-          "wins_last_10": 9,
+          "wins_last_5": 2,
+          "wins_last_10": 6,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": 0.4,
+          "scoring_trend_last5_vs_previous5": -7.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -4349,34 +4393,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 18.8,
-        "away_projected_points": 26.5,
-        "projected_home_margin": -7.7,
-        "projected_total": 45.3,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "home_projected_points": 20.7,
+        "away_projected_points": 26.8,
+        "projected_home_margin": -6.1,
+        "projected_total": 47.4,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 10,
-          "away": 13
+          "home": 17,
+          "away": 20
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 20,
-            "last_10_scored": 15.7,
-            "last_5_allowed": 28,
-            "last_10_allowed": 28.3
+            "last_5_scored": 24.6,
+            "last_10_scored": 25.2,
+            "last_5_allowed": 36.8,
+            "last_10_allowed": 28
           },
           "away": {
-            "last_5_scored": 27,
-            "last_10_scored": 26.8,
-            "last_5_allowed": 16.6,
-            "last_10_allowed": 15.8
+            "last_5_scored": 19.4,
+            "last_10_scored": 23.1,
+            "last_5_allowed": 17.8,
+            "last_10_allowed": 17.5
           }
         },
         "recent_form_weight": 0.35,
@@ -4405,14 +4449,14 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.4793,
-      "away_win_probability": 0.5207,
-      "elo_home_win_probability": 0.4793,
-      "history_games": 165,
+      "home_win_probability": 0.4136,
+      "away_win_probability": 0.5864,
+      "elo_home_win_probability": 0.4136,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
@@ -4420,30 +4464,30 @@
       "matchup_context": {
         "home": {
           "games": 10,
-          "points_allowed_last_5": 29.4,
-          "points_allowed_last_10": 29.0,
-          "points_scored_last_10": 26.5,
+          "points_allowed_last_5": 24.8,
+          "points_allowed_last_10": 27.0,
+          "points_scored_last_10": 26.3,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.14,
           "back_to_back": false,
           "wins_last_5": 2,
-          "wins_last_10": 5,
+          "wins_last_10": 4,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": -4.6,
+          "scoring_trend_last5_vs_previous5": -3.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 25.6,
-          "points_allowed_last_10": 21.8,
-          "points_scored_last_10": 28.4,
+          "points_allowed_last_5": 21.2,
+          "points_allowed_last_10": 21.6,
+          "points_scored_last_10": 26.4,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.0,
           "back_to_back": false,
-          "wins_last_5": 3,
+          "wins_last_5": 4,
           "wins_last_10": 8,
           "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": -12.0,
+          "scoring_trend_last5_vs_previous5": 2.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -4457,34 +4501,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 24.9,
-        "away_projected_points": 26.5,
-        "projected_home_margin": -1.5,
-        "projected_total": 51.4,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "home_projected_points": 24.2,
+        "away_projected_points": 26.6,
+        "projected_home_margin": -2.4,
+        "projected_total": 50.8,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 10,
-          "away": 10
+          "home": 17,
+          "away": 17
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 24.2,
-            "last_10_scored": 26.5,
-            "last_5_allowed": 29.4,
-            "last_10_allowed": 29
+            "last_5_scored": 24.8,
+            "last_10_scored": 26.3,
+            "last_5_allowed": 24.8,
+            "last_10_allowed": 27
           },
           "away": {
-            "last_5_scored": 22.4,
-            "last_10_scored": 28.4,
-            "last_5_allowed": 25.6,
-            "last_10_allowed": 21.8
+            "last_5_scored": 27.4,
+            "last_10_scored": 26.4,
+            "last_5_allowed": 21.2,
+            "last_10_allowed": 21.6
           }
         },
         "recent_form_weight": 0.35,
@@ -4513,14 +4557,14 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.5424,
-      "away_win_probability": 0.4576,
-      "elo_home_win_probability": 0.5424,
-      "history_games": 165,
+      "home_win_probability": 0.5375,
+      "away_win_probability": 0.4625,
+      "elo_home_win_probability": 0.5375,
+      "history_games": 272,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 165,
+        "eligible_games": 272,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
@@ -4528,30 +4572,30 @@
       "matchup_context": {
         "home": {
           "games": 10,
-          "points_allowed_last_5": 21.6,
-          "points_allowed_last_10": 24.5,
-          "points_scored_last_10": 27.5,
+          "points_allowed_last_5": 22.4,
+          "points_allowed_last_10": 20.9,
+          "points_scored_last_10": 29.5,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 7.45,
           "back_to_back": false,
           "wins_last_5": 4,
-          "wins_last_10": 5,
-          "current_streak": "W2",
-          "scoring_trend_last5_vs_previous5": 15.8,
+          "wins_last_10": 7,
+          "current_streak": "W4",
+          "scoring_trend_last5_vs_previous5": 5.0,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
           "games": 10,
-          "points_allowed_last_5": 19.4,
-          "points_allowed_last_10": 20.3,
-          "points_scored_last_10": 21.8,
+          "points_allowed_last_5": 16.8,
+          "points_allowed_last_10": 19.8,
+          "points_scored_last_10": 21.2,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 14.31,
           "back_to_back": false,
-          "wins_last_5": 3,
-          "wins_last_10": 6,
-          "current_streak": "W1",
-          "scoring_trend_last5_vs_previous5": -6.0,
+          "wins_last_5": 4,
+          "wins_last_10": 7,
+          "current_streak": "W4",
+          "scoring_trend_last5_vs_previous5": 8.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -4565,34 +4609,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 25.7,
-        "away_projected_points": 22.1,
-        "projected_home_margin": 3.6,
-        "projected_total": 47.7,
-        "margin_sd": 14.4,
-        "total_sd": 15.06,
+        "home_projected_points": 24.6,
+        "away_projected_points": 23.0,
+        "projected_home_margin": 1.6,
+        "projected_total": 47.6,
+        "margin_sd": 13.72,
+        "total_sd": 14.67,
         "team_games": {
-          "home": 10,
-          "away": 10
+          "home": 16,
+          "away": 17
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 35.4,
-            "last_10_scored": 27.5,
-            "last_5_allowed": 21.6,
-            "last_10_allowed": 24.5
+            "last_5_scored": 32,
+            "last_10_scored": 29.5,
+            "last_5_allowed": 22.4,
+            "last_10_allowed": 20.9
           },
           "away": {
-            "last_5_scored": 18.8,
-            "last_10_scored": 21.8,
-            "last_5_allowed": 19.4,
-            "last_10_allowed": 20.3
+            "last_5_scored": 25.4,
+            "last_10_scored": 21.2,
+            "last_5_allowed": 16.8,
+            "last_10_allowed": 19.8
           }
         },
         "recent_form_weight": 0.35,
@@ -4621,45 +4665,45 @@
       "model": "nfl_elo_baseline",
       "experimental_v3_home_win_probability": null,
       "experimental_v3_status": null,
-      "home_win_probability": 0.5369,
-      "away_win_probability": 0.4631,
-      "elo_home_win_probability": 0.5369,
-      "history_games": 153,
+      "home_win_probability": 0.6254,
+      "away_win_probability": 0.3746,
+      "elo_home_win_probability": 0.6254,
+      "history_games": 260,
       "recency_policy": {
         "lookback_days": 365,
         "half_life_days_for_future_weighted_models": 90,
-        "eligible_games": 153,
+        "eligible_games": 260,
         "roster_continuity": "unverified",
         "roster_adjustment": "not_applied",
         "older_games_used_for_live_team_strength": false
       },
       "matchup_context": {
         "home": {
-          "games": 9,
-          "points_allowed_last_5": 29.4,
-          "points_allowed_last_10": 24.0,
-          "points_scored_last_10": 21.33,
+          "games": 10,
+          "points_allowed_last_5": 28.0,
+          "points_allowed_last_10": 26.2,
+          "points_scored_last_10": 21.3,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 11.0,
           "back_to_back": false,
           "wins_last_5": 1,
-          "wins_last_10": 3,
-          "current_streak": "L3",
-          "scoring_trend_last5_vs_previous5": 1.05,
+          "wins_last_10": 4,
+          "current_streak": "L4",
+          "scoring_trend_last5_vs_previous5": -13.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "away": {
-          "games": 9,
-          "points_allowed_last_5": 24.6,
-          "points_allowed_last_10": 20.67,
-          "points_scored_last_10": 17.33,
+          "games": 10,
+          "points_allowed_last_5": 28.6,
+          "points_allowed_last_10": 25.4,
+          "points_scored_last_10": 12.7,
           "defense_status": "raw_points_allowed_not_pace_adjusted",
           "rest_days": 8.17,
           "back_to_back": false,
           "wins_last_5": 0,
-          "wins_last_10": 4,
-          "current_streak": "L5",
-          "scoring_trend_last5_vs_previous5": -15.15,
+          "wins_last_10": 0,
+          "current_streak": "L10",
+          "scoring_trend_last5_vs_previous5": 5.4,
           "hot_streak_status": "historical_form_not_a_betting_edge"
         },
         "status": "historical_only_no_injury_or_possession_data"
@@ -4673,34 +4717,34 @@
       "matched_injury_context": {
         "status": "source_matched_not_game_verified",
         "injuries": [],
-        "fetched_at": "2026-11-11T19:29:43.499662+00:00",
+        "fetched_at": "2026-11-11T19:35:14.137876+00:00",
         "model_adjustment": "none",
         "lineup_verified": false
       },
       "score_projection": {
         "status": "experimental",
-        "home_projected_points": 23.0,
-        "away_projected_points": 20.9,
-        "projected_home_margin": 2.1,
-        "projected_total": 43.9,
-        "margin_sd": 14.53,
-        "total_sd": 15.19,
+        "home_projected_points": 23.1,
+        "away_projected_points": 21.2,
+        "projected_home_margin": 1.9,
+        "projected_total": 44.2,
+        "margin_sd": 13.76,
+        "total_sd": 14.73,
         "team_games": {
-          "home": 9,
-          "away": 9
+          "home": 16,
+          "away": 15
         },
         "recent_form": {
           "home": {
-            "last_5_scored": 21.8,
+            "last_5_scored": 14.6,
             "last_10_scored": 21.3,
-            "last_5_allowed": 29.4,
-            "last_10_allowed": 24
+            "last_5_allowed": 28,
+            "last_10_allowed": 26.2
           },
           "away": {
-            "last_5_scored": 10.6,
-            "last_10_scored": 17.3,
-            "last_5_allowed": 24.6,
-            "last_10_allowed": 20.7
+            "last_5_scored": 15.4,
+            "last_10_scored": 12.7,
+            "last_5_allowed": 28.6,
+            "last_10_allowed": 25.4
           }
         },
         "recent_form_weight": 0.35,
