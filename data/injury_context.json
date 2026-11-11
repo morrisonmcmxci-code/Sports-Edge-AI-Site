@@ -1,16 +1,18 @@
 {
-  "generated_at": "2026-11-11T16:06:34.575002+00:00",
+  "generated_at": "2026-11-11T16:53:22.210765+00:00",
   "status": "best_effort_unverified",
   "by_league": {
     "nba": {
       "status": "empty_unverified",
       "records": 0,
-      "fetched_at": "2026-11-11T16:06:34.575002+00:00"
+      "fetched_at": "2026-11-11T16:53:22.210765+00:00",
+      "source": "espn_public"
     },
     "nfl": {
       "status": "empty_unverified",
       "records": 0,
-      "fetched_at": "2026-11-11T16:06:34.575002+00:00"
+      "fetched_at": "2026-11-11T16:53:22.210765+00:00",
+      "source": "espn_public"
     }
   },
   "injuries": []
