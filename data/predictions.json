@@ -1,0 +1,1044 @@
+{
+  "generated_at": "2026-11-11T01:22:26.178139+00:00",
+  "status": "research_only",
+  "source": "ESPN scoreboard; historical games in Supabase",
+  "odds_available": false,
+  "games": [
+    {
+      "league": "nba",
+      "game_id": "401909966",
+      "start_time": "2026-11-12T00:00:00+00:00",
+      "home_team_id": "11",
+      "away_team_id": "27",
+      "home_team": "Indiana Pacers",
+      "away_team": "Washington Wizards",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.953,
+      "away_win_probability": 0.047,
+      "elo_home_win_probability": 0.9155,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 117.9,
+        "away_projected_points": 109.4,
+        "projected_home_margin": 8.5,
+        "projected_total": 227.3,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909967",
+      "start_time": "2026-11-12T00:00:00+00:00",
+      "home_team_id": "18",
+      "away_team_id": "5",
+      "home_team": "New York Knicks",
+      "away_team": "Cleveland Cavaliers",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.5165,
+      "away_win_probability": 0.4835,
+      "elo_home_win_probability": 0.5503,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 113.4,
+        "away_projected_points": 115.0,
+        "projected_home_margin": -1.5,
+        "projected_total": 228.4,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909968",
+      "start_time": "2026-11-12T00:00:00+00:00",
+      "home_team_id": "28",
+      "away_team_id": "2",
+      "home_team": "Toronto Raptors",
+      "away_team": "Boston Celtics",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.4099,
+      "away_win_probability": 0.5901,
+      "elo_home_win_probability": 0.3733,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 110.1,
+        "away_projected_points": 110.1,
+        "projected_home_margin": 0.0,
+        "projected_total": 220.1,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909969",
+      "start_time": "2026-11-12T01:00:00+00:00",
+      "home_team_id": "4",
+      "away_team_id": "24",
+      "home_team": "Chicago Bulls",
+      "away_team": "San Antonio Spurs",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.6913,
+      "away_win_probability": 0.3087,
+      "elo_home_win_probability": 0.6748,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 119.0,
+        "away_projected_points": 114.9,
+        "projected_home_margin": 4.2,
+        "projected_total": 233.9,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909970",
+      "start_time": "2026-11-12T01:00:00+00:00",
+      "home_team_id": "29",
+      "away_team_id": "7",
+      "home_team": "Memphis Grizzlies",
+      "away_team": "Denver Nuggets",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.3376,
+      "away_win_probability": 0.6624,
+      "elo_home_win_probability": 0.4015,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 113.9,
+        "away_projected_points": 114.4,
+        "projected_home_margin": -0.6,
+        "projected_total": 228.3,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909971",
+      "start_time": "2026-11-12T01:00:00+00:00",
+      "home_team_id": "15",
+      "away_team_id": "13",
+      "home_team": "Milwaukee Bucks",
+      "away_team": "Los Angeles Lakers",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.5414,
+      "away_win_probability": 0.4586,
+      "elo_home_win_probability": 0.5673,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 116.7,
+        "away_projected_points": 115.9,
+        "projected_home_margin": 0.8,
+        "projected_total": 232.6,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909972",
+      "start_time": "2026-11-12T01:00:00+00:00",
+      "home_team_id": "3",
+      "away_team_id": "17",
+      "home_team": "New Orleans Pelicans",
+      "away_team": "Brooklyn Nets",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.5911,
+      "away_win_probability": 0.4089,
+      "elo_home_win_probability": 0.612,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 113.1,
+        "away_projected_points": 112.5,
+        "projected_home_margin": 0.6,
+        "projected_total": 225.6,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909973",
+      "start_time": "2026-11-12T02:00:00+00:00",
+      "home_team_id": "26",
+      "away_team_id": "19",
+      "home_team": "Utah Jazz",
+      "away_team": "Orlando Magic",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.1902,
+      "away_win_probability": 0.8098,
+      "elo_home_win_probability": 0.298,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 108.8,
+        "away_projected_points": 116.0,
+        "projected_home_margin": -7.2,
+        "projected_total": 224.8,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909974",
+      "start_time": "2026-11-12T02:30:00+00:00",
+      "home_team_id": "10",
+      "away_team_id": "9",
+      "home_team": "Houston Rockets",
+      "away_team": "Golden State Warriors",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.7095,
+      "away_win_probability": 0.2905,
+      "elo_home_win_probability": 0.6389,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 113.4,
+        "away_projected_points": 109.4,
+        "projected_home_margin": 4.1,
+        "projected_total": 222.8,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909975",
+      "start_time": "2026-11-12T03:00:00+00:00",
+      "home_team_id": "22",
+      "away_team_id": "25",
+      "home_team": "Portland Trail Blazers",
+      "away_team": "Oklahoma City Thunder",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.2029,
+      "away_win_probability": 0.7971,
+      "elo_home_win_probability": 0.2553,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 112.2,
+        "away_projected_points": 113.9,
+        "projected_home_margin": -1.7,
+        "projected_total": 226.1,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909976",
+      "start_time": "2026-11-13T00:00:00+00:00",
+      "home_team_id": "20",
+      "away_team_id": "28",
+      "home_team": "Philadelphia 76ers",
+      "away_team": "Toronto Raptors",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.3474,
+      "away_win_probability": 0.6526,
+      "elo_home_win_probability": 0.3962,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 113.2,
+        "away_projected_points": 115.8,
+        "projected_home_margin": -2.7,
+        "projected_total": 229.0,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909977",
+      "start_time": "2026-11-13T00:00:00+00:00",
+      "home_team_id": "27",
+      "away_team_id": "8",
+      "home_team": "Washington Wizards",
+      "away_team": "Detroit Pistons",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.1387,
+      "away_win_probability": 0.8613,
+      "elo_home_win_probability": 0.2619,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 110.8,
+        "away_projected_points": 117.1,
+        "projected_home_margin": -6.3,
+        "projected_total": 227.9,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909978",
+      "start_time": "2026-11-13T01:00:00+00:00",
+      "home_team_id": "16",
+      "away_team_id": "6",
+      "home_team": "Minnesota Timberwolves",
+      "away_team": "Dallas Mavericks",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.8817,
+      "away_win_probability": 0.1183,
+      "elo_home_win_probability": 0.8279,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 115.7,
+        "away_projected_points": 110.0,
+        "projected_home_margin": 5.7,
+        "projected_total": 225.6,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873052",
+      "start_time": "2026-11-13T01:15:00+00:00",
+      "home_team_id": "19",
+      "away_team_id": "28",
+      "home_team": "New York Giants",
+      "away_team": "Washington Commanders",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.4199,
+      "away_win_probability": 0.5801,
+      "elo_home_win_probability": 0.4199,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 25.5,
+        "away_projected_points": 24.1,
+        "projected_home_margin": 1.4,
+        "projected_total": 49.7,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909979",
+      "start_time": "2026-11-13T02:00:00+00:00",
+      "home_team_id": "21",
+      "away_team_id": "30",
+      "home_team": "Phoenix Suns",
+      "away_team": "Charlotte Hornets",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.8446,
+      "away_win_probability": 0.1554,
+      "elo_home_win_probability": 0.7996,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 115.8,
+        "away_projected_points": 110.7,
+        "projected_home_margin": 5.2,
+        "projected_total": 226.5,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909296",
+      "start_time": "2026-11-14T00:00:00+00:00",
+      "home_team_id": "11",
+      "away_team_id": "18",
+      "home_team": "Indiana Pacers",
+      "away_team": "New York Knicks",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.5402,
+      "away_win_probability": 0.4598,
+      "elo_home_win_probability": 0.6289,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 112.9,
+        "away_projected_points": 112.4,
+        "projected_home_margin": 0.6,
+        "projected_total": 225.3,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909297",
+      "start_time": "2026-11-14T00:00:00+00:00",
+      "home_team_id": "19",
+      "away_team_id": "15",
+      "home_team": "Orlando Magic",
+      "away_team": "Milwaukee Bucks",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.5429,
+      "away_win_probability": 0.4571,
+      "elo_home_win_probability": 0.525,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 115.0,
+        "away_projected_points": 111.8,
+        "projected_home_margin": 3.2,
+        "projected_total": 226.7,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909298",
+      "start_time": "2026-11-14T01:00:00+00:00",
+      "home_team_id": "14",
+      "away_team_id": "5",
+      "home_team": "Miami Heat",
+      "away_team": "Cleveland Cavaliers",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.184,
+      "away_win_probability": 0.816,
+      "elo_home_win_probability": 0.3243,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 114.7,
+        "away_projected_points": 116.5,
+        "projected_home_margin": -1.8,
+        "projected_total": 231.2,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909299",
+      "start_time": "2026-11-14T01:00:00+00:00",
+      "home_team_id": "4",
+      "away_team_id": "1",
+      "home_team": "Chicago Bulls",
+      "away_team": "Atlanta Hawks",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.6291,
+      "away_win_probability": 0.3709,
+      "elo_home_win_probability": 0.6423,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 119.0,
+        "away_projected_points": 117.0,
+        "projected_home_margin": 2.0,
+        "projected_total": 236.1,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909300",
+      "start_time": "2026-11-14T01:00:00+00:00",
+      "home_team_id": "3",
+      "away_team_id": "29",
+      "home_team": "New Orleans Pelicans",
+      "away_team": "Memphis Grizzlies",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.3385,
+      "away_win_probability": 0.6615,
+      "elo_home_win_probability": 0.4034,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 113.6,
+        "away_projected_points": 115.3,
+        "projected_home_margin": -1.7,
+        "projected_total": 228.9,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909301",
+      "start_time": "2026-11-14T01:30:00+00:00",
+      "home_team_id": "10",
+      "away_team_id": "26",
+      "home_team": "Houston Rockets",
+      "away_team": "Utah Jazz",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.948,
+      "away_win_probability": 0.052,
+      "elo_home_win_probability": 0.8888,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 120.0,
+        "away_projected_points": 109.7,
+        "projected_home_margin": 10.3,
+        "projected_total": 229.7,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909302",
+      "start_time": "2026-11-14T02:30:00+00:00",
+      "home_team_id": "24",
+      "away_team_id": "9",
+      "home_team": "San Antonio Spurs",
+      "away_team": "Golden State Warriors",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.4314,
+      "away_win_probability": 0.5686,
+      "elo_home_win_probability": 0.4158,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 113.4,
+        "away_projected_points": 112.5,
+        "projected_home_margin": 0.9,
+        "projected_total": 225.8,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909303",
+      "start_time": "2026-11-14T03:00:00+00:00",
+      "home_team_id": "23",
+      "away_team_id": "22",
+      "home_team": "Sacramento Kings",
+      "away_team": "Portland Trail Blazers",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.5512,
+      "away_win_probability": 0.4488,
+      "elo_home_win_probability": 0.583,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 114.8,
+        "away_projected_points": 114.6,
+        "projected_home_margin": 0.2,
+        "projected_total": 229.4,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nba",
+      "game_id": "401909304",
+      "start_time": "2026-11-14T03:30:00+00:00",
+      "home_team_id": "12",
+      "away_team_id": "25",
+      "home_team": "LA Clippers",
+      "away_team": "Oklahoma City Thunder",
+      "model": "nba_v2_experimental",
+      "home_win_probability": 0.2566,
+      "away_win_probability": 0.7434,
+      "elo_home_win_probability": 0.3485,
+      "history_games": 1449,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 112.6,
+        "away_projected_points": 112.2,
+        "projected_home_margin": 0.4,
+        "projected_total": 224.7,
+        "margin_sd": 17.6,
+        "total_sd": 18.9,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873053",
+      "start_time": "2026-11-15T14:30:00+00:00",
+      "home_team_id": "8",
+      "away_team_id": "17",
+      "home_team": "Detroit Lions",
+      "away_team": "New England Patriots",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.659,
+      "away_win_probability": 0.341,
+      "elo_home_win_probability": 0.659,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 24.2,
+        "away_projected_points": 25.6,
+        "projected_home_margin": -1.3,
+        "projected_total": 49.8,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873054",
+      "start_time": "2026-11-15T18:00:00+00:00",
+      "home_team_id": "20",
+      "away_team_id": "2",
+      "home_team": "New York Jets",
+      "away_team": "Buffalo Bills",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.233,
+      "away_win_probability": 0.767,
+      "elo_home_win_probability": 0.233,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 21.7,
+        "away_projected_points": 27.7,
+        "projected_home_margin": -6.0,
+        "projected_total": 49.3,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873055",
+      "start_time": "2026-11-15T18:00:00+00:00",
+      "home_team_id": "18",
+      "away_team_id": "29",
+      "home_team": "New Orleans Saints",
+      "away_team": "Carolina Panthers",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.5815,
+      "away_win_probability": 0.4185,
+      "elo_home_win_probability": 0.5815,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 22.2,
+        "away_projected_points": 22.1,
+        "projected_home_margin": 0.1,
+        "projected_total": 44.2,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873056",
+      "start_time": "2026-11-15T18:00:00+00:00",
+      "home_team_id": "5",
+      "away_team_id": "34",
+      "home_team": "Cleveland Browns",
+      "away_team": "Houston Texans",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.3163,
+      "away_win_probability": 0.6837,
+      "elo_home_win_probability": 0.3163,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 18.5,
+        "away_projected_points": 23.1,
+        "projected_home_margin": -4.6,
+        "projected_total": 41.6,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873057",
+      "start_time": "2026-11-15T18:00:00+00:00",
+      "home_team_id": "10",
+      "away_team_id": "30",
+      "home_team": "Tennessee Titans",
+      "away_team": "Jacksonville Jaguars",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.3132,
+      "away_win_probability": 0.6868,
+      "elo_home_win_probability": 0.3132,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 20.3,
+        "away_projected_points": 26.7,
+        "projected_home_margin": -6.3,
+        "projected_total": 47.0,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873058",
+      "start_time": "2026-11-15T18:00:00+00:00",
+      "home_team_id": "1",
+      "away_team_id": "12",
+      "home_team": "Atlanta Falcons",
+      "away_team": "Kansas City Chiefs",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.4434,
+      "away_win_probability": 0.5566,
+      "elo_home_win_probability": 0.4434,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 22.7,
+        "away_projected_points": 23.1,
+        "projected_home_margin": -0.4,
+        "projected_total": 45.8,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873059",
+      "start_time": "2026-11-15T18:00:00+00:00",
+      "home_team_id": "11",
+      "away_team_id": "15",
+      "home_team": "Indianapolis Colts",
+      "away_team": "Miami Dolphins",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.5646,
+      "away_win_probability": 0.4354,
+      "elo_home_win_probability": 0.5646,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 26.3,
+        "away_projected_points": 23.2,
+        "projected_home_margin": 3.1,
+        "projected_total": 49.4,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873060",
+      "start_time": "2026-11-15T18:00:00+00:00",
+      "home_team_id": "9",
+      "away_team_id": "16",
+      "home_team": "Green Bay Packers",
+      "away_team": "Minnesota Vikings",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.5287,
+      "away_win_probability": 0.4713,
+      "elo_home_win_probability": 0.5287,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 22.8,
+        "away_projected_points": 21.2,
+        "projected_home_margin": 1.6,
+        "projected_total": 44.0,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873061",
+      "start_time": "2026-11-15T21:05:00+00:00",
+      "home_team_id": "22",
+      "away_team_id": "14",
+      "home_team": "Arizona Cardinals",
+      "away_team": "Los Angeles Rams",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.2696,
+      "away_win_probability": 0.7304,
+      "elo_home_win_probability": 0.2696,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 22.8,
+        "away_projected_points": 27.9,
+        "projected_home_margin": -5.1,
+        "projected_total": 50.7,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873062",
+      "start_time": "2026-11-15T21:05:00+00:00",
+      "home_team_id": "13",
+      "away_team_id": "26",
+      "home_team": "Las Vegas Raiders",
+      "away_team": "Seattle Seahawks",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.207,
+      "away_win_probability": 0.793,
+      "elo_home_win_probability": 0.207,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 18.3,
+        "away_projected_points": 26.2,
+        "projected_home_margin": -7.8,
+        "projected_total": 44.5,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873063",
+      "start_time": "2026-11-15T21:25:00+00:00",
+      "home_team_id": "6",
+      "away_team_id": "25",
+      "home_team": "Dallas Cowboys",
+      "away_team": "San Francisco 49ers",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.4652,
+      "away_win_probability": 0.5348,
+      "elo_home_win_probability": 0.4652,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 25.5,
+        "away_projected_points": 26.5,
+        "projected_home_margin": -1.0,
+        "projected_total": 51.9,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873064",
+      "start_time": "2026-11-16T01:20:00+00:00",
+      "home_team_id": "4",
+      "away_team_id": "23",
+      "home_team": "Cincinnati Bengals",
+      "away_team": "Pittsburgh Steelers",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.4777,
+      "away_win_probability": 0.5223,
+      "elo_home_win_probability": 0.4777,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 24.5,
+        "away_projected_points": 24.1,
+        "projected_home_margin": 0.4,
+        "projected_total": 48.6,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    },
+    {
+      "league": "nfl",
+      "game_id": "401873065",
+      "start_time": "2026-11-17T01:15:00+00:00",
+      "home_team_id": "33",
+      "away_team_id": "24",
+      "home_team": "Baltimore Ravens",
+      "away_team": "Los Angeles Chargers",
+      "model": "nfl_elo_baseline",
+      "home_win_probability": 0.6149,
+      "away_win_probability": 0.3851,
+      "elo_home_win_probability": 0.6149,
+      "history_games": 858,
+      "score_projection": {
+        "status": "experimental",
+        "home_projected_points": 23.9,
+        "away_projected_points": 22.0,
+        "projected_home_margin": 1.9,
+        "projected_total": 45.9,
+        "margin_sd": 14.2,
+        "total_sd": 15.32,
+        "team_games": {
+          "home": 20,
+          "away": 20
+        },
+        "method": "shrunk_rolling_scoring_v1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sports Edge AI | Game Predictions</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#0b1020;color:#eef2ff}
+*{box-sizing:border-box}body{margin:0}header{padding:28px max(22px,calc((100vw - 1100px)/2));border-bottom:1px solid #273047;background:#111a2d}
+h1{margin:0;font-size:clamp(25px,4vw,38px)}header p,.muted{color:#a6b4d1}main{max-width:1100px;margin:auto;padding:28px 22px}
+.controls{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.controls button{border:1px solid #405072;border-radius:10px;background:#19253c;color:#fff;padding:11px 20px;cursor:pointer}
+.controls button.active{background:#2863cc}.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:16px}
+.card{background:#151f33;border:1px solid #33415c;border-radius:15px;padding:20px}.top{display:flex;justify-content:space-between;gap:12px;color:#a6b4d1;font-size:13px}
+.match{font-size:18px;font-weight:650;margin:20px 0}.prob{display:flex;justify-content:space-between;margin:8px 0}.bar{height:11px;background:#33415c;border-radius:10px;overflow:hidden}
+.fill{height:100%;background:#5b9bff}.pill{font-size:12px;color:#c0d4ff;background:#253b60;padding:4px 8px;border-radius:6px}
+.notice{border:1px solid #3d4b63;background:#192339;padding:14px;border-radius:10px;line-height:1.5}
+footer{margin:32px 0;color:#9caac4;font-size:13px}.stats{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}.stat{background:#18263e;border:1px solid #344665;padding:14px;border-radius:10px;min-width:150px;flex:1}.stat strong{display:block;font-size:24px;margin-top:6px}.market{border-top:1px solid #344665;padding-top:12px;margin-top:12px}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}.tabs button{background:#243551;color:#eef2ff;border:1px solid #405072;border-radius:7px;padding:7px 9px;cursor:pointer}.tabs button.selected{background:#2863cc}.mini{font-size:13px;line-height:1.7}
+</style></head>
+<body><header><h1>Sports Edge AI</h1><p>Pregame NBA & NFL probability research</p></header>
+<main><div class="notice">Experimental predictions, not betting recommendations. Odds require a connected API key; no verified betting edge. Models do not account for real-time injuries or confirmed lineups.</div>
+<h2>Forward prediction tracking</h2><div id="performance" class="stats"><p class="muted">Loading performance history…</p></div><p id="marketStatus" class="muted">Sportsbook odds: loading…</p><p id="playerStatus" class="muted">Player form research: loading…</p><div class="tabs" id="views"><button data-view="moneyline" class="selected">Moneyline</button><button data-view="spreads">Spreads</button><button data-view="totals">Over/Under</button><button data-view="props">Player Props</button><button data-view="research">Player Projections</button></div><div class="controls"><button data-league="all" class="active">All games</button><button data-league="nba">NBA</button><button data-league="nfl">NFL</button></div>
+<p id="status" class="muted" role="status">Loading prediction snapshot…</p><section class="cards" id="games" aria-label="Upcoming predictions"></section>
+<footer>Source: ESPN public scoreboard and Sports Edge AI historical model. Times displayed in your local timezone. Data refreshes when the scheduled GitHub workflow succeeds.</footer></main>
+<script>
+let snapshot=null,filter="all",market=null,view="moneyline",playerResearch=null;
+const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function researchSummary(){
+ const box=document.getElementById("playerStatus");
+ if(!playerResearch){box.textContent="Player form research unavailable; raw player results are being accumulated.";return}
+ const rows=playerResearch.projections||[];
+ const nba=rows.filter(p=>p.league==="nba").length,nfl=rows.filter(p=>p.league==="nfl").length;
+ box.textContent="Experimental player form averages: "+nba+" NBA / "+nfl+" NFL · requires 5+ completed games per player/stat · not validated and not yet matchup-specific.";
+}
+function render(){
+ const root=document.getElementById("games"),status=document.getElementById("status");
+ if(!snapshot){return}
+ if(view==="research"||view==="props"){
+   const rows=(playerResearch?.projections||[]).filter(p=>filter==="all"||p.league===filter);
+   status.textContent=(view==="props"?"Player prop research · ":"Experimental player-form projections · ")+rows.length+" eligible stat lines · minimum five completed games";
+   const grouped=new Map();
+   for(const p of rows){
+     const key=p.league+":"+p.player_id;
+     if(!grouped.has(key))grouped.set(key,{league:p.league,player:p.player,markets:[],games:p.games});
+     grouped.get(key).markets.push(p);
+   }
+   const people=[...grouped.values()].sort((a,b)=>a.player.localeCompare(b.player));
+   const propCount=(market?.player_props||[]).filter(q=>filter==="all"||q.league===filter).length;
+   const notice=view==="props"?'<p class="muted">Sportsbook player-prop lines collected: '+propCount+'. Estimates below are historical player-form averages, NOT sportsbook over/under lines or validated betting predictions.</p>':"";
+   const oddsRows=(market?.player_props||[]).filter(q=>filter==="all"||q.league===filter);
+   const oddsCards=view==="props"&&oddsRows.length?
+     '<h3 style="grid-column:1/-1">Collected sportsbook player-prop lines</h3>'+
+     oddsRows.slice(0,90).map(q=>'<article class="card"><div class="top"><span class="pill">'+safe(q.league.toUpperCase())+'</span><span>'+safe(q.sportsbook)+'</span></div><div class="match">'+safe(q.player)+'</div><div class="prob"><span>'+safe(q.market.replaceAll("_"," "))+'</span><strong>'+Number(q.line).toFixed(1)+'</strong></div><p class="mini">Over '+safe(q.over_american)+' / Under '+safe(q.under_american)+'</p><p class="muted mini">Odds snapshot · not live or a betting recommendation</p></article>').join('')+
+     '<h3 style="grid-column:1/-1">Historical player-form averages (not sportsbook lines)</h3>':"";
+   root.innerHTML=notice+oddsCards+(people.length?people.slice(0,120).map(p=>
+     '<article class="card"><div class="top"><span class="pill">'+safe(p.league.toUpperCase())+'</span><span>'+p.games+' completed games</span></div>'+
+     '<div class="match">'+safe(p.player)+'</div>'+
+     p.markets.map(q=>'<div class="prob"><span>'+safe(q.market.replaceAll("player_","").replaceAll("_"," "))+'</span><strong>'+Number(q.projected).toFixed(1)+'</strong></div>').join('')+
+     '<p class="muted mini">Last '+p.markets[0].window+' available games · experimental average, not a matchup-specific prediction</p></article>').join("")+
+     (people.length>120?'<p class="muted">Showing 120 of '+people.length+' players. Select NBA or NFL to narrow results.</p>':''):
+     '<p class="muted">No player projections with at least five completed games yet for this league. Historical collection continues daily.</p>');
+   return;
+ }
+ const games=snapshot.games.filter(g=>(filter==="all"||g.league===filter)&&new Date(g.start_time)>new Date());
+ status.textContent="Updated "+new Date(snapshot.generated_at).toLocaleString()+" · "+games.length+" upcoming games";
+ root.innerHTML=games.length?games.map(g=>{
+ const home=Number(g.home_win_probability),away=Number(g.away_win_probability);
+ const quotes=(market?.quotes||[]).filter(q=>q.league===g.league&&q.game_id===g.game_id&&!q.stale);
+ const priority=items=>items.find(q=>q.sportsbook==="betmgm")||items[0]||null;
+ const best=priority(quotes);
+ const projection=g.score_projection||{};
+ const lines=(market?.other_markets||[]).filter(q=>q.league===g.league&&q.game_id===g.game_id);
+ const spread=priority(lines.filter(q=>q.market==="spreads"));
+ const total=priority(lines.filter(q=>q.market==="totals"));
+ let detail="";
+ if(view==="spreads")detail=projection.status==="experimental"?
+ '<div class="market mini"><strong>Projected home margin: '+projection.projected_home_margin.toFixed(1)+'</strong><p>Projected score: '+projection.away_projected_points+' – '+projection.home_projected_points+'</p>'+(spread?'<p>'+safe(spread.sportsbook)+' spread: '+spread.home_spread+' · Estimated home cover: '+(spread.home_cover_probability===undefined?"Unavailable":(spread.home_cover_probability*100).toFixed(1)+"%")+'</p>':'<p class="muted">No matched sportsbook spread in the latest snapshot.</p>')+'</div>':'<p class="muted">Insufficient historical games for spread projection.</p>';
+ if(view==="totals")detail=projection.status==="experimental"?
+ '<div class="market mini"><strong>Projected total: '+projection.projected_total.toFixed(1)+'</strong>'+(total?'<p>'+safe(total.sportsbook)+' over/under: '+total.total_line+' · Estimated over: '+(total.over_probability===undefined?"Unavailable":(total.over_probability*100).toFixed(1)+"%")+'</p>':'<p class="muted">No matched sportsbook total in the latest snapshot.</p>')+'</div>':'<p class="muted">Insufficient historical games for totals projection.</p>';
+ if(view==="props"){
+ const props=(market?.player_props||[]).filter(q=>q.league===g.league&&q.game_id===g.game_id);
+ detail=props.length?'<div class="market mini"><strong>Player prop lines (BetMGM preferred; odds only)</strong><p class="muted">No player-stat projections or validated edges yet. Prices are snapshots.</p>'+
+ props.slice(0,24).map(p=>'<p>'+safe(p.sportsbook.toUpperCase())+' · '+safe(p.player)+' · '+safe(p.market.replaceAll("_"," "))+' '+Number(p.line)+' · Over '+Number(p.over_american)+' / Under '+Number(p.under_american)+'</p>').join('')+
+ (props.length>24?'<p class="muted">Showing first 24 of '+props.length+' markets</p>':'')+'</div>':
+ '<div class="market mini"><strong>No player prop lines collected for this game.</strong><p class="muted">On the free API plan, props are checked only on Mondays for one game per league when at least 50 credits remain. No historical prop prices are presented as current. Player-stat projections are not implemented.</p></div>';
+ }
+ const oddsHtml=best?'<div class="market"><strong>Research-only market comparison</strong><p class="muted">'+safe(best.sportsbook)+' · Home '+best.home_american+' / Away '+best.away_american+'</p><p>Estimated EV: Home '+(best.home_ev_per_unit*100).toFixed(1)+'% · Away '+(best.away_ev_per_unit*100).toFixed(1)+'%</p><p class="muted">Snapshot odds · not a validated betting edge.</p></div>':'<div class="market mini muted">No matched sportsbook moneyline available for this game in the latest snapshot. Model probability is shown separately.</div>';
+ return '<article class="card"><div class="top"><span class="pill">'+safe(g.league.toUpperCase())+'</span><time>'+safe(new Date(g.start_time).toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"}))+'</time></div>'+
+ '<div class="match">'+safe(g.away_team)+' @ '+safe(g.home_team)+'</div>'+
+ '<div class="prob"><span>'+safe(g.home_team)+'</span><strong>'+Math.round(home*100)+'%</strong></div>'+
+ '<div class="bar"><div class="fill" style="width:'+Math.max(0,Math.min(100,home*100))+'%"></div></div>'+
+ '<div class="prob"><span>'+safe(g.away_team)+'</span><strong>'+Math.round(away*100)+'%</strong></div>'+
+ '<p class="muted">'+safe(g.model.replaceAll("_"," "))+' · '+g.history_games+' historical games</p>'+(view==='moneyline'?oddsHtml:detail)+'</article>'
+ }).join(""):'<p class="muted">No upcoming predictions available for this filter. Check again after the next successful refresh.</p>';
+}
+document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{
+ view=b.dataset.view;document.querySelectorAll("[data-view]").forEach(x=>x.classList.toggle("selected",x===b));render();
+}));
+document.querySelectorAll("[data-league]").forEach(b=>b.addEventListener("click",()=>{
+ filter=b.dataset.league;document.querySelectorAll("[data-league]").forEach(x=>x.classList.toggle("active",x===b));render();
+}));
+Promise.allSettled([
+ fetch("./data/performance.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()}),
+ fetch("./data/market.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()})
+]).then(([p,m])=>{
+ if(p.status==="fulfilled"){
+  document.getElementById("performance").innerHTML=["nba","nfl"].map(l=>{
+   const v=p.value.by_league[l];
+   return '<div class="stat"><span>'+l.toUpperCase()+' · '+v.graded+' graded</span><strong>'+(v.accuracy===null?"Pending":(v.accuracy*100).toFixed(1)+"%")+'</strong><span class="muted">'+v.pending+' pending · Brier '+(v.brier===null?"—":v.brier.toFixed(3))+'</span></div>';
+  }).join("");
+ }else{document.getElementById("performance").textContent="Tracking starts after the next successful daily run.";}
+ if(m.status==="fulfilled"){
+  market=m.value;
+  document.getElementById("marketStatus").textContent=market.status==="not_configured"?"Sportsbook odds not connected — optional API key required.":"Market quotes: "+market.quotes.length+" moneylines, "+(market.other_markets||[]).length+" spread/total quotes, "+(market.player_props||[]).length+" player prop quotes (snapshot; research only)";
+  if(market.api_usage && Number.isInteger(market.api_usage.remaining))document.getElementById("marketStatus").textContent+=" · API credits remaining: "+market.api_usage.remaining;
+  render();
+ }else{document.getElementById("marketStatus").textContent="Sportsbook odds not available yet.";}
+});
+fetch("./data/player_projections.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()})
+.then(data=>{playerResearch=data;researchSummary();render()}).catch(()=>researchSummary());
+fetch("./data/predictions.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("No published prediction snapshot");return r.json()})
+.then(data=>{if(!Array.isArray(data.games))throw Error("Invalid prediction snapshot");snapshot=data;render()})
+.catch(e=>{document.getElementById("status").textContent="Predictions not published yet: "+e.message});
+</script></body></html>
