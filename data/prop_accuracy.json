@@ -1,0 +1,17 @@
+{
+  "status": "awaiting_first_run",
+  "by_league": {
+    "nba": {
+      "tracked": 0,
+      "pending": 0,
+      "graded": 0
+    },
+    "nfl": {
+      "tracked": 0,
+      "pending": 0,
+      "graded": 0
+    }
+  },
+  "recent_results": [],
+  "note": "Forward-only tracking starts with next pregame workflow run."
+}
