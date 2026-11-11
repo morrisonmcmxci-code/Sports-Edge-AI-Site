@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T19:42:54.230646+00:00",
+  "generated_at": "2026-11-11T19:52:31.151585+00:00",
   "status": "research_only_not_calibrated",
   "games": [
     {
@@ -43,7 +43,7 @@
       "sportsbooks": 9,
       "market_home_probability": 0.60924,
       "market_away_probability": 0.39076,
-      "book_probability_range_pp": 2.67,
+      "book_probability_range_pp": 0.97,
       "model_market_gap_pp": 5.41,
       "history_current": true,
       "data_completeness_checks": {
@@ -77,7 +77,7 @@
       "sportsbooks": 9,
       "market_home_probability": 0.34111,
       "market_away_probability": 0.65889,
-      "book_probability_range_pp": 1.88,
+      "book_probability_range_pp": 2.12,
       "model_market_gap_pp": 3.37,
       "history_current": true,
       "data_completeness_checks": {
@@ -143,10 +143,10 @@
       "game_id": "401909970",
       "status": "review_required",
       "sportsbooks": 9,
-      "market_home_probability": 0.40183,
-      "market_away_probability": 0.59817,
-      "book_probability_range_pp": 1.12,
-      "model_market_gap_pp": 25.62,
+      "market_home_probability": 0.40136,
+      "market_away_probability": 0.59864,
+      "book_probability_range_pp": 1.35,
+      "model_market_gap_pp": 25.66,
       "history_current": true,
       "data_completeness_checks": {
         "historical_games_current": true,
@@ -245,10 +245,10 @@
       "game_id": "401909973",
       "status": "screened_not_calibrated",
       "sportsbooks": 9,
-      "market_home_probability": 0.38835,
-      "market_away_probability": 0.61165,
-      "book_probability_range_pp": 1.32,
-      "model_market_gap_pp": 12.13,
+      "market_home_probability": 0.39076,
+      "market_away_probability": 0.60924,
+      "book_probability_range_pp": 1.45,
+      "model_market_gap_pp": 11.88,
       "history_current": true,
       "data_completeness_checks": {
         "historical_games_current": true,
@@ -281,7 +281,7 @@
       "sportsbooks": 9,
       "market_home_probability": 0.69621,
       "market_away_probability": 0.30379,
-      "book_probability_range_pp": 1.27,
+      "book_probability_range_pp": 1.7,
       "model_market_gap_pp": -14.69,
       "history_current": true,
       "data_completeness_checks": {
