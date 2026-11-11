@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-11-11T15:54:50.459120+00:00",
+  "status": "best_effort_unverified",
+  "by_league": {
+    "nba": {
+      "status": "fetched",
+      "records": 0,
+      "fetched_at": "2026-11-11T15:54:50.459120+00:00"
+    },
+    "nfl": {
+      "status": "fetched",
+      "records": 0,
+      "fetched_at": "2026-11-11T15:54:50.459120+00:00"
+    }
+  },
+  "injuries": []
+}
