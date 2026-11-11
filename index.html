@@ -31,7 +31,7 @@ function researchSummary(){
 // Research ranking, NOT calibrated win probability. Only exact unique name+league+market joins.
 function bestPropRows(){
  const ps=playerResearch?.projections||[], odds=market?.player_props||[];
- const normalize=n=>String(n||"").normalize("NFKD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
+ const normalize=n=>String(n||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
  const byName=new Map();
  for(const p of ps){
    const key=[p.league,normalize(p.player),p.market].join("|");
