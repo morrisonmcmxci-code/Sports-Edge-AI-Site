@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sports Edge AI | Game Predictions</title>
+<title>Sports Edge AI | Unified Dashboard v2</title><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
 <style>
 :root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#0b1020;color:#eef2ff}
 *{box-sizing:border-box}body{margin:0}header{padding:28px max(22px,calc((100vw - 1100px)/2));border-bottom:1px solid #273047;background:#111a2d}
@@ -13,13 +13,15 @@ h1{margin:0;font-size:clamp(25px,4vw,38px)}header p,.muted{color:#a6b4d1}main{ma
 .notice{border:1px solid #3d4b63;background:#192339;padding:14px;border-radius:10px;line-height:1.5}
 footer{margin:32px 0;color:#9caac4;font-size:13px}.stats{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}.stat{background:#18263e;border:1px solid #344665;padding:14px;border-radius:10px;min-width:150px;flex:1}.stat strong{display:block;font-size:24px;margin-top:6px}.market{border-top:1px solid #344665;padding-top:12px;margin-top:12px}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}.tabs button{background:#243551;color:#eef2ff;border:1px solid #405072;border-radius:7px;padding:7px 9px;cursor:pointer}.tabs button.selected{background:#2863cc}.mini{font-size:13px;line-height:1.7}.wide{grid-column:1/-1}.section-label{font-size:13px;font-weight:750;letter-spacing:.04em;color:#a9c8ff;text-transform:uppercase;border-top:1px solid #344665;margin-top:16px;padding-top:12px}.game-card{min-width:0}.stat-row{border-top:1px solid #2c3a52;padding:9px 0}.stat-row:first-of-type{border-top:0}.cards{grid-template-columns:repeat(auto-fill,minmax(min(100%,350px),1fr))}
 </style></head>
-<body><header><h1>Sports Edge AI</h1><p>Pregame NBA & NFL probability research</p></header>
+<body><header><h1>Sports Edge AI</h1><p>Pregame NBA & NFL probability research · Unified dashboard v2</p></header>
 <main><div class="notice">Experimental predictions, not betting recommendations. Odds require a connected API key; no verified betting edge. Models do not account for real-time injuries or confirmed lineups.</div>
 <h2>Forward prediction tracking</h2><div id="performance" class="stats"><p class="muted">Loading performance history…</p></div><p id="marketStatus" class="muted">Sportsbook odds: loading…</p><p id="playerStatus" class="muted">Player form research: loading…</p><div class="tabs" id="views"><button data-view="moneyline" class="selected">Games & Odds</button><button data-view="players">Players: Props & Projections</button><button data-view="bestprops">Best Player Props 80+</button><button data-view="accuracy">Daily Accuracy</button><button data-view="research">Player Projections</button></div><div class="controls"><button data-league="all" class="active">All games</button><button data-league="nba">NBA</button><button data-league="nfl">NFL</button></div>
 <p id="status" class="muted" role="status">Loading prediction snapshot…</p><section class="cards" id="games" aria-label="Upcoming predictions"></section>
-<footer>Source: ESPN public scoreboard and Sports Edge AI historical model. Times displayed in your local timezone. Data refreshes when the scheduled GitHub workflow succeeds.</footer></main>
+<footer>Dashboard version: unified-v2-20261111 · Source: ESPN public scoreboard and Sports Edge AI historical model. Times displayed in your local timezone. Data refreshes when the scheduled GitHub workflow succeeds.</footer></main>
 <script>
 let snapshot=null,filter="all",market=null,view="moneyline",playerResearch=null,propAccuracy=null;
+const DATA_REV="unified-v2-20261111";
+const dataUrl=path=>"./data/"+path+"?v="+DATA_REV;
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function researchSummary(){
  const box=document.getElementById("playerStatus");
@@ -191,8 +193,8 @@ document.querySelectorAll("[data-league]").forEach(b=>b.addEventListener("click"
  filter=b.dataset.league;document.querySelectorAll("[data-league]").forEach(x=>x.classList.toggle("active",x===b));render();
 }));
 Promise.allSettled([
- fetch("./data/performance.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()}),
- fetch("./data/market.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()})
+ fetch(dataUrl("performance.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()}),
+ fetch(dataUrl("market.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()})
 ]).then(([p,m])=>{
  if(p.status==="fulfilled"){
   window.gamePerformance=p.value;
@@ -208,10 +210,10 @@ Promise.allSettled([
   render();
  }else{document.getElementById("marketStatus").textContent="Sportsbook odds not available yet.";}
 });
-fetch("./data/prop_accuracy.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()}).then(d=>{propAccuracy=d;render()}).catch(()=>{});
-fetch("./data/player_projections.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()})
+fetch(dataUrl("prop_accuracy.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()}).then(d=>{propAccuracy=d;render()}).catch(()=>{});
+fetch(dataUrl("player_projections.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()})
 .then(data=>{playerResearch=data;researchSummary();render()}).catch(()=>researchSummary());
-fetch("./data/predictions.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("No published prediction snapshot");return r.json()})
+fetch(dataUrl("predictions.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("No published prediction snapshot");return r.json()})
 .then(data=>{if(!Array.isArray(data.games))throw Error("Invalid prediction snapshot");snapshot=data;render()})
 .catch(e=>{document.getElementById("status").textContent="Predictions not published yet: "+e.message});
 </script></body></html>
