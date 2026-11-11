@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T18:37:14.097424+00:00",
+  "generated_at": "2026-11-11T18:49:50.042451+00:00",
   "status": "research_only_not_calibrated",
   "games": [
     {
@@ -13,21 +13,23 @@
       "model_market_gap_pp": 33.89,
       "history_current": true,
       "market_disagreement": true,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "review_required",
-      "reason": "Market/model conflict or stale history"
+      "reason": "Market/model conflict, score/probability inconsistency, or stale history"
     },
     {
       "league": "nba",
       "game_id": "401909967",
       "status": "screened_not_calibrated",
       "sportsbooks": 9,
-      "market_home_probability": 0.59627,
-      "market_away_probability": 0.40373,
-      "book_probability_range_pp": 2.04,
-      "model_market_gap_pp": 8.55,
+      "market_home_probability": 0.60767,
+      "market_away_probability": 0.39233,
+      "book_probability_range_pp": 2.13,
+      "model_market_gap_pp": 7.41,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -43,6 +45,7 @@
       "model_market_gap_pp": -6.91,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -58,9 +61,10 @@
       "model_market_gap_pp": 28.76,
       "history_current": true,
       "market_disagreement": true,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "review_required",
-      "reason": "Market/model conflict or stale history"
+      "reason": "Market/model conflict, score/probability inconsistency, or stale history"
     },
     {
       "league": "nba",
@@ -73,6 +77,7 @@
       "model_market_gap_pp": -1.88,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -88,9 +93,10 @@
       "model_market_gap_pp": 15.32,
       "history_current": true,
       "market_disagreement": true,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "review_required",
-      "reason": "Market/model conflict or stale history"
+      "reason": "Market/model conflict, score/probability inconsistency, or stale history"
     },
     {
       "league": "nba",
@@ -103,6 +109,7 @@
       "model_market_gap_pp": 8.48,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -112,27 +119,29 @@
       "game_id": "401909973",
       "status": "review_required",
       "sportsbooks": 9,
-      "market_home_probability": 0.38597,
-      "market_away_probability": 0.61403,
-      "book_probability_range_pp": 2.98,
-      "model_market_gap_pp": -18.03,
+      "market_home_probability": 0.38944,
+      "market_away_probability": 0.61056,
+      "book_probability_range_pp": 1.32,
+      "model_market_gap_pp": -18.37,
       "history_current": true,
       "market_disagreement": true,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "review_required",
-      "reason": "Market/model conflict or stale history"
+      "reason": "Market/model conflict, score/probability inconsistency, or stale history"
     },
     {
       "league": "nba",
       "game_id": "401909974",
       "status": "screened_not_calibrated",
       "sportsbooks": 9,
-      "market_home_probability": 0.69466,
-      "market_away_probability": 0.30534,
-      "book_probability_range_pp": 2.83,
-      "model_market_gap_pp": -11.64,
+      "market_home_probability": 0.69621,
+      "market_away_probability": 0.30379,
+      "book_probability_range_pp": 2.94,
+      "model_market_gap_pp": -11.79,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -144,13 +153,14 @@
       "sportsbooks": 9,
       "market_home_probability": 0.48917,
       "market_away_probability": 0.51083,
-      "book_probability_range_pp": 2.16,
+      "book_probability_range_pp": 2.35,
       "model_market_gap_pp": -26.06,
       "history_current": true,
       "market_disagreement": true,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "review_required",
-      "reason": "Market/model conflict or stale history"
+      "reason": "Market/model conflict, score/probability inconsistency, or stale history"
     },
     {
       "league": "nba",
@@ -184,6 +194,7 @@
       "model_market_gap_pp": -11.61,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -269,6 +280,7 @@
       "model_market_gap_pp": 9.28,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -284,6 +296,7 @@
       "model_market_gap_pp": -1.17,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -295,10 +308,11 @@
       "sportsbooks": 9,
       "market_home_probability": 0.55831,
       "market_away_probability": 0.44169,
-      "book_probability_range_pp": 1.06,
+      "book_probability_range_pp": 2.0,
       "model_market_gap_pp": 5.0,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -314,6 +328,7 @@
       "model_market_gap_pp": -4.15,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -325,10 +340,11 @@
       "sportsbooks": 9,
       "market_home_probability": 0.18375,
       "market_away_probability": 0.81625,
-      "book_probability_range_pp": 1.64,
+      "book_probability_range_pp": 1.5,
       "model_market_gap_pp": 9.96,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -344,6 +360,7 @@
       "model_market_gap_pp": 4.4,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -359,6 +376,7 @@
       "model_market_gap_pp": -7.92,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -370,10 +388,11 @@
       "sportsbooks": 9,
       "market_home_probability": 0.61737,
       "market_away_probability": 0.38263,
-      "book_probability_range_pp": 2.33,
+      "book_probability_range_pp": 2.64,
       "model_market_gap_pp": -4.12,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -389,6 +408,7 @@
       "model_market_gap_pp": 4.89,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -404,6 +424,7 @@
       "model_market_gap_pp": -6.02,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -419,6 +440,7 @@
       "model_market_gap_pp": 10.56,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -434,6 +456,7 @@
       "model_market_gap_pp": -13.3,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
@@ -449,6 +472,7 @@
       "model_market_gap_pp": -4.68,
       "history_current": true,
       "market_disagreement": false,
+      "score_probability_conflict": false,
       "actionable": false,
       "reliability": "unvalidated",
       "reason": "No out-of-sample calibration; research only"
