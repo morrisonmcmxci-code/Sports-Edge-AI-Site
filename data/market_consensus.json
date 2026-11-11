@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T19:52:31.151585+00:00",
+  "generated_at": "2026-11-11T19:57:22.335000+00:00",
   "status": "research_only_not_calibrated",
   "games": [
     {
@@ -245,10 +245,10 @@
       "game_id": "401909973",
       "status": "screened_not_calibrated",
       "sportsbooks": 9,
-      "market_home_probability": 0.39076,
-      "market_away_probability": 0.60924,
-      "book_probability_range_pp": 1.45,
-      "model_market_gap_pp": 11.88,
+      "market_home_probability": 0.38453,
+      "market_away_probability": 0.61547,
+      "book_probability_range_pp": 1.54,
+      "model_market_gap_pp": 12.51,
       "history_current": true,
       "data_completeness_checks": {
         "historical_games_current": true,
@@ -311,23 +311,23 @@
     {
       "league": "nba",
       "game_id": "401909975",
-      "status": "review_required",
+      "status": "screened_not_calibrated",
       "sportsbooks": 9,
-      "market_home_probability": 0.4935,
-      "market_away_probability": 0.5065,
+      "market_home_probability": 0.49555,
+      "market_away_probability": 0.50445,
       "book_probability_range_pp": 1.18,
-      "model_market_gap_pp": 15.01,
+      "model_market_gap_pp": 14.81,
       "history_current": true,
       "data_completeness_checks": {
         "historical_games_current": true,
         "recent_team_samples_sufficient": true,
         "two_or_more_books": true,
         "starting_lineups_verified": false,
-        "market_model_within_15pp": false
+        "market_model_within_15pp": true
       },
-      "data_completeness_pct": 60,
+      "data_completeness_pct": 80,
       "data_completeness_is_not_win_probability": true,
-      "market_disagreement": true,
+      "market_disagreement": false,
       "score_probability_conflict": false,
       "score_probability_diagnostic": {
         "status": "experimental_not_calibrated",
@@ -339,8 +339,8 @@
         "actionable": false
       },
       "actionable": false,
-      "reliability": "review_required",
-      "reason": "Market/model conflict, score/probability inconsistency, or stale history"
+      "reliability": "unvalidated",
+      "reason": "No out-of-sample calibration; research only"
     },
     {
       "league": "nba",
@@ -574,10 +574,10 @@
       "game_id": "401873056",
       "status": "review_required",
       "sportsbooks": 9,
-      "market_home_probability": 0.32654,
-      "market_away_probability": 0.67346,
+      "market_home_probability": 0.32956,
+      "market_away_probability": 0.67044,
       "book_probability_range_pp": 0.89,
-      "model_market_gap_pp": 17.9,
+      "model_market_gap_pp": 17.59,
       "history_current": true,
       "data_completeness_checks": {
         "historical_games_current": true,

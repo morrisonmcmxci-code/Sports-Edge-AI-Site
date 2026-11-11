@@ -33,7 +33,15 @@
           "observed_home_win_rate": 1.0
         }
       ],
-      "auto_retraining_enabled": false
+      "auto_retraining_enabled": false,
+      "paired_player_shadow_comparison": {
+        "status": "insufficient_paired_games",
+        "graded": 0,
+        "minimum_paired_games": 100,
+        "live_model": null,
+        "player_shadow": null,
+        "winner_not_selected": true
+      }
     },
     "nfl": {
       "graded": 0,
@@ -41,7 +49,8 @@
       "brier": null,
       "log_loss": null,
       "calibration_bins": [],
-      "auto_retraining_enabled": false
+      "auto_retraining_enabled": false,
+      "paired_player_shadow_comparison": null
     }
   },
   "note": "First-seen pregame forecasts only; no in-sample weight fitting or ROI claim."
