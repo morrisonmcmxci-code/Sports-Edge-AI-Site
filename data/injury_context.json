@@ -1,18 +1,34 @@
 {
-  "generated_at": "2026-11-11T16:53:22.210765+00:00",
+  "generated_at": "2026-11-11T17:04:36.133899+00:00",
   "status": "best_effort_unverified",
   "by_league": {
     "nba": {
       "status": "empty_unverified",
       "records": 0,
-      "fetched_at": "2026-11-11T16:53:22.210765+00:00",
-      "source": "espn_public"
+      "fetched_at": "2026-11-11T17:04:36.133899+00:00",
+      "source": "espn_public",
+      "fallback": {
+        "teams_listed": 30,
+        "teams_checked": 30,
+        "team_endpoints_succeeded": 30,
+        "team_endpoints_failed": 0,
+        "teams_with_injuries": 0,
+        "status": "checked"
+      }
     },
     "nfl": {
       "status": "empty_unverified",
       "records": 0,
-      "fetched_at": "2026-11-11T16:53:22.210765+00:00",
-      "source": "espn_public"
+      "fetched_at": "2026-11-11T17:04:36.133899+00:00",
+      "source": "espn_public",
+      "fallback": {
+        "teams_listed": 32,
+        "teams_checked": 32,
+        "team_endpoints_succeeded": 32,
+        "team_endpoints_failed": 0,
+        "teams_with_injuries": 0,
+        "status": "checked"
+      }
     }
   },
   "injuries": []
