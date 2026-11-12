@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-12T12:31:15.234652+00:00",
+  "generated_at": "2026-11-12T13:50:16.528307+00:00",
   "status": "best_effort_unverified",
   "by_league": {
     "nba": {
       "status": "empty_unverified",
       "records": 0,
-      "fetched_at": "2026-11-12T12:31:15.234652+00:00",
+      "fetched_at": "2026-11-12T13:50:16.528307+00:00",
       "source": "espn_public",
       "fallback": {
         "teams_listed": 30,
@@ -19,7 +19,7 @@
     "nfl": {
       "status": "empty_unverified",
       "records": 0,
-      "fetched_at": "2026-11-12T12:31:15.234652+00:00",
+      "fetched_at": "2026-11-12T13:50:16.528307+00:00",
       "source": "espn_public",
       "fallback": {
         "teams_listed": 32,
