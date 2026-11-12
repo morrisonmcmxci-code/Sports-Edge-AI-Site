@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-11-12T17:44:55.566491+00:00",
+  "status": "walk_forward_research_only",
+  "selection_thresholds": {
+    "min_paired_holdout": 30,
+    "min_relative_mae_improvement": 0.03
+  },
+  "markets": {
+    "player_points": {
+      "baseline_samples": 3185,
+      "baseline_mae": 4.648,
+      "paired_samples": 3181,
+      "paired_baseline_mae": 4.649,
+      "paired_minutes_mae": 4.636,
+      "relative_improvement": 0.0029,
+      "selected_factor": "baseline",
+      "status": "baseline_retained_insufficient_evidence"
+    },
+    "player_rebounds": {
+      "baseline_samples": 3185,
+      "baseline_mae": 1.915,
+      "paired_samples": 3181,
+      "paired_baseline_mae": 1.916,
+      "paired_minutes_mae": 1.912,
+      "relative_improvement": 0.0023,
+      "selected_factor": "baseline",
+      "status": "baseline_retained_insufficient_evidence"
+    },
+    "player_assists": {
+      "baseline_samples": 3185,
+      "baseline_mae": 1.342,
+      "paired_samples": 3181,
+      "paired_baseline_mae": 1.341,
+      "paired_minutes_mae": 1.341,
+      "relative_improvement": 0.0005,
+      "selected_factor": "baseline",
+      "status": "baseline_retained_insufficient_evidence"
+    }
+  },
+  "caution": "Overlapping player histories and shared game outcomes are correlated; review independent time-period holdout before live promotion."
+}

@@ -3,33 +3,57 @@
   "min_samples_to_evaluate": 100,
   "by_league": {
     "nba": {
-      "graded": 6,
+      "graded": 16,
       "status": "insufficient_data",
-      "brier": 0.249,
-      "log_loss": 0.69672,
+      "brier": 0.24508,
+      "log_loss": 0.68081,
       "calibration_bins": [
         {
+          "range": "10-20%",
+          "count": 1,
+          "predicted_home_win_rate": 0.1902,
+          "observed_home_win_rate": 0.0
+        },
+        {
           "range": "20-30%",
-          "count": 3,
-          "predicted_home_win_rate": 0.2323,
-          "observed_home_win_rate": 0.3333
+          "count": 4,
+          "predicted_home_win_rate": 0.225,
+          "observed_home_win_rate": 0.5
         },
         {
           "range": "30-40%",
+          "count": 2,
+          "predicted_home_win_rate": 0.3649,
+          "observed_home_win_rate": 0.5
+        },
+        {
+          "range": "40-50%",
           "count": 1,
-          "predicted_home_win_rate": 0.3923,
-          "observed_home_win_rate": 1.0
+          "predicted_home_win_rate": 0.4099,
+          "observed_home_win_rate": 0.0
         },
         {
           "range": "50-60%",
+          "count": 4,
+          "predicted_home_win_rate": 0.5508,
+          "observed_home_win_rate": 0.0
+        },
+        {
+          "range": "60-70%",
           "count": 1,
-          "predicted_home_win_rate": 0.5541,
+          "predicted_home_win_rate": 0.6913,
           "observed_home_win_rate": 0.0
         },
         {
           "range": "70-80%",
+          "count": 2,
+          "predicted_home_win_rate": 0.7361,
+          "observed_home_win_rate": 1.0
+        },
+        {
+          "range": "90-100%",
           "count": 1,
-          "predicted_home_win_rate": 0.7627,
+          "predicted_home_win_rate": 0.953,
           "observed_home_win_rate": 1.0
         }
       ],

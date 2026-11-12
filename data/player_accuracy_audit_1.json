@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-11",
+  "timezone": "America/Chicago",
+  "generated_at": "2026-11-12T17:45:21.703731+00:00",
+  "by_league": {
+    "nba": {
+      "player_assists": {
+        "unique_player_games": 16,
+        "mean_absolute_error": 1.606,
+        "mean_signed_error": 0.588,
+        "within_2": 0.6875
+      },
+      "player_points": {
+        "unique_player_games": 20,
+        "mean_absolute_error": 4.733,
+        "mean_signed_error": 0.266,
+        "within_2": 0.3
+      },
+      "player_rebounds": {
+        "unique_player_games": 20,
+        "mean_absolute_error": 1.94,
+        "mean_signed_error": -0.387,
+        "within_2": 0.65
+      }
+    }
+  },
+  "retrospective_directional_agreement": {
+    "nba|player_assists": {
+      "correct": 22,
+      "wrong": 11,
+      "push": 0
+    },
+    "nba|player_points": {
+      "correct": 20,
+      "wrong": 30,
+      "push": 0
+    },
+    "nba|player_rebounds": {
+      "correct": 30,
+      "wrong": 18,
+      "push": 0
+    }
+  },
+  "cautions": [
+    "Projection error deduplicated by league/game/player/market.",
+    "Directional agreement is reconstructed from projected value vs line, not a frozen recommendation.",
+    "Multiple sportsbook lines for one player remain correlated; no ROI claim.",
+    "Rows with conflicting projections for one player/game/market are excluded."
+  ]
+}

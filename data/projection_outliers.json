@@ -1,0 +1,365 @@
+{
+  "generated_at": "2026-11-12T17:45:21.737500+00:00",
+  "status": "retrospective_error_audit_not_causal_attribution",
+  "thresholds": {
+    "player_points": 7.0,
+    "player_rebounds": 4.0,
+    "player_assists": 4.0
+  },
+  "by_market": {
+    "player_assists": {
+      "unique_player_games": 17,
+      "mean_absolute_error": 1.711,
+      "mean_signed_error": 0.354,
+      "large_miss_count": 0,
+      "large_miss_rate": 0.0
+    },
+    "player_points": {
+      "unique_player_games": 23,
+      "mean_absolute_error": 4.916,
+      "mean_signed_error": 0.79,
+      "large_miss_count": 7,
+      "large_miss_rate": 0.3043
+    },
+    "player_rebounds": {
+      "unique_player_games": 21,
+      "mean_absolute_error": 1.986,
+      "mean_signed_error": -0.507,
+      "large_miss_count": 2,
+      "large_miss_rate": 0.0952
+    }
+  },
+  "largest_misses": [
+    {
+      "player": "Aaron Nesmith",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_points",
+      "projected": 13.33,
+      "actual": 2.0,
+      "signed_error": 11.33,
+      "absolute_error": 11.33,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "RJ Barrett",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_points",
+      "projected": 21.96,
+      "actual": 12.0,
+      "signed_error": 9.96,
+      "absolute_error": 9.96,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Collin Murray-Boyles",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_points",
+      "projected": 13.39,
+      "actual": 5.0,
+      "signed_error": 8.39,
+      "absolute_error": 8.39,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Tre Johnson",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_points",
+      "projected": 6.67,
+      "actual": 15.0,
+      "signed_error": -8.33,
+      "absolute_error": 8.33,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Ja'Kobe Walter",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_points",
+      "projected": 9.95,
+      "actual": 17.0,
+      "signed_error": -7.05,
+      "absolute_error": 7.05,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Kyshawn George",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_points",
+      "projected": 18.0,
+      "actual": 25.0,
+      "signed_error": -7.0,
+      "absolute_error": 7.0,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Anthony Davis",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_points",
+      "projected": 28.0,
+      "actual": 21.0,
+      "signed_error": 7.0,
+      "absolute_error": 7.0,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Derrick White",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_points",
+      "projected": 12.21,
+      "actual": 19.0,
+      "signed_error": -6.79,
+      "absolute_error": 6.79,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Pascal Siakam",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_points",
+      "projected": 21.33,
+      "actual": 28.0,
+      "signed_error": -6.67,
+      "absolute_error": 6.67,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Neemias Queta",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_rebounds",
+      "projected": 7.16,
+      "actual": 13.0,
+      "signed_error": -5.84,
+      "absolute_error": 5.84,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Jakob Poeltl",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_points",
+      "projected": 11.8,
+      "actual": 6.0,
+      "signed_error": 5.8,
+      "absolute_error": 5.8,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Alex Sarr",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_points",
+      "projected": 10.67,
+      "actual": 5.0,
+      "signed_error": 5.67,
+      "absolute_error": 5.67,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Immanuel Quickley",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_points",
+      "projected": 16.67,
+      "actual": 11.0,
+      "signed_error": 5.67,
+      "absolute_error": 5.67,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Kyshawn George",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_rebounds",
+      "projected": 3.86,
+      "actual": 9.0,
+      "signed_error": -5.14,
+      "absolute_error": 5.14,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "AJ Dybantsa",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_points",
+      "projected": 16.71,
+      "actual": 13.0,
+      "signed_error": 3.71,
+      "absolute_error": 3.71,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Kelly Oubre Jr.",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_points",
+      "projected": 10.4,
+      "actual": 14.0,
+      "signed_error": -3.6,
+      "absolute_error": 3.6,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Trae Young",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_assists",
+      "projected": 7.43,
+      "actual": 4.0,
+      "signed_error": 3.43,
+      "absolute_error": 3.43,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "RJ Barrett",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_assists",
+      "projected": 3.6,
+      "actual": 7.0,
+      "signed_error": -3.4,
+      "absolute_error": 3.4,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Payton Pritchard",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_rebounds",
+      "projected": 4.35,
+      "actual": 1.0,
+      "signed_error": 3.35,
+      "absolute_error": 3.35,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Deandre Ayton",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_rebounds",
+      "projected": 5.29,
+      "actual": 2.0,
+      "signed_error": 3.29,
+      "absolute_error": 3.29,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Payton Pritchard",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_assists",
+      "projected": 4.14,
+      "actual": 1.0,
+      "signed_error": 3.14,
+      "absolute_error": 3.14,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Kyshawn George",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_assists",
+      "projected": 6.0,
+      "actual": 3.0,
+      "signed_error": 3.0,
+      "absolute_error": 3.0,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Anthony Davis",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_rebounds",
+      "projected": 10.0,
+      "actual": 13.0,
+      "signed_error": -3.0,
+      "absolute_error": 3.0,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Baylor Scheierman",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_rebounds",
+      "projected": 4.08,
+      "actual": 7.0,
+      "signed_error": -2.92,
+      "absolute_error": 2.92,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Deandre Ayton",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_points",
+      "projected": 4.86,
+      "actual": 2.0,
+      "signed_error": 2.86,
+      "absolute_error": 2.86,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Baylor Scheierman",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_points",
+      "projected": 6.23,
+      "actual": 9.0,
+      "signed_error": -2.77,
+      "absolute_error": 2.77,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Bilal Coulibaly",
+      "league": "nba",
+      "game_id": "401909966",
+      "market": "player_rebounds",
+      "projected": 3.33,
+      "actual": 6.0,
+      "signed_error": -2.67,
+      "absolute_error": 2.67,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Derrick White",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_assists",
+      "projected": 4.63,
+      "actual": 7.0,
+      "signed_error": -2.37,
+      "absolute_error": 2.37,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Jordan Walsh",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_points",
+      "projected": 3.77,
+      "actual": 6.0,
+      "signed_error": -2.23,
+      "absolute_error": 2.23,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    },
+    {
+      "player": "Immanuel Quickley",
+      "league": "nba",
+      "game_id": "401909968",
+      "market": "player_assists",
+      "projected": 6.2,
+      "actual": 4.0,
+      "signed_error": 2.2,
+      "absolute_error": 2.2,
+      "explanation": "unknown_without_verified_minutes_usage_injury_and_matchup_context"
+    }
+  ],
+  "caution": "Outliers are not evidence of injury, minutes or matchup effects without independently verified pregame and postgame context."
+}

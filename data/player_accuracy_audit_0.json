@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-12",
+  "timezone": "America/Chicago",
+  "generated_at": "2026-11-12T17:45:21.634646+00:00",
+  "by_league": {},
+  "retrospective_directional_agreement": {},
+  "cautions": [
+    "Projection error deduplicated by league/game/player/market.",
+    "Directional agreement is reconstructed from projected value vs line, not a frozen recommendation.",
+    "Multiple sportsbook lines for one player remain correlated; no ROI claim.",
+    "Rows with conflicting projections for one player/game/market are excluded."
+  ]
+}
