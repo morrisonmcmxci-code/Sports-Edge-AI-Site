@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-11-13T16:14:22.668022+00:00",
+  "status": "retrospective_reconstruction_not_frozen_challenger",
+  "coverage": {
+    "eligible_quotes": 251,
+    "insufficient_history": 0,
+    "insufficient_minutes": 0
+  },
+  "paired_quotes": 251,
+  "baseline": {
+    "graded": 251,
+    "wins": 142,
+    "losses": 109,
+    "pushes": 0,
+    "hit_rate": 0.5657,
+    "mean_absolute_error": 3.953,
+    "priced_picks": 251,
+    "flat_stake_roi": 0.0334
+  },
+  "challenger": {
+    "graded": 251,
+    "wins": 148,
+    "losses": 103,
+    "pushes": 0,
+    "hit_rate": 0.5896,
+    "mean_absolute_error": 3.985,
+    "priced_picks": 251,
+    "flat_stake_roi": 0.0795
+  },
+  "by_market": {
+    "player_points": {
+      "baseline": {
+        "graded": 103,
+        "wins": 59,
+        "losses": 44,
+        "pushes": 0,
+        "hit_rate": 0.5728,
+        "mean_absolute_error": 6.434,
+        "priced_picks": 103,
+        "flat_stake_roi": 0.0719
+      },
+      "challenger": {
+        "graded": 103,
+        "wins": 61,
+        "losses": 42,
+        "pushes": 0,
+        "hit_rate": 0.5922,
+        "mean_absolute_error": 6.513,
+        "priced_picks": 103,
+        "flat_stake_roi": 0.1085
+      }
+    },
+    "player_assists": {
+      "baseline": {
+        "graded": 66,
+        "wins": 33,
+        "losses": 33,
+        "pushes": 0,
+        "hit_rate": 0.5,
+        "mean_absolute_error": 2.452,
+        "priced_picks": 66,
+        "flat_stake_roi": -0.1274
+      },
+      "challenger": {
+        "graded": 66,
+        "wins": 34,
+        "losses": 32,
+        "pushes": 0,
+        "hit_rate": 0.5152,
+        "mean_absolute_error": 2.473,
+        "priced_picks": 66,
+        "flat_stake_roi": -0.095
+      }
+    },
+    "player_rebounds": {
+      "baseline": {
+        "graded": 82,
+        "wins": 50,
+        "losses": 32,
+        "pushes": 0,
+        "hit_rate": 0.6098,
+        "mean_absolute_error": 2.045,
+        "priced_picks": 82,
+        "flat_stake_roi": 0.1146
+      },
+      "challenger": {
+        "graded": 82,
+        "wins": 53,
+        "losses": 29,
+        "pushes": 0,
+        "hit_rate": 0.6463,
+        "mean_absolute_error": 2.026,
+        "priced_picks": 82,
+        "flat_stake_roi": 0.1835
+      }
+    }
+  },
+  "limitations": [
+    "Historical player statistics are cut off strictly before each tipoff.",
+    "The comparison reconstructs both methods from current archived boxscores; it is not a historical record of published picks.",
+    "No historical injury/lineup reconstruction; no model promotion from this report alone.",
+    "Only NBA markets with both eligible models and a recorded pregame sportsbook line are compared.",
+    "Repeated games may be correlated; odds and game stats require independent validation."
+  ]
+}

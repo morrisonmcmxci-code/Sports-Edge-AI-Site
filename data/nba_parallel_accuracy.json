@@ -1,0 +1,20 @@
+{
+  "status": "prospective_frozen_pregame_comparison",
+  "models": {
+    "baseline": {
+      "games": 0,
+      "winner_accuracy": null,
+      "margin_mae": null,
+      "total_mae": null,
+      "moneyline_brier": null
+    },
+    "challenger": {
+      "games": 0,
+      "winner_accuracy": null,
+      "margin_mae": null,
+      "total_mae": null,
+      "moneyline_brier": null
+    }
+  },
+  "note": "Only first-seen forecasts captured before tipoff; uncalibrated moneyline probabilities; no odds-based ROI."
+}

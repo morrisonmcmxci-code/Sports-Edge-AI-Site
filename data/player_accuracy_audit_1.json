@@ -1,43 +1,78 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "timezone": "America/Chicago",
-  "generated_at": "2026-11-12T17:45:21.703731+00:00",
+  "generated_at": "2026-11-13T16:14:22.828360+00:00",
   "by_league": {
     "nba": {
       "player_assists": {
-        "unique_player_games": 16,
-        "mean_absolute_error": 1.606,
-        "mean_signed_error": 0.588,
-        "within_2": 0.6875
+        "unique_player_games": 10,
+        "mean_absolute_error": 2.946,
+        "mean_signed_error": -1.478,
+        "within_2": 0.5
       },
       "player_points": {
-        "unique_player_games": 20,
-        "mean_absolute_error": 4.733,
-        "mean_signed_error": 0.266,
-        "within_2": 0.3
+        "unique_player_games": 13,
+        "mean_absolute_error": 9.166,
+        "mean_signed_error": -5.209,
+        "within_2": 0.1538
       },
       "player_rebounds": {
-        "unique_player_games": 20,
-        "mean_absolute_error": 1.94,
-        "mean_signed_error": -0.387,
-        "within_2": 0.65
+        "unique_player_games": 11,
+        "mean_absolute_error": 2.212,
+        "mean_signed_error": -0.883,
+        "within_2": 0.4545
+      }
+    },
+    "nfl": {
+      "player_reception_yds": {
+        "unique_player_games": 9,
+        "mean_absolute_error": 28.529,
+        "mean_signed_error": -2.691,
+        "within_2": 0.0
+      },
+      "player_receptions": {
+        "unique_player_games": 9,
+        "mean_absolute_error": 1.324,
+        "mean_signed_error": -0.058,
+        "within_2": 0.7778
+      },
+      "player_rush_yds": {
+        "unique_player_games": 2,
+        "mean_absolute_error": 11.9,
+        "mean_signed_error": -11.9,
+        "within_2": 0.0
       }
     }
   },
   "retrospective_directional_agreement": {
     "nba|player_assists": {
-      "correct": 22,
-      "wrong": 11,
+      "correct": 9,
+      "wrong": 19,
       "push": 0
     },
     "nba|player_points": {
-      "correct": 20,
-      "wrong": 30,
+      "correct": 17,
+      "wrong": 18,
       "push": 0
     },
     "nba|player_rebounds": {
-      "correct": 30,
-      "wrong": 18,
+      "correct": 19,
+      "wrong": 12,
+      "push": 0
+    },
+    "nfl|player_reception_yds": {
+      "correct": 18,
+      "wrong": 28,
+      "push": 0
+    },
+    "nfl|player_receptions": {
+      "correct": 24,
+      "wrong": 7,
+      "push": 0
+    },
+    "nfl|player_rush_yds": {
+      "correct": 4,
+      "wrong": 6,
       "push": 0
     }
   },
