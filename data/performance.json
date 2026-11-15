@@ -3,12 +3,12 @@
   "by_league": {
     "nba": {
       "tracked": 43,
-      "pending": 23,
+      "pending": 9,
       "pushes": 0,
-      "graded": 20,
-      "correct": 11,
-      "accuracy": 0.55,
-      "brier": 0.2202
+      "graded": 34,
+      "correct": 19,
+      "accuracy": 0.5588,
+      "brier": 0.2487
     },
     "nfl": {
       "tracked": 15,
