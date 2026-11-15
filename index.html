@@ -38,7 +38,7 @@ footer{margin:32px 0;color:#9caac4;font-size:13px}.stats{display:flex;gap:12px;f
 <footer>Dashboard version: unified-v5-player-dates-20261111 · Source: ESPN public scoreboard and Sports Edge AI historical model. Times displayed in your local timezone. Data refreshes when the scheduled GitHub workflow succeeds.</footer></main>
 <script>
 let snapshot=null,filter="all",market=null,view="moneyline",playerResearch=null,propAccuracy=null,playerQuery="",propMarketFilter="all",propSort="player";
-const DATA_REV="compact-prop-table-v1-20261111";
+const DATA_REV="roster-verified-prop-v2-20261115";
 const dataUrl=path=>"./data/"+path+"?v="+DATA_REV;
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function researchSummary(){
@@ -249,7 +249,7 @@ function render(){
   const filtered=data.filter(x=>x.p.player.toLowerCase().includes(playerQuery.toLowerCase()));
   const body=filtered.slice(0,500).map(({p,game,q,gap})=>{
    const date=game?new Date(game.start_time).toLocaleString(undefined,{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}):"No scheduled game";
-   const match=game?game.away_team+" @ "+game.home_team:"Historical form";
+   const match=game?game.away_team+" @ "+game.home_team:"Matchup unverified";
    const projected=p.status==="experimental"&&Number.isFinite(Number(p.projected))?fmt(p.projected):"—";
    const oddsText=q?"O "+signed(q.over_american)+" / U "+signed(q.under_american):"—";
    return '<tr data-player="'+safe(p.player.toLowerCase())+'"><td><div class="prop-player">'+safe(p.player)+'</div><div class="prop-sub">'+safe(p.league.toUpperCase())+' · '+Number(p.games||0)+' games</div></td>'+
@@ -259,7 +259,7 @@ function render(){
     '<td>'+(q?'<span class="prop-strong">'+fmt(q.line)+'</span><div class="prop-sub">'+safe(q.sportsbook)+'</div>':'<span class="prop-chip stale">No fresh line</span>')+'</td>'+
     '<td>'+(gap===null?'<span class="prop-sub">—</span>':'<strong class="prop-diff '+(gap>=0?"positive":"negative")+'">'+(gap>0?"+":"")+gap.toFixed(1)+'</strong>')+'</td>'+
     '<td>'+safe(oddsText)+'</td>'+
-    '<td>'+(q?'<span class="prop-chip fresh">Recent quote</span>':p.status==="experimental"?'<span class="prop-chip">Form only</span>':'<span class="prop-chip stale">Limited history</span>')+'</td></tr>';
+    '<td>'+(q?'<span class="prop-chip fresh">Recent quote</span>':!game?'<span class="prop-chip stale">Team unverified</span>':p.status==="experimental"?'<span class="prop-chip">Form only</span>':'<span class="prop-chip stale">Limited history</span>')+'</td></tr>';
   }).join("");
   status.textContent=filtered.length+" player/stat records · "+filtered.filter(x=>x.q).length+" with recent matched lines · research projections only";
   root.innerHTML=propToolbar()+'<p class="prop-summary">NBA/NFL player form, next matchup, model average, sportsbook line and projection gap. Missing lines and insufficient data are shown explicitly; a gap is not a validated betting edge.</p>'+
@@ -293,6 +293,7 @@ Promise.allSettled([
   market=m.value;
   document.getElementById("marketStatus").textContent=market.status==="not_configured"?"Sportsbook odds not connected — optional API key required.":"Market quotes: "+market.quotes.length+" moneylines, "+(market.other_markets||[]).length+" spread/total quotes, "+(market.player_props||[]).length+" player prop quotes (snapshot; research only)";
   if(market.api_usage && Number.isInteger(market.api_usage.remaining))document.getElementById("marketStatus").textContent+=" · API credits remaining: "+market.api_usage.remaining;
+  if(market.player_props_diagnostics){const d=market.player_props_diagnostics;document.getElementById("marketStatus").textContent+=" · Prop collection: "+String(d.collection_status||"unknown")+" · Events requested: "+Object.values(d.requested_games||{}).reduce((a,b)=>a+Number(b||0),0);}
   render();
  }else{document.getElementById("marketStatus").textContent="Sportsbook odds not available yet.";}
 });

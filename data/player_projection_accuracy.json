@@ -1,0 +1,428 @@
+{
+  "generated_at": "2026-11-15T13:58:28.479642+00:00",
+  "status": "frozen_pregame_projections_no_sportsbook_required",
+  "windows": {
+    "yesterday": {
+      "by_market": {},
+      "by_model": {}
+    },
+    "last_7_days": {
+      "by_market": {
+        "nba|player_assists": {
+          "baseline": {
+            "frozen": 259,
+            "graded": 0,
+            "pending": 259,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          },
+          "minutes_adjusted": {
+            "frozen": 258,
+            "graded": 0,
+            "pending": 258,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nba|player_points": {
+          "baseline": {
+            "frozen": 259,
+            "graded": 0,
+            "pending": 259,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          },
+          "minutes_adjusted": {
+            "frozen": 258,
+            "graded": 0,
+            "pending": 258,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nba|player_rebounds": {
+          "baseline": {
+            "frozen": 259,
+            "graded": 0,
+            "pending": 259,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          },
+          "minutes_adjusted": {
+            "frozen": 258,
+            "graded": 0,
+            "pending": 258,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_pass_tds": {
+          "baseline": {
+            "frozen": 24,
+            "graded": 0,
+            "pending": 24,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_pass_yds": {
+          "baseline": {
+            "frozen": 24,
+            "graded": 0,
+            "pending": 24,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_reception_yds": {
+          "baseline": {
+            "frozen": 206,
+            "graded": 0,
+            "pending": 206,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_receptions": {
+          "baseline": {
+            "frozen": 206,
+            "graded": 0,
+            "pending": 206,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_rush_yds": {
+          "baseline": {
+            "frozen": 83,
+            "graded": 0,
+            "pending": 83,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        }
+      },
+      "by_model": {
+        "baseline": {
+          "frozen": 1320,
+          "graded": 0,
+          "pending": 1320,
+          "mae": null,
+          "within_2": null,
+          "within_5": null,
+          "mean_signed_error": null
+        },
+        "minutes_adjusted": {
+          "frozen": 774,
+          "graded": 0,
+          "pending": 774,
+          "mae": null,
+          "within_2": null,
+          "within_5": null,
+          "mean_signed_error": null
+        }
+      }
+    },
+    "last_30_days": {
+      "by_market": {
+        "nba|player_assists": {
+          "baseline": {
+            "frozen": 259,
+            "graded": 0,
+            "pending": 259,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          },
+          "minutes_adjusted": {
+            "frozen": 258,
+            "graded": 0,
+            "pending": 258,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nba|player_points": {
+          "baseline": {
+            "frozen": 259,
+            "graded": 0,
+            "pending": 259,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          },
+          "minutes_adjusted": {
+            "frozen": 258,
+            "graded": 0,
+            "pending": 258,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nba|player_rebounds": {
+          "baseline": {
+            "frozen": 259,
+            "graded": 0,
+            "pending": 259,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          },
+          "minutes_adjusted": {
+            "frozen": 258,
+            "graded": 0,
+            "pending": 258,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_pass_tds": {
+          "baseline": {
+            "frozen": 24,
+            "graded": 0,
+            "pending": 24,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_pass_yds": {
+          "baseline": {
+            "frozen": 24,
+            "graded": 0,
+            "pending": 24,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_reception_yds": {
+          "baseline": {
+            "frozen": 206,
+            "graded": 0,
+            "pending": 206,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_receptions": {
+          "baseline": {
+            "frozen": 206,
+            "graded": 0,
+            "pending": 206,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_rush_yds": {
+          "baseline": {
+            "frozen": 83,
+            "graded": 0,
+            "pending": 83,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        }
+      },
+      "by_model": {
+        "baseline": {
+          "frozen": 1320,
+          "graded": 0,
+          "pending": 1320,
+          "mae": null,
+          "within_2": null,
+          "within_5": null,
+          "mean_signed_error": null
+        },
+        "minutes_adjusted": {
+          "frozen": 774,
+          "graded": 0,
+          "pending": 774,
+          "mae": null,
+          "within_2": null,
+          "within_5": null,
+          "mean_signed_error": null
+        }
+      }
+    },
+    "all_recorded": {
+      "by_market": {
+        "nba|player_assists": {
+          "baseline": {
+            "frozen": 435,
+            "graded": 0,
+            "pending": 435,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          },
+          "minutes_adjusted": {
+            "frozen": 434,
+            "graded": 0,
+            "pending": 434,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nba|player_points": {
+          "baseline": {
+            "frozen": 435,
+            "graded": 0,
+            "pending": 435,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          },
+          "minutes_adjusted": {
+            "frozen": 434,
+            "graded": 0,
+            "pending": 434,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nba|player_rebounds": {
+          "baseline": {
+            "frozen": 435,
+            "graded": 0,
+            "pending": 435,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          },
+          "minutes_adjusted": {
+            "frozen": 434,
+            "graded": 0,
+            "pending": 434,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_pass_tds": {
+          "baseline": {
+            "frozen": 36,
+            "graded": 0,
+            "pending": 36,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_pass_yds": {
+          "baseline": {
+            "frozen": 36,
+            "graded": 0,
+            "pending": 36,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_reception_yds": {
+          "baseline": {
+            "frozen": 266,
+            "graded": 0,
+            "pending": 266,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_receptions": {
+          "baseline": {
+            "frozen": 266,
+            "graded": 0,
+            "pending": 266,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        },
+        "nfl|player_rush_yds": {
+          "baseline": {
+            "frozen": 113,
+            "graded": 0,
+            "pending": 113,
+            "mae": null,
+            "within_2": null,
+            "within_5": null,
+            "mean_signed_error": null
+          }
+        }
+      },
+      "by_model": {
+        "baseline": {
+          "frozen": 2022,
+          "graded": 0,
+          "pending": 2022,
+          "mae": null,
+          "within_2": null,
+          "within_5": null,
+          "mean_signed_error": null
+        },
+        "minutes_adjusted": {
+          "frozen": 1302,
+          "graded": 0,
+          "pending": 1302,
+          "mae": null,
+          "within_2": null,
+          "within_5": null,
+          "mean_signed_error": null
+        }
+      }
+    }
+  },
+  "note": "Accuracy means projection error and within-X-stat tolerance, NOT over/under betting hit rate. Frozen predictions are never recreated after tipoff."
+}
