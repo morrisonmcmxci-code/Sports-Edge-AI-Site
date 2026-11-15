@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-12",
-  "generated_at": "2026-11-13T16:13:17.560677+00:00",
+  "date": "2026-11-14",
+  "generated_at": "2026-11-15T13:23:25.780814+00:00",
   "status": "retrospective_reconstructed_comparison_not_frozen_pregame_predictions",
-  "games_with_results": 4,
-  "paired_games": 4,
-  "baseline_margin_mae": 12.75,
-  "challenger_margin_mae": 14.65,
-  "baseline_total_mae": 22.825,
-  "challenger_total_mae": 22.825,
+  "games_with_results": 5,
+  "paired_games": 5,
+  "baseline_margin_mae": 13.42,
+  "challenger_margin_mae": 12.944,
+  "baseline_total_mae": 12.7,
+  "challenger_total_mae": 12.7,
   "limitations": [
     "Only game score history and player boxscore histories before tipoff enter features.",
     "No possession/pace or defensive efficiency inputs available; not a possession-based model.",
@@ -18,92 +18,114 @@
   ],
   "games": [
     {
-      "game_id": "401909976",
-      "matchup": "Toronto Raptors @ Philadelphia 76ers",
-      "actual_home": 123,
-      "actual_away": 112,
-      "actual_total": 235,
-      "actual_margin": 11,
+      "game_id": "401909980",
+      "matchup": "Denver Nuggets @ New Orleans Pelicans",
+      "actual_home": 108,
+      "actual_away": 116,
+      "actual_total": 224,
+      "actual_margin": -8,
       "status": "shadow_challenger",
       "reconstructed_baseline": {
-        "total": 227.9,
-        "margin": 0.0,
-        "total_absolute_error": 7.1,
-        "margin_absolute_error": 11.0
+        "total": 234.0,
+        "margin": -6.3,
+        "total_absolute_error": 10.0,
+        "margin_absolute_error": 1.7
       },
       "player_aware_challenger": {
-        "total": 227.9,
-        "margin": -2.46,
-        "total_absolute_error": 7.1,
-        "margin_absolute_error": 13.46
+        "total": 234.0,
+        "margin": -4.91,
+        "total_absolute_error": 10.0,
+        "margin_absolute_error": 3.09
       },
-      "player_margin": -9.83
+      "player_margin": -0.73
     },
     {
-      "game_id": "401909977",
-      "matchup": "Detroit Pistons @ Washington Wizards",
-      "actual_home": 140,
-      "actual_away": 144,
-      "actual_total": 284,
-      "actual_margin": -4,
+      "game_id": "401909981",
+      "matchup": "Dallas Mavericks @ Cleveland Cavaliers",
+      "actual_home": 127,
+      "actual_away": 117,
+      "actual_total": 244,
+      "actual_margin": 10,
       "status": "shadow_challenger",
       "reconstructed_baseline": {
-        "total": 225.5,
-        "margin": -7.5,
-        "total_absolute_error": 58.5,
-        "margin_absolute_error": 3.5
+        "total": 229.8,
+        "margin": 2.2,
+        "total_absolute_error": 14.2,
+        "margin_absolute_error": 7.8
       },
       "player_aware_challenger": {
-        "total": 225.5,
-        "margin": -7.76,
-        "total_absolute_error": 58.5,
-        "margin_absolute_error": 3.76
+        "total": 229.8,
+        "margin": 1.34,
+        "total_absolute_error": 14.2,
+        "margin_absolute_error": 8.66
       },
-      "player_margin": -8.53
+      "player_margin": -1.26
     },
     {
-      "game_id": "401909978",
-      "matchup": "Dallas Mavericks @ Minnesota Timberwolves",
-      "actual_home": 133,
-      "actual_away": 94,
-      "actual_total": 227,
-      "actual_margin": 39,
+      "game_id": "401909982",
+      "matchup": "Detroit Pistons @ Miami Heat",
+      "actual_home": 137,
+      "actual_away": 117,
+      "actual_total": 254,
+      "actual_margin": 20,
       "status": "shadow_challenger",
       "reconstructed_baseline": {
-        "total": 227.3,
-        "margin": 3.6,
-        "total_absolute_error": 0.3,
-        "margin_absolute_error": 35.4
+        "total": 233.9,
+        "margin": -1.6,
+        "total_absolute_error": 20.1,
+        "margin_absolute_error": 21.6
       },
       "player_aware_challenger": {
-        "total": 227.3,
-        "margin": 0.58,
-        "total_absolute_error": 0.3,
-        "margin_absolute_error": 38.42
+        "total": 233.9,
+        "margin": -0.53,
+        "total_absolute_error": 20.1,
+        "margin_absolute_error": 20.53
       },
-      "player_margin": -8.48
+      "player_margin": 2.68
     },
     {
-      "game_id": "401909979",
-      "matchup": "Charlotte Hornets @ Phoenix Suns",
-      "actual_home": 101,
-      "actual_away": 96,
-      "actual_total": 197,
-      "actual_margin": 5,
+      "game_id": "401909983",
+      "matchup": "Brooklyn Nets @ Memphis Grizzlies",
+      "actual_home": 129,
+      "actual_away": 110,
+      "actual_total": 239,
+      "actual_margin": 19,
       "status": "shadow_challenger",
       "reconstructed_baseline": {
-        "total": 222.4,
-        "margin": 6.1,
-        "total_absolute_error": 25.4,
-        "margin_absolute_error": 1.1
+        "total": 229.9,
+        "margin": 4.4,
+        "total_absolute_error": 9.1,
+        "margin_absolute_error": 14.6
       },
       "player_aware_challenger": {
-        "total": 222.4,
-        "margin": 7.96,
-        "total_absolute_error": 25.4,
-        "margin_absolute_error": 2.96
+        "total": 229.9,
+        "margin": 4.75,
+        "total_absolute_error": 9.1,
+        "margin_absolute_error": 14.25
       },
-      "player_margin": 13.55
+      "player_margin": 5.8
+    },
+    {
+      "game_id": "401909984",
+      "matchup": "Chicago Bulls @ Minnesota Timberwolves",
+      "actual_home": 106,
+      "actual_away": 117,
+      "actual_total": 223,
+      "actual_margin": -11,
+      "status": "shadow_challenger",
+      "reconstructed_baseline": {
+        "total": 233.1,
+        "margin": 10.4,
+        "total_absolute_error": 10.1,
+        "margin_absolute_error": 21.4
+      },
+      "player_aware_challenger": {
+        "total": 233.1,
+        "margin": 7.19,
+        "total_absolute_error": 10.1,
+        "margin_absolute_error": 18.19
+      },
+      "player_margin": -2.44
     }
   ]
 }
