@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:57:43.477057+00:00",
+  "generated_at": "2026-11-16T11:55:53.797428+00:00",
   "status": "walk_forward_research_only",
   "selection_thresholds": {
     "min_paired_holdout": 30,
@@ -7,19 +7,19 @@
   },
   "markets": {
     "player_points": {
-      "baseline_samples": 3562,
-      "baseline_mae": 4.673,
-      "paired_samples": 3558,
-      "paired_baseline_mae": 4.675,
-      "paired_minutes_mae": 4.66,
-      "relative_improvement": 0.0031,
+      "baseline_samples": 3753,
+      "baseline_mae": 4.708,
+      "paired_samples": 3749,
+      "paired_baseline_mae": 4.71,
+      "paired_minutes_mae": 4.696,
+      "relative_improvement": 0.0028,
       "selected_factor": "baseline",
       "status": "baseline_retained_insufficient_evidence"
     },
     "player_rebounds": {
-      "baseline_samples": 3562,
+      "baseline_samples": 3753,
       "baseline_mae": 1.914,
-      "paired_samples": 3558,
+      "paired_samples": 3749,
       "paired_baseline_mae": 1.915,
       "paired_minutes_mae": 1.911,
       "relative_improvement": 0.0023,
@@ -27,12 +27,12 @@
       "status": "baseline_retained_insufficient_evidence"
     },
     "player_assists": {
-      "baseline_samples": 3562,
-      "baseline_mae": 1.347,
-      "paired_samples": 3558,
-      "paired_baseline_mae": 1.347,
-      "paired_minutes_mae": 1.347,
-      "relative_improvement": 0.0003,
+      "baseline_samples": 3753,
+      "baseline_mae": 1.348,
+      "paired_samples": 3749,
+      "paired_baseline_mae": 1.348,
+      "paired_minutes_mae": 1.348,
+      "relative_improvement": 0.0002,
       "selected_factor": "baseline",
       "status": "baseline_retained_insufficient_evidence"
     }

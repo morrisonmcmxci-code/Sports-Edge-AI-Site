@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-14",
-  "generated_at": "2026-11-15T13:56:48.440177+00:00",
+  "date": "2026-11-15",
+  "generated_at": "2026-11-16T11:54:53.018194+00:00",
   "status": "retrospective_reconstructed_comparison_not_frozen_pregame_predictions",
-  "games_with_results": 5,
-  "paired_games": 5,
-  "baseline_margin_mae": 13.42,
-  "challenger_margin_mae": 12.944,
-  "baseline_total_mae": 12.7,
-  "challenger_total_mae": 12.7,
+  "games_with_results": 9,
+  "paired_games": 9,
+  "baseline_margin_mae": 9.856,
+  "challenger_margin_mae": 10.082,
+  "baseline_total_mae": 14.756,
+  "challenger_total_mae": 14.756,
   "limitations": [
     "Only game score history and player boxscore histories before tipoff enter features.",
     "No possession/pace or defensive efficiency inputs available; not a possession-based model.",
@@ -18,114 +18,202 @@
   ],
   "games": [
     {
-      "game_id": "401909980",
-      "matchup": "Denver Nuggets @ New Orleans Pelicans",
-      "actual_home": 108,
-      "actual_away": 116,
-      "actual_total": 224,
+      "game_id": "401909985",
+      "matchup": "Indiana Pacers @ Philadelphia 76ers",
+      "actual_home": 131,
+      "actual_away": 124,
+      "actual_total": 255,
+      "actual_margin": 7,
+      "status": "shadow_challenger",
+      "reconstructed_baseline": {
+        "total": 226.8,
+        "margin": 1.0,
+        "total_absolute_error": 28.2,
+        "margin_absolute_error": 6.0
+      },
+      "player_aware_challenger": {
+        "total": 226.8,
+        "margin": 0.47,
+        "total_absolute_error": 28.2,
+        "margin_absolute_error": 6.53
+      },
+      "player_margin": -1.14
+    },
+    {
+      "game_id": "401909986",
+      "matchup": "Los Angeles Lakers @ Phoenix Suns",
+      "actual_home": 123,
+      "actual_away": 131,
+      "actual_total": 254,
       "actual_margin": -8,
       "status": "shadow_challenger",
       "reconstructed_baseline": {
-        "total": 234.0,
-        "margin": -6.3,
-        "total_absolute_error": 10.0,
-        "margin_absolute_error": 1.7
+        "total": 228.7,
+        "margin": -1.5,
+        "total_absolute_error": 25.3,
+        "margin_absolute_error": 6.5
       },
       "player_aware_challenger": {
-        "total": 234.0,
-        "margin": -4.91,
-        "total_absolute_error": 10.0,
-        "margin_absolute_error": 3.09
+        "total": 228.7,
+        "margin": -3.38,
+        "total_absolute_error": 25.3,
+        "margin_absolute_error": 4.62
       },
-      "player_margin": -0.73
+      "player_margin": -9.03
     },
     {
-      "game_id": "401909981",
-      "matchup": "Dallas Mavericks @ Cleveland Cavaliers",
-      "actual_home": 127,
-      "actual_away": 117,
-      "actual_total": 244,
-      "actual_margin": 10,
+      "game_id": "401909987",
+      "matchup": "Charlotte Hornets @ LA Clippers",
+      "actual_home": 113,
+      "actual_away": 105,
+      "actual_total": 218,
+      "actual_margin": 8,
       "status": "shadow_challenger",
       "reconstructed_baseline": {
-        "total": 229.8,
-        "margin": 2.2,
-        "total_absolute_error": 14.2,
-        "margin_absolute_error": 7.8
+        "total": 224.8,
+        "margin": 4.8,
+        "total_absolute_error": 6.8,
+        "margin_absolute_error": 3.2
       },
       "player_aware_challenger": {
-        "total": 229.8,
-        "margin": 1.34,
-        "total_absolute_error": 14.2,
-        "margin_absolute_error": 8.66
+        "total": 224.8,
+        "margin": 5.72,
+        "total_absolute_error": 6.8,
+        "margin_absolute_error": 2.28
       },
-      "player_margin": -1.26
+      "player_margin": 8.49
     },
     {
-      "game_id": "401909982",
-      "matchup": "Detroit Pistons @ Miami Heat",
-      "actual_home": 137,
-      "actual_away": 117,
-      "actual_total": 254,
-      "actual_margin": 20,
-      "status": "shadow_challenger",
-      "reconstructed_baseline": {
-        "total": 233.9,
-        "margin": -1.6,
-        "total_absolute_error": 20.1,
-        "margin_absolute_error": 21.6
-      },
-      "player_aware_challenger": {
-        "total": 233.9,
-        "margin": -0.53,
-        "total_absolute_error": 20.1,
-        "margin_absolute_error": 20.53
-      },
-      "player_margin": 2.68
-    },
-    {
-      "game_id": "401909983",
-      "matchup": "Brooklyn Nets @ Memphis Grizzlies",
-      "actual_home": 129,
+      "game_id": "401909988",
+      "matchup": "San Antonio Spurs @ Utah Jazz",
+      "actual_home": 102,
       "actual_away": 110,
-      "actual_total": 239,
-      "actual_margin": 19,
+      "actual_total": 212,
+      "actual_margin": -8,
       "status": "shadow_challenger",
       "reconstructed_baseline": {
-        "total": 229.9,
-        "margin": 4.4,
-        "total_absolute_error": 9.1,
-        "margin_absolute_error": 14.6
+        "total": 226.9,
+        "margin": -9.2,
+        "total_absolute_error": 14.9,
+        "margin_absolute_error": 1.2
       },
       "player_aware_challenger": {
-        "total": 229.9,
-        "margin": 4.75,
-        "total_absolute_error": 9.1,
-        "margin_absolute_error": 14.25
+        "total": 226.9,
+        "margin": -9.48,
+        "total_absolute_error": 14.9,
+        "margin_absolute_error": 1.48
       },
-      "player_margin": 5.8
+      "player_margin": -10.31
     },
     {
-      "game_id": "401909984",
-      "matchup": "Chicago Bulls @ Minnesota Timberwolves",
-      "actual_home": 106,
-      "actual_away": 117,
-      "actual_total": 223,
-      "actual_margin": -11,
+      "game_id": "401909989",
+      "matchup": "Dallas Mavericks @ Boston Celtics",
+      "actual_home": 131,
+      "actual_away": 94,
+      "actual_total": 225,
+      "actual_margin": 37,
       "status": "shadow_challenger",
       "reconstructed_baseline": {
-        "total": 233.1,
-        "margin": 10.4,
-        "total_absolute_error": 10.1,
-        "margin_absolute_error": 21.4
+        "total": 224.4,
+        "margin": 7.9,
+        "total_absolute_error": 0.6,
+        "margin_absolute_error": 29.1
       },
       "player_aware_challenger": {
-        "total": 233.1,
-        "margin": 7.19,
-        "total_absolute_error": 10.1,
-        "margin_absolute_error": 18.19
+        "total": 224.4,
+        "margin": 6.14,
+        "total_absolute_error": 0.6,
+        "margin_absolute_error": 30.86
       },
-      "player_margin": -2.44
+      "player_margin": 0.87
+    },
+    {
+      "game_id": "401909990",
+      "matchup": "New York Knicks @ Toronto Raptors",
+      "actual_home": 108,
+      "actual_away": 112,
+      "actual_total": 220,
+      "actual_margin": -4,
+      "status": "shadow_challenger",
+      "reconstructed_baseline": {
+        "total": 224.6,
+        "margin": -1.2,
+        "total_absolute_error": 4.6,
+        "margin_absolute_error": 2.8
+      },
+      "player_aware_challenger": {
+        "total": 224.6,
+        "margin": 1.45,
+        "total_absolute_error": 4.6,
+        "margin_absolute_error": 5.45
+      },
+      "player_margin": 9.39
+    },
+    {
+      "game_id": "401909991",
+      "matchup": "Houston Rockets @ Washington Wizards",
+      "actual_home": 119,
+      "actual_away": 147,
+      "actual_total": 266,
+      "actual_margin": -28,
+      "status": "shadow_challenger",
+      "reconstructed_baseline": {
+        "total": 229.3,
+        "margin": -5.9,
+        "total_absolute_error": 36.7,
+        "margin_absolute_error": 22.1
+      },
+      "player_aware_challenger": {
+        "total": 229.3,
+        "margin": -7.02,
+        "total_absolute_error": 36.7,
+        "margin_absolute_error": 20.98
+      },
+      "player_margin": -10.36
+    },
+    {
+      "game_id": "401909992",
+      "matchup": "Atlanta Hawks @ Milwaukee Bucks",
+      "actual_home": 106,
+      "actual_away": 113,
+      "actual_total": 219,
+      "actual_margin": -7,
+      "status": "shadow_challenger",
+      "reconstructed_baseline": {
+        "total": 231.9,
+        "margin": -5.5,
+        "total_absolute_error": 12.9,
+        "margin_absolute_error": 1.5
+      },
+      "player_aware_challenger": {
+        "total": 231.9,
+        "margin": -8.4,
+        "total_absolute_error": 12.9,
+        "margin_absolute_error": 1.4
+      },
+      "player_margin": -17.12
+    },
+    {
+      "game_id": "401909993",
+      "matchup": "Oklahoma City Thunder @ Sacramento Kings",
+      "actual_home": 103,
+      "actual_away": 125,
+      "actual_total": 228,
+      "actual_margin": -22,
+      "status": "shadow_challenger",
+      "reconstructed_baseline": {
+        "total": 225.2,
+        "margin": -5.7,
+        "total_absolute_error": 2.8,
+        "margin_absolute_error": 16.3
+      },
+      "player_aware_challenger": {
+        "total": 225.2,
+        "margin": -4.86,
+        "total_absolute_error": 2.8,
+        "margin_absolute_error": 17.14
+      },
+      "player_margin": -2.33
     }
   ]
 }
