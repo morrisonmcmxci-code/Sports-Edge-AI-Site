@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-16T11:56:52.565158+00:00",
+  "generated_at": "2026-11-17T15:48:53.825445+00:00",
   "status": "diagnostics_not_causal_attribution",
   "roster": {
     "players": {
-      "nba": 526,
-      "nfl": 2554
+      "nba": 525,
+      "nfl": 2552
     },
     "missing_boxscore_counts": {
       "nba": 27,
@@ -185,15 +185,6 @@
       },
       {
         "league": "nfl",
-        "player_id": "2578570",
-        "player": "Jacoby Brissett",
-        "roster_team_id": "33",
-        "last_boxscore_team_id": "22",
-        "last_boxscore_date": "2026-11-01T18:00:00+00:00",
-        "reason_unverified": "trade_or_stale_roster_or_historical_team"
-      },
-      {
-        "league": "nfl",
         "player_id": "4036444",
         "player": "Ryan Neuzil",
         "roster_team_id": "33",
@@ -212,11 +203,11 @@
       },
       {
         "league": "nfl",
-        "player_id": "4243371",
-        "player": "Riley Patterson",
+        "player_id": "2576399",
+        "player": "Nick Vannett",
         "roster_team_id": "33",
-        "last_boxscore_team_id": "15",
-        "last_boxscore_date": "2026-10-11T17:00:00+00:00",
+        "last_boxscore_team_id": "26",
+        "last_boxscore_date": "2026-08-29T00:00:00+00:00",
         "reason_unverified": "trade_or_stale_roster_or_historical_team"
       },
       {
@@ -244,15 +235,6 @@
         "roster_team_id": "33",
         "last_boxscore_team_id": "14",
         "last_boxscore_date": "2026-10-13T00:15:00+00:00",
-        "reason_unverified": "trade_or_stale_roster_or_historical_team"
-      },
-      {
-        "league": "nfl",
-        "player_id": "2576399",
-        "player": "Nick Vannett",
-        "roster_team_id": "33",
-        "last_boxscore_team_id": "26",
-        "last_boxscore_date": "2026-08-29T00:00:00+00:00",
         "reason_unverified": "trade_or_stale_roster_or_historical_team"
       },
       {
@@ -500,6 +482,15 @@
       },
       {
         "league": "nfl",
+        "player_id": "4689333",
+        "player": "Tyrus Wheat",
+        "roster_team_id": "8",
+        "last_boxscore_team_id": "6",
+        "last_boxscore_date": "2026-10-04T17:00:00+00:00",
+        "reason_unverified": "trade_or_stale_roster_or_historical_team"
+      },
+      {
+        "league": "nfl",
         "player_id": "5081056",
         "player": "Jeffrey M'ba",
         "roster_team_id": "8",
@@ -644,6 +635,15 @@
       },
       {
         "league": "nfl",
+        "player_id": "4027873",
+        "player": "Samori Toure",
+        "roster_team_id": "11",
+        "last_boxscore_team_id": "21",
+        "last_boxscore_date": "2026-08-29T00:00:00+00:00",
+        "reason_unverified": "trade_or_stale_roster_or_historical_team"
+      },
+      {
+        "league": "nfl",
         "player_id": "3919512",
         "player": "Jessie Bates III",
         "roster_team_id": "30",
@@ -734,6 +734,15 @@
       },
       {
         "league": "nfl",
+        "player_id": "3722362",
+        "player": "Brett Rypien",
+        "roster_team_id": "13",
+        "last_boxscore_team_id": "34",
+        "last_boxscore_date": "2026-08-28T23:00:00+00:00",
+        "reason_unverified": "trade_or_stale_roster_or_historical_team"
+      },
+      {
+        "league": "nfl",
         "player_id": "4034530",
         "player": "Chris Williams",
         "roster_team_id": "13",
@@ -802,15 +811,6 @@
         "roster_team_id": "24",
         "last_boxscore_team_id": "17",
         "last_boxscore_date": "2026-08-28T00:00:00+00:00",
-        "reason_unverified": "trade_or_stale_roster_or_historical_team"
-      },
-      {
-        "league": "nfl",
-        "player_id": "4577189",
-        "player": "Jalen Hunt",
-        "roster_team_id": "14",
-        "last_boxscore_team_id": "30",
-        "last_boxscore_date": "2026-08-28T23:30:00+00:00",
         "reason_unverified": "trade_or_stale_roster_or_historical_team"
       },
       {
@@ -1031,11 +1031,11 @@
       },
       {
         "league": "nfl",
-        "player_id": "4689988",
-        "player": "Jason Brownlee",
+        "player_id": "4334405",
+        "player": "Tavierre Thomas",
         "roster_team_id": "19",
-        "last_boxscore_team_id": "12",
-        "last_boxscore_date": "2026-08-29T00:00:00+00:00",
+        "last_boxscore_team_id": "16",
+        "last_boxscore_date": "2026-08-29T01:00:00+00:00",
         "reason_unverified": "trade_or_stale_roster_or_historical_team"
       },
       {
@@ -1112,8 +1112,8 @@
       },
       {
         "league": "nfl",
-        "player_id": "4427278",
-        "player": "Xavier Gipson",
+        "player_id": "4567535",
+        "player": "Anfernee Orji",
         "roster_team_id": "21",
         "last_boxscore_team_id": "19",
         "last_boxscore_date": "2026-08-28T23:30:00+00:00",
@@ -1121,11 +1121,11 @@
       },
       {
         "league": "nfl",
-        "player_id": "4567535",
-        "player": "Anfernee Orji",
+        "player_id": "4428396",
+        "player": "Hayden Rucci",
         "roster_team_id": "21",
-        "last_boxscore_team_id": "19",
-        "last_boxscore_date": "2026-08-28T23:30:00+00:00",
+        "last_boxscore_team_id": "24",
+        "last_boxscore_date": "2026-11-08T21:05:00+00:00",
         "reason_unverified": "trade_or_stale_roster_or_historical_team"
       },
       {
@@ -1256,6 +1256,15 @@
       },
       {
         "league": "nfl",
+        "player_id": "2972515",
+        "player": "Cooper Rush",
+        "roster_team_id": "27",
+        "last_boxscore_team_id": "1",
+        "last_boxscore_date": "2026-09-20T17:00:00+00:00",
+        "reason_unverified": "trade_or_stale_roster_or_historical_team"
+      },
+      {
+        "league": "nfl",
         "player_id": "4880219",
         "player": "Silas Walters",
         "roster_team_id": "27",
@@ -1270,6 +1279,15 @@
         "roster_team_id": "10",
         "last_boxscore_team_id": "11",
         "last_boxscore_date": "2026-08-22T17:00:00+00:00",
+        "reason_unverified": "trade_or_stale_roster_or_historical_team"
+      },
+      {
+        "league": "nfl",
+        "player_id": "4689988",
+        "player": "Jason Brownlee",
+        "roster_team_id": "10",
+        "last_boxscore_team_id": "12",
+        "last_boxscore_date": "2026-08-29T00:00:00+00:00",
         "reason_unverified": "trade_or_stale_roster_or_historical_team"
       },
       {
@@ -1493,85 +1511,85 @@
     ]
   },
   "frozen_accuracy": {
-    "graded": 1517,
-    "pending": 3822,
+    "graded": 2606,
+    "pending": 5510,
     "by_market_model": [
       {
         "league": "nba",
         "market": "player_assists",
         "model": "baseline",
-        "graded": 187,
-        "mae": 1.389
+        "graded": 362,
+        "mae": 1.361
       },
       {
         "league": "nba",
         "market": "player_assists",
         "model": "minutes_adjusted",
-        "graded": 187,
-        "mae": 1.39
+        "graded": 362,
+        "mae": 1.357
       },
       {
         "league": "nba",
         "market": "player_points",
         "model": "baseline",
-        "graded": 187,
-        "mae": 5.438
+        "graded": 362,
+        "mae": 5.007
       },
       {
         "league": "nba",
         "market": "player_points",
         "model": "minutes_adjusted",
-        "graded": 187,
-        "mae": 5.453
+        "graded": 362,
+        "mae": 5.011
       },
       {
         "league": "nba",
         "market": "player_rebounds",
         "model": "baseline",
-        "graded": 187,
+        "graded": 362,
+        "mae": 1.93
+      },
+      {
+        "league": "nba",
+        "market": "player_rebounds",
+        "model": "minutes_adjusted",
+        "graded": 362,
         "mae": 1.927
-      },
-      {
-        "league": "nba",
-        "market": "player_rebounds",
-        "model": "minutes_adjusted",
-        "graded": 187,
-        "mae": 1.922
       },
       {
         "league": "nfl",
         "market": "player_pass_tds",
         "model": "baseline",
-        "graded": 20,
-        "mae": 1.23
+        "graded": 22,
+        "mae": 1.204
       },
       {
         "league": "nfl",
         "market": "player_pass_yds",
         "model": "baseline",
-        "graded": 20,
-        "mae": 79.501
+        "graded": 22,
+        "mae": 80.135
       },
       {
         "league": "nfl",
         "market": "player_reception_yds",
         "model": "baseline",
-        "graded": 147,
-        "mae": 23.221
+        "graded": 161,
+        "mae": 22.987
       },
       {
         "league": "nfl",
         "market": "player_receptions",
         "model": "baseline",
-        "graded": 147,
-        "mae": 1.598
+        "graded": 161,
+        "mae": 1.599
       },
       {
         "league": "nfl",
         "market": "player_rush_yds",
         "model": "baseline",
-        "graded": 61,
-        "mae": 17.997
+        "graded": 68,
+        "mae": 19.579
       }
     ]
   },

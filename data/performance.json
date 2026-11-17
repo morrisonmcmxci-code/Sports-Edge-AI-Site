@@ -2,22 +2,22 @@
   "status": "prospective_research",
   "by_league": {
     "nba": {
-      "tracked": 68,
-      "pending": 25,
+      "tracked": 72,
+      "pending": 21,
       "pushes": 0,
-      "graded": 43,
-      "correct": 27,
-      "accuracy": 0.6279,
-      "brier": 0.2196
+      "graded": 51,
+      "correct": 31,
+      "accuracy": 0.6078,
+      "brier": 0.2339
     },
     "nfl": {
       "tracked": 27,
-      "pending": 14,
+      "pending": 13,
       "pushes": 0,
-      "graded": 13,
+      "graded": 14,
       "correct": 9,
-      "accuracy": 0.6923,
-      "brier": 0.1939
+      "accuracy": 0.6429,
+      "brier": 0.2071
     }
   },
   "note": "First-seen pregame predictions only. No odds or ROI validated."

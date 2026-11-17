@@ -2,18 +2,18 @@
   "status": "prospective_frozen_pregame_comparison",
   "models": {
     "baseline": {
-      "games": 3,
-      "winner_accuracy": 1.0,
-      "margin_mae": 13.7,
-      "total_mae": 18.333,
-      "moneyline_brier": 0.1424
+      "games": 11,
+      "winner_accuracy": 0.5455,
+      "margin_mae": 14.418,
+      "total_mae": 15.7,
+      "moneyline_brier": 0.249
     },
     "challenger": {
-      "games": 3,
-      "winner_accuracy": 1.0,
-      "margin_mae": 13.283,
-      "total_mae": 18.333,
-      "moneyline_brier": 0.1162
+      "games": 11,
+      "winner_accuracy": 0.5455,
+      "margin_mae": 14.575,
+      "total_mae": 15.7,
+      "moneyline_brier": 0.2488
     }
   },
   "note": "Only first-seen forecasts captured before tipoff; uncalibrated moneyline probabilities; no odds-based ROI."
