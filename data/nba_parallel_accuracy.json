@@ -14,7 +14,21 @@
       "margin_mae": 14.575,
       "total_mae": 15.7,
       "moneyline_brier": 0.2488
+    },
+    "hybrid": {
+      "games": 0,
+      "winner_accuracy": null,
+      "margin_mae": null,
+      "total_mae": null,
+      "moneyline_brier": null
     }
   },
-  "note": "Only first-seen forecasts captured before tipoff; uncalibrated moneyline probabilities; no odds-based ROI."
+  "retrospective_hybrid_blend_not_frozen": {
+    "games": 11,
+    "winner_accuracy": 0.5455,
+    "margin_mae": 14.424,
+    "total_mae": 15.7,
+    "moneyline_brier": 0.2487
+  },
+  "note": "Prospective hybrid counts only genuinely frozen hybrid forecasts. Historical hybrid is a counterfactual blend of previously frozen inputs, not a frozen hybrid pick. All three share the same total forecast until an independently validated total model exists; no sportsbook ROI."
 }
