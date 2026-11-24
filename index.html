@@ -37,7 +37,7 @@ footer{margin:32px 0;color:#9caac4;font-size:13px}.stats{display:flex;gap:12px;f
 <p id="status" class="muted" role="status">Loading prediction snapshot…</p><section class="cards" id="games" aria-label="Upcoming predictions"></section>
 <footer>Dashboard version: unified-v5-player-dates-20261111 · Source: ESPN public scoreboard and Sports Edge AI historical model. Times displayed in your local timezone. Data refreshes when the scheduled GitHub workflow succeeds.</footer></main>
 <script>
-let snapshot=null,filter="all",market=null,view="moneyline",playerResearch=null,propAccuracy=null,playerQuery="",propMarketFilter="all",propSort="player";
+let marketRows=[],snapshot=null,filter="all",market=null,view="moneyline",playerResearch=null,propAccuracy=null,playerQuery="",propMarketFilter="all",propSort="player";
 const DATA_REV="roster-verified-prop-v2-20261115";
 const dataUrl=path=>"./data/"+path+"?v="+DATA_REV;
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -90,6 +90,16 @@ function bestPropRows(){
 }
 function fmt(n,d=1){return Number.isFinite(Number(n))?Number(n).toFixed(d):"—"}
 function signed(n){return Number.isFinite(Number(n))?(Number(n)>0?"+":"")+n:"—"}
+function chicagoDay(t){return new Intl.DateTimeFormat("en-CA",{timeZone:"America/Chicago",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(t))}
+function marketComparison(g){
+ const norm=s=>String(s||"").toLowerCase().replace(/[^a-z0-9]/g,"");
+ const rows=marketRows.filter(r=>r.league===g.league&&Math.abs(Date.parse(r.start_time)-Date.parse(g.start_time))<=30*60000&&Date.parse(r.generated_at)<Date.parse(g.start_time)&&Date.now()-Date.parse(r.generated_at)<=7200000&&Date.parse(r.generated_at)<=Date.now());
+ const home=rows.filter(r=>norm(r.side)===norm(g.home_team)),away=rows.filter(r=>norm(r.side)===norm(g.away_team));
+ if(home.length!==1||away.length!==1||home[0].event_slug!==away[0].event_slug)return '<p class="muted mini">No verified SportsBookISH pregame match.</p>';
+ const p=Number(home[0].kalshi_implied),a=Number(away[0].kalshi_implied);
+ if(!home[0].kalshi_implied||!away[0].kalshi_implied||!(p>0&&p<1&&a>0&&a<1))return '';
+ return '<p class="mini">Kalshi via <a href="https://sportsbookish.com/data">SportsBookISH</a> (CC BY 4.0): '+safe(g.home_team)+' '+fmt(p*100)+'% · '+safe(g.away_team)+' '+fmt(a*100)+'% · home model difference '+fmt((g.home_win_probability-p)*100)+' pp</p>';
+}
 function moneylineGame(g){
  const odds=(market?.quotes||[]).filter(q=>q.league===g.league&&q.game_id===g.game_id&&!q.stale);
  const other=(market?.other_markets||[]).filter(q=>q.league===g.league&&q.game_id===g.game_id);
@@ -126,7 +136,7 @@ function moneylineGame(g){
   '<div class="section-label">Win probability</div>'+
   probability(g.away_team,g.away_win_probability,winner===g.away_team)+
   probability(g.home_team,g.home_win_probability,winner===g.home_team)+
-  moneylineHtml+
+  moneylineHtml+marketComparison(g)+
   (p.status==="experimental"?'<div class="section-label">Projected final score</div>'+projectedScore+
    line('Projected spread',safe(spreadName)+' by '+fmt(Math.abs(p.projected_home_margin)))+
    line('Projected game total',fmt(p.projected_total)):'')+
@@ -268,8 +278,8 @@ function render(){
   wirePropToolbar();
   return;
  }
- const games=snapshot.games.filter(g=>(filter==="all"||g.league===filter)&&new Date(g.start_time)>new Date());
- status.textContent="Updated "+new Date(snapshot.generated_at).toLocaleString()+" · "+games.length+" upcoming games";
+ const games=snapshot.games.filter(g=>(filter==="all"||g.league===filter)&&(new Date(g.start_time)>new Date()||chicagoDay(g.start_time)===chicagoDay(Date.now())));
+ status.textContent="Updated "+new Date(snapshot.generated_at).toLocaleString()+" · "+games.length+" today / upcoming games";
  root.innerHTML=games.length?games.map(moneylineGame).join(""):'<p class="muted wide">No upcoming games in the current snapshot. Completed games are tracked under Daily Accuracy; new games appear after the next data refresh.</p>';
 }
 document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{
@@ -303,4 +313,8 @@ fetch(dataUrl("player_projections.json"),{cache:"no-store"}).then(r=>{if(!r.ok)t
 fetch(dataUrl("predictions.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("No published prediction snapshot");return r.json()})
 .then(data=>{if(!Array.isArray(data.games))throw Error("Invalid prediction snapshot");snapshot=data;render()})
 .catch(e=>{document.getElementById("status").textContent="Predictions not published yet: "+e.message});
+
+// Parse the provider's documented public CSV export, including quoted fields.
+function parseMarketCsv(s){let rows=[],r=[],v="",q=false;for(let i=0;i<s.length;i++){let c=s[i];if(c==='"'){if(q&&s[i+1]==='"'){v+='"';i++}else q=!q}else if(c===","&&!q){r.push(v);v=""}else if(c==="\n"&&!q){r.push(v.replace(/\r$/,""));rows.push(r);r=[];v=""}else v+=c}if(v||r.length){r.push(v);rows.push(r)}const h=rows.shift()||[];return rows.filter(r=>r.length===h.length).map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]])))}
+fetch("https://hyder.me/api/data/daily-odds-csv",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.text()}).then(s=>{marketRows=parseMarketCsv(s);render()}).catch(()=>{});
 </script></body></html>
