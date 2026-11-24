@@ -132,7 +132,7 @@ function moneylineGame(g){
   line(safe(g.away_team),signed(spread.away_spread))+line(safe(g.home_team),signed(spread.home_spread)):'';
  const totalHtml=total?'<div class="section-label">Sportsbook total · '+safe(total.sportsbook)+'</div>'+line('Over / Under',fmt(total.total_line)):'';
  return '<article class="card game-card"><div class="top"><span class="pill">'+safe(g.league.toUpperCase())+'</span><time>'+safe(new Date(g.start_time).toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"}))+'</time></div>'+
-  '<div class="match">'+safe(g.away_team)+' @ '+safe(g.home_team)+'</div>'+
+  '<div class="match">'+safe(g.away_team)+' @ '+safe(g.home_team)+'</div>'+ (g.captured_at?'<p class="muted mini">Archived pregame forecast · '+safe(g.result!=="pending"?"Final result recorded":Date.parse(g.start_time)<=Date.now()?"Scheduled start passed":"Upcoming")+'</p>':'')+
   '<div class="section-label">Win probability</div>'+
   probability(g.away_team,g.away_win_probability,winner===g.away_team)+
   probability(g.home_team,g.home_win_probability,winner===g.home_team)+
@@ -311,7 +311,7 @@ fetch(dataUrl("prop_accuracy.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw 
 fetch(dataUrl("player_projections.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()})
 .then(data=>{playerResearch=data;researchSummary();render()}).catch(()=>researchSummary());
 fetch(dataUrl("predictions.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("No published prediction snapshot");return r.json()})
-.then(data=>{if(!Array.isArray(data.games))throw Error("Invalid prediction snapshot");snapshot=data;render()})
+.then(data=>{if(!Array.isArray(data.games))throw Error("Invalid prediction snapshot");snapshot=data;render();fetch(dataUrl("today_archive.json"),{cache:"no-store"}).then(r=>r.json()).then(a=>{const keys=new Set(snapshot.games.map(g=>g.league+":"+g.game_id));for(const g of a.games||[]){if(chicagoDay(g.start_time)!==chicagoDay(Date.now())||keys.has(g.league+":"+g.game_id))continue;const p=g.parallel_baseline;snapshot.games.push({...g,score_projection:p?{status:"experimental",home_projected_points:p.projected_home_points,away_projected_points:p.projected_away_points,projected_home_margin:p.projected_home_margin,projected_total:p.projected_total}:{},matchup_context:{home:{rest_days:0},away:{rest_days:0}}});}snapshot.games.sort((a,b)=>Date.parse(a.start_time)-Date.parse(b.start_time));render()}).catch(()=>{})})
 .catch(e=>{document.getElementById("status").textContent="Predictions not published yet: "+e.message});
 
 // Parse the provider's documented public CSV export, including quoted fields.
