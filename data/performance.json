@@ -2,8 +2,8 @@
   "status": "prospective_research",
   "by_league": {
     "nba": {
-      "tracked": 72,
-      "pending": 0,
+      "tracked": 94,
+      "pending": 22,
       "pushes": 0,
       "graded": 72,
       "correct": 43,
@@ -11,8 +11,8 @@
       "brier": 0.2432
     },
     "nfl": {
-      "tracked": 27,
-      "pending": 1,
+      "tracked": 43,
+      "pending": 17,
       "pushes": 0,
       "graded": 26,
       "correct": 18,

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-17T16:13:29.232946+00:00",
+  "generated_at": "2026-11-23T23:58:36.967308+00:00",
   "status": "shadow_scenario_readiness_no_fabricated_features",
-  "games_audited": 34,
+  "games_audited": 39,
   "scenarios": [
     {
-      "game_id": "401910002",
+      "game_id": "401910036",
       "league": "nba",
       "status": "inputs_pending",
       "required_verified_inputs": [
@@ -38,7 +38,7 @@
       }
     },
     {
-      "game_id": "401910003",
+      "game_id": "401910037",
       "league": "nba",
       "status": "inputs_pending",
       "required_verified_inputs": [
@@ -72,7 +72,7 @@
       }
     },
     {
-      "game_id": "401910004",
+      "game_id": "401910038",
       "league": "nba",
       "status": "inputs_pending",
       "required_verified_inputs": [
@@ -106,7 +106,7 @@
       }
     },
     {
-      "game_id": "401910006",
+      "game_id": "401910039",
       "league": "nba",
       "status": "inputs_pending",
       "required_verified_inputs": [
@@ -140,7 +140,7 @@
       }
     },
     {
-      "game_id": "401910005",
+      "game_id": "401910040",
       "league": "nba",
       "status": "inputs_pending",
       "required_verified_inputs": [
@@ -174,7 +174,7 @@
       }
     },
     {
-      "game_id": "401910007",
+      "game_id": "401910041",
       "league": "nba",
       "status": "inputs_pending",
       "required_verified_inputs": [
@@ -208,7 +208,7 @@
       }
     },
     {
-      "game_id": "401910008",
+      "game_id": "401910042",
       "league": "nba",
       "status": "inputs_pending",
       "required_verified_inputs": [
@@ -224,914 +224,6 @@
         "opponent_defensive_rating",
         "verified_rotation_minutes",
         "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910009",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910010",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910011",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910012",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910013",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910014",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910016",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910015",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910017",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910018",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910019",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910020",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910021",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401910022",
-      "league": "nba",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "missing_features": [
-        "team_possessions",
-        "offensive_rating",
-        "opponent_defensive_rating",
-        "verified_rotation_minutes",
-        "historical_injury_snapshots"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873066",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873067",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873068",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873070",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873071",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873072",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873073",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873076",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873074",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873069",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873075",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "simulation_status": "not_run_without_validated_score_distribution",
-      "confidence": {
-        "status": "incomplete",
-        "missing_features": [
-          "home_projected_points",
-          "away_projected_points"
-        ],
-        "as_of": null,
-        "tipoff": null,
-        "injury_snapshot_at": null,
-        "market_snapshot_at": null,
-        "validated_win_probability": null,
-        "confidence_score": null,
-        "note": "A confidence percentage is withheld until chronologically calibrated."
-      }
-    },
-    {
-      "game_id": "401873077",
-      "league": "nfl",
-      "status": "inputs_pending",
-      "required_verified_inputs": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
-      ],
-      "missing_features": [
-        "offensive_plays",
-        "opponent_plays_allowed",
-        "drives",
-        "points_per_drive",
-        "snap_share",
-        "weather"
       ],
       "simulation_status": "not_run_without_validated_score_distribution",
       "confidence": {
@@ -1151,6 +243,1092 @@
     },
     {
       "game_id": "401873078",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401910043",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401910044",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401910045",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909314",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909315",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909316",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909317",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909318",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909319",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909320",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909321",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909322",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873079",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909323",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909324",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401909325",
+      "league": "nba",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "missing_features": [
+        "team_possessions",
+        "offensive_rating",
+        "opponent_defensive_rating",
+        "verified_rotation_minutes",
+        "historical_injury_snapshots"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873081",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873080",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873082",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873083",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873084",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873085",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873087",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873088",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873089",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873090",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873093",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873091",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873092",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873086",
+      "league": "nfl",
+      "status": "inputs_pending",
+      "required_verified_inputs": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "missing_features": [
+        "offensive_plays",
+        "opponent_plays_allowed",
+        "drives",
+        "points_per_drive",
+        "snap_share",
+        "weather"
+      ],
+      "simulation_status": "not_run_without_validated_score_distribution",
+      "confidence": {
+        "status": "incomplete",
+        "missing_features": [
+          "home_projected_points",
+          "away_projected_points"
+        ],
+        "as_of": null,
+        "tipoff": null,
+        "injury_snapshot_at": null,
+        "market_snapshot_at": null,
+        "validated_win_probability": null,
+        "confidence_score": null,
+        "note": "A confidence percentage is withheld until chronologically calibrated."
+      }
+    },
+    {
+      "game_id": "401873094",
       "league": "nfl",
       "status": "inputs_pending",
       "required_verified_inputs": [

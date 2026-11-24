@@ -2,33 +2,33 @@
   "status": "prospective_frozen_pregame_comparison",
   "models": {
     "baseline": {
-      "games": 11,
-      "winner_accuracy": 0.5455,
-      "margin_mae": 14.418,
-      "total_mae": 15.7,
-      "moneyline_brier": 0.249
+      "games": 32,
+      "winner_accuracy": 0.5312,
+      "margin_mae": 12.766,
+      "total_mae": 14.922,
+      "moneyline_brier": 0.2513
     },
     "challenger": {
-      "games": 11,
-      "winner_accuracy": 0.5455,
-      "margin_mae": 14.575,
-      "total_mae": 15.7,
-      "moneyline_brier": 0.2488
+      "games": 32,
+      "winner_accuracy": 0.5625,
+      "margin_mae": 12.656,
+      "total_mae": 14.922,
+      "moneyline_brier": 0.2486
     },
     "hybrid": {
-      "games": 0,
-      "winner_accuracy": null,
-      "margin_mae": null,
-      "total_mae": null,
-      "moneyline_brier": null
+      "games": 4,
+      "winner_accuracy": 0.75,
+      "margin_mae": 8.88,
+      "total_mae": 12.1,
+      "moneyline_brier": 0.1735
     }
   },
   "retrospective_hybrid_blend_not_frozen": {
-    "games": 11,
-    "winner_accuracy": 0.5455,
-    "margin_mae": 14.424,
-    "total_mae": 15.7,
-    "moneyline_brier": 0.2487
+    "games": 32,
+    "winner_accuracy": 0.5,
+    "margin_mae": 12.67,
+    "total_mae": 14.922,
+    "moneyline_brier": 0.2496
   },
   "note": "Prospective hybrid counts only genuinely frozen hybrid forecasts. Historical hybrid is a counterfactual blend of previously frozen inputs, not a frozen hybrid pick. All three share the same total forecast until an independently validated total model exists; no sportsbook ROI."
 }

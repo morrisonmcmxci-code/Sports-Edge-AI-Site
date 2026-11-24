@@ -1,120 +1,136 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-22",
   "timezone": "America/Chicago",
-  "generated_at": "2026-11-17T16:16:01.515773+00:00",
+  "generated_at": "2026-11-24T00:01:12.806627+00:00",
   "scope": "frozen pregame winner forecasts; not spread, prop, or betting ROI",
   "by_league": {
-    "nba": {
-      "games": 8,
-      "correct": 4,
-      "accuracy": 0.5,
-      "brier": 0.31121
-    },
     "nfl": {
-      "games": 1,
-      "correct": 0,
-      "accuracy": 0.0,
-      "brier": 0.3781
+      "games": 11,
+      "correct": 8,
+      "accuracy": 0.7273,
+      "brier": 0.18234
     }
   },
   "games": [
     {
-      "game_id": "401909994",
-      "league": "nba",
-      "matchup": "Orlando Magic @ Boston Celtics",
-      "predicted_winner": "Boston Celtics",
-      "actual_winner": "Orlando Magic",
-      "correct": false,
-      "confidence": 0.82,
-      "brier": 0.6724,
-      "captured_at": "2026-11-15T13:23:17.709821+00:00"
-    },
-    {
-      "game_id": "401909995",
-      "league": "nba",
-      "matchup": "Chicago Bulls @ Cleveland Cavaliers",
-      "predicted_winner": "Cleveland Cavaliers",
-      "actual_winner": "Cleveland Cavaliers",
-      "correct": true,
-      "confidence": 0.7069,
-      "brier": 0.08591,
-      "captured_at": "2026-11-15T13:23:17.709821+00:00"
-    },
-    {
-      "game_id": "401909996",
-      "league": "nba",
-      "matchup": "Memphis Grizzlies @ Washington Wizards",
-      "predicted_winner": "Memphis Grizzlies",
-      "actual_winner": "Memphis Grizzlies",
-      "correct": true,
-      "confidence": 0.6655,
-      "brier": 0.11189,
-      "captured_at": "2026-11-15T13:23:17.709821+00:00"
-    },
-    {
-      "game_id": "401909997",
-      "league": "nba",
-      "matchup": "Philadelphia 76ers @ Brooklyn Nets",
-      "predicted_winner": "Philadelphia 76ers",
-      "actual_winner": "Philadelphia 76ers",
-      "correct": true,
-      "confidence": 0.5554,
-      "brier": 0.19767,
-      "captured_at": "2026-11-15T13:23:17.709821+00:00"
-    },
-    {
-      "game_id": "401909998",
-      "league": "nba",
-      "matchup": "Houston Rockets @ Miami Heat",
-      "predicted_winner": "Houston Rockets",
-      "actual_winner": "Miami Heat",
-      "correct": false,
-      "confidence": 0.5122,
-      "brier": 0.26235,
-      "captured_at": "2026-11-15T13:23:17.709821+00:00"
-    },
-    {
-      "game_id": "401909999",
-      "league": "nba",
-      "matchup": "Portland Trail Blazers @ Minnesota Timberwolves",
-      "predicted_winner": "Minnesota Timberwolves",
-      "actual_winner": "Minnesota Timberwolves",
-      "correct": true,
-      "confidence": 0.5839,
-      "brier": 0.17314,
-      "captured_at": "2026-11-15T13:23:17.709821+00:00"
-    },
-    {
-      "game_id": "401910000",
-      "league": "nba",
-      "matchup": "Golden State Warriors @ New Orleans Pelicans",
-      "predicted_winner": "Golden State Warriors",
-      "actual_winner": "New Orleans Pelicans",
-      "correct": false,
-      "confidence": 0.6877,
-      "brier": 0.47293,
-      "captured_at": "2026-11-15T13:23:17.709821+00:00"
-    },
-    {
-      "game_id": "401873065",
+      "game_id": "401873067",
       "league": "nfl",
-      "matchup": "Los Angeles Chargers @ Baltimore Ravens",
-      "predicted_winner": "Baltimore Ravens",
-      "actual_winner": "Los Angeles Chargers",
-      "correct": false,
-      "confidence": 0.6149,
-      "brier": 0.3781,
-      "captured_at": "2026-11-10T23:56:27.142994+00:00"
+      "matchup": "Arizona Cardinals @ Kansas City Chiefs",
+      "predicted_winner": "Kansas City Chiefs",
+      "actual_winner": "Kansas City Chiefs",
+      "correct": true,
+      "confidence": 0.6469,
+      "brier": 0.12468,
+      "captured_at": "2026-11-15T13:23:17.709821+00:00"
     },
     {
-      "game_id": "401910001",
-      "league": "nba",
-      "matchup": "Phoenix Suns @ Denver Nuggets",
-      "predicted_winner": "Denver Nuggets",
-      "actual_winner": "Phoenix Suns",
+      "game_id": "401873068",
+      "league": "nfl",
+      "matchup": "Baltimore Ravens @ Carolina Panthers",
+      "predicted_winner": "Carolina Panthers",
+      "actual_winner": "Carolina Panthers",
+      "correct": true,
+      "confidence": 0.5285,
+      "brier": 0.22231,
+      "captured_at": "2026-11-15T13:23:17.709821+00:00"
+    },
+    {
+      "game_id": "401873070",
+      "league": "nfl",
+      "matchup": "Miami Dolphins @ Buffalo Bills",
+      "predicted_winner": "Buffalo Bills",
+      "actual_winner": "Buffalo Bills",
+      "correct": true,
+      "confidence": 0.7474,
+      "brier": 0.06381,
+      "captured_at": "2026-11-15T13:23:17.709821+00:00"
+    },
+    {
+      "game_id": "401873071",
+      "league": "nfl",
+      "matchup": "New Orleans Saints @ Chicago Bears",
+      "predicted_winner": "Chicago Bears",
+      "actual_winner": "Chicago Bears",
+      "correct": true,
+      "confidence": 0.6449,
+      "brier": 0.1261,
+      "captured_at": "2026-11-15T13:23:17.709821+00:00"
+    },
+    {
+      "game_id": "401873072",
+      "league": "nfl",
+      "matchup": "Tampa Bay Buccaneers @ Detroit Lions",
+      "predicted_winner": "Detroit Lions",
+      "actual_winner": "Detroit Lions",
+      "correct": true,
+      "confidence": 0.6685,
+      "brier": 0.10989,
+      "captured_at": "2026-11-15T13:23:17.709821+00:00"
+    },
+    {
+      "game_id": "401873073",
+      "league": "nfl",
+      "matchup": "Tennessee Titans @ Dallas Cowboys",
+      "predicted_winner": "Dallas Cowboys",
+      "actual_winner": "Dallas Cowboys",
+      "correct": true,
+      "confidence": 0.6376,
+      "brier": 0.13133,
+      "captured_at": "2026-11-15T13:23:17.709821+00:00"
+    },
+    {
+      "game_id": "401873076",
+      "league": "nfl",
+      "matchup": "Pittsburgh Steelers @ Philadelphia Eagles",
+      "predicted_winner": "Pittsburgh Steelers",
+      "actual_winner": "Philadelphia Eagles",
       "correct": false,
-      "confidence": 0.7165,
-      "brier": 0.51337,
+      "confidence": 0.5831,
+      "brier": 0.34001,
+      "captured_at": "2026-11-15T13:23:17.709821+00:00"
+    },
+    {
+      "game_id": "401873074",
+      "league": "nfl",
+      "matchup": "New York Jets @ Los Angeles Chargers",
+      "predicted_winner": "Los Angeles Chargers",
+      "actual_winner": "New York Jets",
+      "correct": false,
+      "confidence": 0.591,
+      "brier": 0.34928,
+      "captured_at": "2026-11-15T13:23:17.709821+00:00"
+    },
+    {
+      "game_id": "401873069",
+      "league": "nfl",
+      "matchup": "Jacksonville Jaguars @ New York Giants",
+      "predicted_winner": "Jacksonville Jaguars",
+      "actual_winner": "New York Giants",
+      "correct": false,
+      "confidence": 0.5493,
+      "brier": 0.30173,
+      "captured_at": "2026-11-15T13:23:17.709821+00:00"
+    },
+    {
+      "game_id": "401873075",
+      "league": "nfl",
+      "matchup": "Las Vegas Raiders @ Denver Broncos",
+      "predicted_winner": "Denver Broncos",
+      "actual_winner": "Denver Broncos",
+      "correct": true,
+      "confidence": 0.7228,
+      "brier": 0.07684,
+      "captured_at": "2026-11-15T13:23:17.709821+00:00"
+    },
+    {
+      "game_id": "401873077",
+      "league": "nfl",
+      "matchup": "Minnesota Vikings @ San Francisco 49ers",
+      "predicted_winner": "San Francisco 49ers",
+      "actual_winner": "San Francisco 49ers",
+      "correct": true,
+      "confidence": 0.6003,
+      "brier": 0.15976,
       "captured_at": "2026-11-15T13:23:17.709821+00:00"
     }
   ]
