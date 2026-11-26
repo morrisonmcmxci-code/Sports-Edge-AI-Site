@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T00:00:10.091360+00:00",
+  "generated_at": "2026-11-26T22:31:50.938270+00:00",
   "status": "walk_forward_research_only",
   "selection_thresholds": {
     "min_paired_holdout": 30,
@@ -7,32 +7,32 @@
   },
   "markets": {
     "player_points": {
-      "baseline_samples": 4470,
-      "baseline_mae": 4.709,
-      "paired_samples": 4466,
-      "paired_baseline_mae": 4.711,
-      "paired_minutes_mae": 4.701,
-      "relative_improvement": 0.002,
+      "baseline_samples": 4944,
+      "baseline_mae": 4.685,
+      "paired_samples": 4940,
+      "paired_baseline_mae": 4.686,
+      "paired_minutes_mae": 4.68,
+      "relative_improvement": 0.0014,
       "selected_factor": "baseline",
       "status": "baseline_retained_insufficient_evidence"
     },
     "player_rebounds": {
-      "baseline_samples": 4470,
-      "baseline_mae": 1.918,
-      "paired_samples": 4466,
-      "paired_baseline_mae": 1.919,
-      "paired_minutes_mae": 1.915,
-      "relative_improvement": 0.0021,
+      "baseline_samples": 4944,
+      "baseline_mae": 1.911,
+      "paired_samples": 4940,
+      "paired_baseline_mae": 1.912,
+      "paired_minutes_mae": 1.909,
+      "relative_improvement": 0.0016,
       "selected_factor": "baseline",
       "status": "baseline_retained_insufficient_evidence"
     },
     "player_assists": {
-      "baseline_samples": 4470,
-      "baseline_mae": 1.347,
-      "paired_samples": 4466,
-      "paired_baseline_mae": 1.347,
-      "paired_minutes_mae": 1.346,
-      "relative_improvement": 0.0005,
+      "baseline_samples": 4944,
+      "baseline_mae": 1.342,
+      "paired_samples": 4940,
+      "paired_baseline_mae": 1.342,
+      "paired_minutes_mae": 1.342,
+      "relative_improvement": -0.0001,
       "selected_factor": "baseline",
       "status": "baseline_retained_insufficient_evidence"
     }

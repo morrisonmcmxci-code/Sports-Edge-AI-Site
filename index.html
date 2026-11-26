@@ -107,7 +107,7 @@ function moneylineGame(g){
  const ml=preferred(odds),spread=preferred(other.filter(q=>q.market==="spreads")),total=preferred(other.filter(q=>q.market==="totals")),p=g.score_projection||{};
  const line=(label,value)=>'<div class="prob"><span>'+label+'</span><strong>'+value+'</strong></div>';
  const edgeHome=ml&&Number.isFinite(Number(ml.home_no_vig_market_probability))?100*(Number(g.home_win_probability)-Number(ml.home_no_vig_market_probability)):null;
- const staleHistory=Math.max(Number(g.matchup_context?.home?.rest_days??999),Number(g.matchup_context?.away?.rest_days??999))>45;
+ const staleHistory=!g.captured_at&&Math.max(Number(g.matchup_context?.home?.rest_days??999),Number(g.matchup_context?.away?.rest_days??999))>45;
  const marketConflict=ml&&Number.isFinite(edgeHome)&&Math.abs(edgeHome)>25;
  const spreadConflict=spread&&Number.isFinite(Number(p.projected_home_margin))&&Math.abs(Number(p.projected_home_margin)+Number(spread.home_spread))>10;
  const modelUnsafe=staleHistory||g.history_quality?.status==="stale"||marketConflict||spreadConflict;
@@ -311,7 +311,7 @@ fetch(dataUrl("prop_accuracy.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw 
 fetch(dataUrl("player_projections.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()})
 .then(data=>{playerResearch=data;researchSummary();render()}).catch(()=>researchSummary());
 fetch(dataUrl("predictions.json"),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("No published prediction snapshot");return r.json()})
-.then(data=>{if(!Array.isArray(data.games))throw Error("Invalid prediction snapshot");snapshot=data;render();fetch(dataUrl("today_archive.json"),{cache:"no-store"}).then(r=>r.json()).then(a=>{const keys=new Set(snapshot.games.map(g=>g.league+":"+g.game_id));for(const g of a.games||[]){if(chicagoDay(g.start_time)!==chicagoDay(Date.now())||keys.has(g.league+":"+g.game_id))continue;const p=g.parallel_baseline;snapshot.games.push({...g,score_projection:p?{status:"experimental",home_projected_points:p.projected_home_points,away_projected_points:p.projected_away_points,projected_home_margin:p.projected_home_margin,projected_total:p.projected_total}:{},matchup_context:{home:{rest_days:0},away:{rest_days:0}}});}snapshot.games.sort((a,b)=>Date.parse(a.start_time)-Date.parse(b.start_time));render()}).catch(()=>{})})
+.then(data=>{if(!Array.isArray(data.games))throw Error("Invalid prediction snapshot");snapshot=data;render();fetch(dataUrl("today_archive.json"),{cache:"no-store"}).then(r=>r.json()).then(a=>{const keys=new Set(snapshot.games.map(g=>g.league+":"+g.game_id));for(const g of a.games||[]){if(chicagoDay(g.start_time)!==chicagoDay(Date.now())||keys.has(g.league+":"+g.game_id))continue;const p=g.parallel_baseline;snapshot.games.push({...g,score_projection:p?{status:"experimental",home_projected_points:p.projected_home_points,away_projected_points:p.projected_away_points,projected_home_margin:p.projected_home_margin,projected_total:p.projected_total}:{},matchup_context:g.matchup_context});}snapshot.games.sort((a,b)=>Date.parse(a.start_time)-Date.parse(b.start_time));render()}).catch(()=>{})})
 .catch(e=>{document.getElementById("status").textContent="Predictions not published yet: "+e.message});
 
 // Parse the provider's documented public CSV export, including quoted fields.

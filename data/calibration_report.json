@@ -3,22 +3,22 @@
   "min_samples_to_evaluate": 100,
   "by_league": {
     "nba": {
-      "graded": 72,
+      "graded": 94,
       "status": "insufficient_data",
-      "brier": 0.24319,
-      "log_loss": 0.6846,
+      "brier": 0.23246,
+      "log_loss": 0.65857,
       "calibration_bins": [
         {
           "range": "10-20%",
-          "count": 3,
-          "predicted_home_win_rate": 0.171,
-          "observed_home_win_rate": 0.3333
+          "count": 4,
+          "predicted_home_win_rate": 0.1703,
+          "observed_home_win_rate": 0.25
         },
         {
           "range": "20-30%",
-          "count": 8,
-          "predicted_home_win_rate": 0.2378,
-          "observed_home_win_rate": 0.375
+          "count": 10,
+          "predicted_home_win_rate": 0.2481,
+          "observed_home_win_rate": 0.3
         },
         {
           "range": "30-40%",
@@ -28,33 +28,33 @@
         },
         {
           "range": "40-50%",
-          "count": 11,
-          "predicted_home_win_rate": 0.446,
-          "observed_home_win_rate": 0.4545
+          "count": 17,
+          "predicted_home_win_rate": 0.4437,
+          "observed_home_win_rate": 0.4706
         },
         {
           "range": "50-60%",
-          "count": 11,
-          "predicted_home_win_rate": 0.551,
-          "observed_home_win_rate": 0.4545
+          "count": 15,
+          "predicted_home_win_rate": 0.5537,
+          "observed_home_win_rate": 0.4
         },
         {
           "range": "60-70%",
-          "count": 9,
-          "predicted_home_win_rate": 0.6532,
-          "observed_home_win_rate": 0.3333
+          "count": 10,
+          "predicted_home_win_rate": 0.6525,
+          "observed_home_win_rate": 0.4
         },
         {
           "range": "70-80%",
-          "count": 8,
-          "predicted_home_win_rate": 0.7279,
-          "observed_home_win_rate": 0.75
+          "count": 13,
+          "predicted_home_win_rate": 0.7373,
+          "observed_home_win_rate": 0.6923
         },
         {
           "range": "80-90%",
-          "count": 8,
-          "predicted_home_win_rate": 0.8544,
-          "observed_home_win_rate": 0.625
+          "count": 11,
+          "predicted_home_win_rate": 0.8538,
+          "observed_home_win_rate": 0.7273
         },
         {
           "range": "90-100%",
@@ -66,24 +66,24 @@
       "auto_retraining_enabled": false,
       "paired_player_shadow_comparison": {
         "status": "insufficient_paired_games",
-        "graded": 43,
+        "graded": 65,
         "minimum_paired_games": 100,
         "live_model": {
-          "brier": 0.24615,
-          "log_loss": 0.69873
+          "brier": 0.22964,
+          "log_loss": 0.6563
         },
         "player_shadow": {
-          "brier": 0.23929,
-          "log_loss": 0.67015
+          "brier": 0.23151,
+          "log_loss": 0.65384
         },
         "winner_not_selected": true
       }
     },
     "nfl": {
-      "graded": 26,
+      "graded": 29,
       "status": "insufficient_data",
-      "brier": 0.19161,
-      "log_loss": 0.56851,
+      "brier": 0.19773,
+      "log_loss": 0.58149,
       "calibration_bins": [
         {
           "range": "20-30%",
@@ -99,21 +99,21 @@
         },
         {
           "range": "40-50%",
-          "count": 6,
-          "predicted_home_win_rate": 0.4456,
-          "observed_home_win_rate": 0.5
+          "count": 7,
+          "predicted_home_win_rate": 0.4471,
+          "observed_home_win_rate": 0.5714
         },
         {
           "range": "50-60%",
-          "count": 5,
-          "predicted_home_win_rate": 0.5589,
-          "observed_home_win_rate": 0.4
+          "count": 6,
+          "predicted_home_win_rate": 0.5572,
+          "observed_home_win_rate": 0.3333
         },
         {
           "range": "60-70%",
-          "count": 7,
-          "predicted_home_win_rate": 0.6389,
-          "observed_home_win_rate": 0.8571
+          "count": 8,
+          "predicted_home_win_rate": 0.6348,
+          "observed_home_win_rate": 0.875
         },
         {
           "range": "70-80%",

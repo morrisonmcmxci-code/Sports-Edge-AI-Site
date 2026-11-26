@@ -1,8 +1,27 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-26",
   "timezone": "America/Chicago",
-  "generated_at": "2026-11-24T00:01:12.727974+00:00",
+  "generated_at": "2026-11-26T22:32:53.859798+00:00",
   "scope": "frozen pregame winner forecasts; not spread, prop, or betting ROI",
-  "by_league": {},
-  "games": []
+  "by_league": {
+    "nfl": {
+      "games": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "brier": 0.3014
+    }
+  },
+  "games": [
+    {
+      "game_id": "401873081",
+      "league": "nfl",
+      "matchup": "Chicago Bears @ Detroit Lions",
+      "predicted_winner": "Detroit Lions",
+      "actual_winner": "Chicago Bears",
+      "correct": false,
+      "confidence": 0.549,
+      "brier": 0.3014,
+      "captured_at": "2026-11-23T23:58:28.268950+00:00"
+    }
+  ]
 }
